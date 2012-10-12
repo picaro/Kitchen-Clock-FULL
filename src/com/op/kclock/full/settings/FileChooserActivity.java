@@ -1,4 +1,4 @@
-package com.op.kclock.settings;
+package com.op.kclock.full.settings;
 
 
 import android.annotation.TargetApi;
@@ -7,7 +7,10 @@ import android.content.*;
 import android.os.*;
 import android.view.*;
 import android.widget.*;
-import com.op.kclock.*;
+
+import com.op.kclock.full.R;
+import com.op.kclock.full.*;
+
 import java.io.*;
 import java.util.*;
 

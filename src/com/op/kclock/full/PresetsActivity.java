@@ -1,4 +1,4 @@
-package com.op.kclock;
+package com.op.kclock.full;
 
 import java.util.HashMap;
 import java.util.List;
@@ -25,15 +25,17 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.markupartist.android.widget.ActionBar;
-import com.op.kclock.dialogs.TimePickDialog;
-import com.op.kclock.model.AlarmClock;
-import com.op.kclock.utils.DBHelper;
-import com.op.kclock.cookconst.*;
+import com.op.kclock.full.R;
+
 import android.widget.*;
 import android.view.*;
-import com.op.kclock.dialogs.*;
+
+import com.op.kclock.full.cookconst.*;
+import com.op.kclock.full.dialogs.*;
+import com.op.kclock.full.model.AlarmClock;
+import com.op.kclock.full.utils.*;
+
 import android.content.*;
-import com.op.kclock.utils.*;
 import java.io.*;
 
 @TargetApi(5)
@@ -336,10 +338,5 @@ public class PresetsActivity extends Activity implements OnClickListener {
 
 	}
 
-	@Override
-	protected void onPause(){
-		super.onPause();
-		File prefFile = new File("/mnt/sdcard/tmp.txt");
-		Utils.saveSharedPreferencesToFile(prefFile,this.getApplicationContext());
-	}
+
 }

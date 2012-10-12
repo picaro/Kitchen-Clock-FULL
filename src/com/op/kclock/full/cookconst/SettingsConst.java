@@ -1,15 +1,15 @@
-package com.op.kclock.cookconst;
+package com.op.kclock.full.cookconst;
 
 /**
  *class with app settings const
 */
 public class SettingsConst
 {
-	public static final boolean APP_FULL = false;
+	public static final boolean APP_FULL = true;
 	public static final int MAX_TIMERS = 4;
 	public static final int MAX_PRESETS = 6;
 	
-	
+	public static final String SETTINGS_FILE = "/mnt/sdcard/android/config/kclock/preferences.dat";
 	public static final String SETTINGS ="pro.pastukhov.cookdroid";
 	public static final String SAVE_SESSION ="savesession";
 	public static final String THEME ="";
@@ -22,7 +22,7 @@ public class SettingsConst
 
 	
 	
-	public static final String INTENT_TIMER_ENDED = "com.op.kclock.KC_ALERT";
+	public static final String INTENT_TIMER_ENDED = "com.op.kclock.full.KC_ALERT";
 	public static final int APP_NOTIF_ID = 99;
 	public static final String TIMER = "timer";
 	public static final String TIMER_NAME = "timer_name";

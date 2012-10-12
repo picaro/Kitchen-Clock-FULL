@@ -1,4 +1,4 @@
-package com.op.kclock;
+package com.op.kclock.full;
 
 public class InfoActivity
 {

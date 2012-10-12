@@ -1,6 +1,6 @@
 package com.op.kclock.ui;
 
-import com.op.kclock.model.AlarmClock;
+import com.op.kclock.full.model.AlarmClock;
 
 import android.content.Context;
 import android.util.AttributeSet;

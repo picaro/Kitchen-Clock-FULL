@@ -1,4 +1,4 @@
-package com.op.kclock;
+package com.op.kclock.full;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,9 +23,12 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.provider.MediaStore;
 
-import com.op.kclock.cookconst.SettingsConst;
-import com.op.kclock.misc.Log;
-import com.op.kclock.settings.FileChooserActivity;
+import com.op.kclock.full.R;
+import com.op.kclock.full.cookconst.SettingsConst;
+import com.op.kclock.full.misc.Log;
+import com.op.kclock.full.settings.FileChooserActivity;
+import com.op.kclock.full.utils.Utils;
+
 import java.io.*;
 
 public class SettingsActivity extends PreferenceActivity implements
@@ -266,4 +269,18 @@ public class SettingsActivity extends PreferenceActivity implements
 		// Preference volumePref =
 		// (Preference)findPreference(getString(R.string.pref_volume_key));
 	}
+	
+	@Override
+	protected void onPause(){
+		super.onPause();
+		File prefFile = new File(SettingsConst.SETTINGS_FILE);
+//		try {
+//			prefFile.mkdirs();
+//			prefFile.createNewFile();
+//			Utils.saveSharedPreferencesToFile(prefFile, getApplicationContext());
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+	}
+	
 }

@@ -16,7 +16,7 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *  
  */
-package com.op.kclock.dialogs;
+package com.op.kclock.full.dialogs;
 
 import java.util.Calendar;
 
@@ -37,9 +37,9 @@ import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.op.kclock.MainActivity;
-import com.op.kclock.R;
-import com.op.kclock.model.AlarmClock;
+import com.op.kclock.full.R;
+import com.op.kclock.full.MainActivity;
+import com.op.kclock.full.model.AlarmClock;
 import com.op.kclock.ui.INumberPicker;
 import com.op.kclock.ui.NumberPicker;
 

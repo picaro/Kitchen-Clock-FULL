@@ -17,19 +17,19 @@
  *  
  */ 
 
-package com.op.kclock.misc;
+package com.op.kclock.full.misc;
 
 
-import com.op.kclock.R;
-import com.op.kclock.cookconst.SettingsConst;
-//import com.op.kclock.settings.Utils;
+import com.op.kclock.full.R;
+import com.op.kclock.full.cookconst.SettingsConst;
+import com.op.kclock.full.utils.*;
+//import com.op.kclock.full.settings.Utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
-import com.op.kclock.utils.*;
 
 public class Changelog {
 	private static final String TAG = "Changelog";

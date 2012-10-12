@@ -16,7 +16,7 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *  
  */ 
-package com.op.kclock.misc;
+package com.op.kclock.full.misc;
 
 import android.util.Config;
 

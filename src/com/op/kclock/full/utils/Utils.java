@@ -1,4 +1,4 @@
-package com.op.kclock.utils ;
+package com.op.kclock.full.utils ;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,8 +7,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 import java.util.Map.Entry;
-import com.op.kclock.R;
-import com.op.kclock.misc.Log;
+import com.op.kclock.full.R;
+import com.op.kclock.full.misc.Log;
 
 
 import android.content.Context;
@@ -89,7 +89,7 @@ public class Utils {
 		return Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
 	}
 
-	private static String prefName = "com.op.kclock";
+	private static String prefName = "com.op.kclock.full";
 
 public static boolean saveSharedPreferencesToFile(File dst, Context context) {
     boolean res = false;

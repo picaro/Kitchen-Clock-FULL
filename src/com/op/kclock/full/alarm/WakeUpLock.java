@@ -16,7 +16,7 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *  
  */ 
-package com.op.kclock.alarm;
+package com.op.kclock.full.alarm;
 
 import android.app.KeyguardManager;
 import android.app.KeyguardManager.KeyguardLock;

@@ -16,7 +16,7 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *  
  */
-package com.op.kclock.model;
+package com.op.kclock.full.model;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -39,11 +39,12 @@ import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.op.kclock.MainActivity;
-import com.op.kclock.R;
-import com.op.kclock.SettingsActivity;
-import com.op.kclock.alarm.WakeUpLock;
-import com.op.kclock.cookconst.SettingsConst;
+import com.op.kclock.full.R;
+import com.op.kclock.full.MainActivity;
+import com.op.kclock.full.SettingsActivity;
+import com.op.kclock.full.alarm.WakeUpLock;
+import com.op.kclock.full.cookconst.SettingsConst;
+
 import android.provider.*;
 
 public class AlarmClock implements Parcelable {

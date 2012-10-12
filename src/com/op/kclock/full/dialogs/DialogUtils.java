@@ -16,12 +16,13 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *  
  */ 
-package com.op.kclock.dialogs;
+package com.op.kclock.full.dialogs;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import com.op.kclock.*;
+
+import com.op.kclock.full.*;
 
 /**
  class for little dialogs. 

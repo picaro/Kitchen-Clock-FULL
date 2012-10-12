@@ -16,7 +16,7 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *  
  */
-package com.op.kclock.dialogs;
+package com.op.kclock.full.dialogs;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -25,8 +25,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.op.kclock.R;
-import com.op.kclock.model.AlarmClock;
+import com.op.kclock.full.R;
+import com.op.kclock.full.model.AlarmClock;
 
 public class NameDialog extends Dialog {
 

@@ -1,11 +1,12 @@
-package com.op.kclock.alarm;
+package com.op.kclock.full.alarm;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import java.util.Calendar;
-import com.op.kclock.*;
+
+import com.op.kclock.full.*;
 
 
 /**

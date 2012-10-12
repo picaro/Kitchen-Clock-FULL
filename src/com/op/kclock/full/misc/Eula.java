@@ -16,17 +16,17 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *  
  */ 
-package com.op.kclock.misc;
+package com.op.kclock.full.misc;
 
-import com.op.kclock.R;
-import com.op.kclock.cookconst.SettingsConst;
-//import com.op.kclock.settings.Utils;
+import com.op.kclock.full.R;
+import com.op.kclock.full.cookconst.SettingsConst;
+import com.op.kclock.full.utils.*;
+//import com.op.kclock.full.settings.Utils;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
-import com.op.kclock.utils.*;
 import android.content.*;
 import android.preference.*;
 

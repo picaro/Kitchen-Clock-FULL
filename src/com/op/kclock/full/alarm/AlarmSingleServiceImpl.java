@@ -16,7 +16,7 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *  
  */
-package com.op.kclock.alarm;
+package com.op.kclock.full.alarm;
 
 import java.util.List;
 
@@ -26,10 +26,10 @@ import android.media.AudioManager;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 
-import com.op.kclock.MainActivity;
-import com.op.kclock.R;
-import com.op.kclock.misc.Log;
-import com.op.kclock.model.AlarmClock;
+import com.op.kclock.full.R;
+import com.op.kclock.full.MainActivity;
+import com.op.kclock.full.misc.Log;
+import com.op.kclock.full.model.AlarmClock;
 
 /**
  * Class that handles Putting alarm to file and to device. So that we can wake

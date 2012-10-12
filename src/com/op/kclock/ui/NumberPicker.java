@@ -16,7 +16,7 @@
 package com.op.kclock.ui;
 
 
-import com.op.kclock.R;
+import com.op.kclock.full.R;
 
 import android.content.Context;
 import android.os.Handler;
