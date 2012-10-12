@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">"Horloge de cuisine"</string>
+    <string name="menu_settings">"Préférences"</string>
+    <string name="main_alarmclock">"Réveil"</string>
+<string name="start">"Démarrage"</string>
+<string name="stop">"Arrêt"</string>
+<string name="changelog_title">"Journal des modifications"</string>
+
+		<string name="alarm_name">"nom de l'alarme"</string>
+		
+    <!-- Eula -->
+	<string name="eula_title">"licence"</string>
+<string name="eula_accept">"accept"</string>
+<string name="eula_refuse">"Refuser"</string>	
+<string name="name">"Nom"</string>
+<string name="save">"Sauver"</string>
+<string name="edit">"Editer"</string>
+<string name="delete">"Effaceurs"</string>
+<string name="ok">"OK"</string>
+<string name="cancel">"Annuler"</string>
+<string name="yes">"Oui"</string>
+<string name="no">"Non"</string>
+<string name="back">"Retour"</string>
+   <string name="add">"Ajouter"</string>
+<string name="exit">"Sortie"</string>
+<string name="info">"Informations"</string>
+    <string name="settime">"Définir l'heure"</string>
+    <string name="delete_all">"Supprimer tout"</string>
+    <string name="min">"min"</string>
+    <string name="hour">"heure"</string>
+    <string name="sec">"sec"</string>
+    <string name="set">"Fixer"</string>
+
+    <!-- Notifications -->
+<string name="timer_started">"Compte à rebours démarré"</string>
+<string name="click_to_open">"Cliquez ici pour ouvrir l'application"</string>
+<string name="countdown_ended">"Compte à rebours terminé"</string>
+    <string name="toast_time_invalid">"Time should be not zero"</string>
+
+
+    <!-- Preferences -->
+	    <string name="pref_info_version">"Version"</string>
+    <string name="pref_info_version_error">"Impossible de déterminer la position."</string>
+    <string name="pref_report_a_bug">"Signaler Un Bug"</string>
+    <string name="pref_report_a_bug_summary">"Soumettre un nouveau problème à l'issue tracker"</string>
+    <string name="pref_display_changelog_summary">"Afficher application de changelog"</string>
+    <string name="pref_display_eula_summary">"Afficher la demande de permis"</string>
+    <string name="pref_show_tips">"Afficher les conseils au démarrage"</string>
+    <string name="pref_display_settings">"Paramètres d'affichage"</string>
+    <string name="pref_keep_screen_on">"Gardez sur écran"</string>
+    <string name="pref_keep_screen_on_summary_on">"L'écran restera actif pendant l'exécution du programme"</string>
+    <string name="pref_keep_screen_on_summary_off">"L'écran se met en veille en fonction des paramètres du système"</string>
+    <string name="pref_clear_timer_label">"Étiquette Effacer l'horloge"</string>
+    <string name="pref_clear_timer_label_summary_on">"Le label Timer retourne à la valeur par défaut après un délai prédéfini atteint son alarme."</string>
+    <string name="pref_clear_timer_label_summary_off">"L'étiquette minuterie garde le nom de la dernière présélection utilisé"</string>
+<string name="pref_set_timers_names">"Définir le nom des timers"</string>
+<string name="pref_notification_settings">"Réglage notifications"</string>
+<string name="pref_notification_sound">"Son"</string>
+<string name="pref_notification_sound_summary_on">"Notification sonore activée"</string>
+<string name="pref_notification_sound_summary_off">"Notification sonore désactivée"</string>
+<string name="pref_notification_insistent">"Insistant"</string>
+<string name="pref_notification_insistent_summary_on">"Mode insistant activé"</string>
+<string name="pref_notification_insistent_summary_off">"Mode insistant desactivé"</string>
+<string name="pref_notification_custom_sound">"Son personnel"</string>
+<string name="pref_notification_custom_sound_summary_on">"Utiliser un son personnel"</string>
+<string name="pref_notification_custom_sound_summary_off">"Utiliser le son par défaut"</string>
+<string name="pref_notification_ringtone">"Sélectionner une alarme "</string>
+<string name="pref_notification_ringtone_summary">"Sélectionner un son personnel disponible dans les alarmes du système"</string>
+<string name="pref_notification_led">"LED"</string>
+<string name="pref_notification_led_summary_on">"LED de notification activée"</string>
+<string name="pref_notification_led_summary_off">"LED de notification désactivée"</string>
+<string name="pref_notification_led_color">"Couleur de la LED"</string>
+<string name="pref_notification_led_color_summary">"Modifier la couleur de la LED"</string>
+<string name="pref_notification_led_color_dialogtitle">"Selectionner la couleur de la LED"</string>
+<string name="pref_notification_led_color_green">"Vert"</string>
+<string name="pref_notification_led_color_white">"Blanc"</string>
+<string name="pref_notification_led_color_red">"Rouge/Defaut "</string>
+<string name="pref_notification_led_color_blue">"Bleu"</string>
+<string name="pref_notification_led_color_yellow">"Jaune"</string>
+<string name="pref_notification_led_color_cyan">"Cyan"</string>
+<string name="pref_notification_led_color_magenta">"Magenta"</string>
+<string name="pref_notification_led_color_pink">"Rose"</string>
+<string name="pref_notification_led_color_orange">"Orange"</string>
+<string name="pref_notification_led_color_light_blue">"Bleu clair"</string>
+<string name="pref_notification_led_blink_rate">"Clignotement de la LED"</string>
+<string name="pref_notification_led_blink_rate_summary">"Modifier le clignotement de la LED"</string>
+<string name="pref_notification_led_blink_rate_dialogtitle">"Sélectionner la durée de clignotement de la LED "</string>
+<string name="pref_notification_led_blink_rate_two">"2 (Rapide)"</string>
+<string name="pref_notification_led_blink_rate_three">"3"</string>
+<string name="pref_notification_led_blink_rate_four">"4 (Moyen)"</string>
+<string name="pref_notification_led_blink_rate_five">"5"</string>
+<string name="pref_notification_led_blink_rate_six">"6 (Lent)"</string>
+<string name="pref_notification_vibrate">"Vibration"</string>
+<string name="pref_notification_vibrate_summary_on">"Vibration during de notification Activée"</string>
+<string name="pref_notification_vibrate_summary_off">"Vibration during de notification DESACTIVEE"</string>
+<string name="pref_notification_vibrate_pattern">"Mode de vibration"</string>
+<string name="pref_notification_vibrate_pattern_summary">"Changer de mode de vibration"</string>
+<string name="pref_notification_vibrate_pattern_dialogtitle">"Sélectionnez le mode de vibration"</string>
+<string name="pref_notification_vibrate_pattern_normal">"Normal"</string>
+<string name="pref_notification_vibrate_pattern_medium">"Vibration moyenne"</string>
+<string name="pref_notification_vibrate_pattern_long">"Vibration longue"</string>
+<string name="pref_notification_vibrate_pattern_multiple_short">"Vibration courte"</string>
+<string name="pref_notification_vibrate_pattern_multiple_long">"Plusieurs longue"</string>
+
+    <string name="pref_pickstyle_wheel">"Roues"</string>
+    <string name="pref_pickstyle_picker">"Cueilleur"</string>
+    <string name="pref_pickstyle_number">"Nombre"</string>
+    <string name="pref_showsec">"Montrer secondes sélecteur"</string>
+    <string name="pref_showsec_summary_on">"Secondes dans le sélecteur sur"</string>
+    <string name="pref_showsec_summary_off">"Secondes dans le sélecteur de"</string>
+    <string name="pref_showhr">"Affichez les heures dans un sélecteur"</string>
+    <string name="pref_showhr_summary_on">"Heures dans le sélecteur sur"</string>
+    <string name="pref_showhr_summary_off">"Heures dans le sélecteur de"</string>
+    <string name="pref_simmetricpick">"Cueilleurs symétriques"</string>
+    <string name="pref_simmetricpick_summary_on">"symétrique"</string>
+    <string name="pref_simmetricpick_summary_off">"minutes plus"</string>
+    <string name="pref_autostart">"Minuteries Autostart"</string>
+    <string name="pref_autostart_summary_on">"autostart sur"</string>
+    <string name="pref_autostart_summary_off">"autostart hors"</string>
+    <string name="pref_addalarmonstart">"Ajouter minuterie au démarrage"</string>
+    <string name="pref_addalarmonstart_summary_on">"montrer ajouter de dialogue minuterie au démarrage sur"</string>
+    <string name="pref_addalarmonstart_summary_off">"montrer ajouter de dialogue minuterie commencer"</string>
+    <string name="pref_cyclicmins">"Cyclique roue des minutes"</string>
+    <string name="pref_cyclicmins_summary_on">"minutes cycliques sur"</string>
+    <string name="pref_cyclicmins_summary_off">"minutes cycliques off"</string>
+    <string name="pref_stoponrotate">"Arrêt sur rotation"</string>
+    <string name="pref_stoponrotate_summary_on">"arrêter alarmante sur le téléphone rotation sur"</string>
+    <string name="pref_stoponrotate_summary_off">"arrêter alarmante sur le téléphone hors rotation"</string>
+    <string name="pref_pickstyle">"Choisissez de dialogue fois"</string>
+    <string name="pref_pickstyle_summary">"Type de prendre le temps de dialogue"</string>
+    <string name="pref_pickstyle_dialogtitle">"Sélecteur de style"</string>
+    <string name="pref_shownames">"Afficher les noms"</string>
+    <string name="pref_shownames_summary">"afficher les noms d'alarme"</string>
+    <string name="pref_savesession">"Enregistrer des alarmes"</string>
+    <string name="pref_musicon">"Son"</string>
+    <string name="pref_savesession_sum">"restaurer les alarmes sur le début"</string>
+    <string name="pref_musicon_sum">"son de l'alarme"</string>
+
+
+    <string name="pref_showsettbtn">"Afficher le bouton Paramètres"</string>
+    <string name="pref_showsettbtn_summary">"afficher le bouton Paramètres dans actionbar"</string>
+    <string name="pref_volume">"Volume"</string>
+    <string name="pref_volume_summary">"régler le volume de l'alarme"</string>
+    <string name="pref_showdelall">"Afficher del bouton"</string>
+    <string name="pref_showdelall_summary">"montrer supprimer tout bouton dans actionbar"</string>
+    <string name="pref_soundfile">"Son personnalisée"</string>
+    <string name="pref_soundfile_summary">"sélectionner le son sur mesure"</string>
+  <string name="pref_soundsource_system">"SYSTÈME"</string>
+    <string name="pref_soundsource_custom">"douane"</string>
+    <string name="pref_soundsource_summary">"sélectionner la source sonore"</string>	
+    <string name="pref_soundsource_dialogtitle">"Source sonore"</string>
+    <string name="alarm_settings">"Réglages d'alarmes"</string>
+    <string name="main_settings">"Paramètres principaux"</string>
+    <string name="interface_settings">"Paramètres de l'interface"</string>
+
+    <string name="pref_showaddbtn">"Montrer ajouter un bouton"</string>
+    <string name="pref_showaddbtn_summary">"montrer ajouter un bouton dans actionbar"</string>	
+    <string name="pref_showrefreshbtn">"Afficher bouton Actualiser"</string>
+    <string name="pref_showrefreshbtn_summary">"montrent bouton Actualiser tout dans actionbar"</string>	
+    	
+    <string name="pref_sorttype_unsorted">"Non trié"</string>
+    <string name="pref_sorttype_runnedfirst">"actif premier"</string>
+    <string name="pref_sorttype_smallfirst">"plus proche en premier"</string>
+    <string name="pref_sortlist">"Tri"</string>
+    <string name="pref_sortlist_summary">"Type de tri de la liste des alarmes"</string>
+	
+<string name="preset_list_empty">"Liste de reglage vide"</string>
+<string name="presets_saved">"REGLAGES Sauves"</string>
+<string name="presets">"REGLAGES"</string>
+	<string name="delete_preset_title">"REGLAGES effacer les?"</string>
+<string name="delete_preset_message">"Êtes-vous Sur De Vouloir effacer reglages ERP?"</string>
+    <string name="logs">"Historique"</string>
+
+	
+</resources>

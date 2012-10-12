@@ -1,0 +1,46 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+
+  dependencies {
+    classpath  'org.gradle.api.plugins:gradle-android-plugin:1.2.0'
+  }
+}
+
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+   compile fileTree(dir: 'lib', includes: ['*.jar']) 
+}
+
+task listJars << {
+    configurations.compile.each { File file -> println file.name }
+}
+
+// Signing configuration, valid for all builds (1)
+androidSignAndAlign {
+    keyStore = "../keystore/key_kc"
+    keyAlias = "opastukhov"
+    keyStorePassword = "ikfrj,kjr"
+    keyAliasPassword = "ikfrj,kjr"
+}
+
+// Configure the filtering of resources with properties from the Gradle's project scope (2)
+processResources {
+  expand (project.properties)
+}
+
+// Configure a dedicated debug build (3)
+task configureDebug << {
+  jar.classifier = "debug"
+}
+
+// Configure a dedicated release build (4)
+task configureRelease << {
+  proguard.enabled = false
+}

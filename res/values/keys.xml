@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="pref_info_version_key">pref_info_version</string>
+    <string name="pref_report_a_bug_key">pref_report_a_bug</string>
+    <string name="pref_changelog_key">pref_changelog</string>
+    <string name="pref_eula_key">pref_eula</string>
+    <string name="pref_show_tips_key">pref_show_tips</string>
+    <string name="pref_keep_screen_on_key">pref_keep_screen_on</string>
+    <string name="pref_clear_timer_label_key">pref_clear_timer_label_key</string>
+    <string name="pref_notification_sound_key">pref_notification_sound</string>
+    <string name="pref_notification_insistent_key">pref_notification_insistent</string>
+    <string name="pref_notification_custom_sound_key">pref_notification_custom_sound</string>
+    <string name="pref_notification_ringtone_key">pref_notification_ringtone</string>
+    <string name="pref_notification_led_key">pref_notification_led</string>
+    <string name="pref_notification_led_color_key">pref_notification_led_color</string>
+    <string name="pref_notification_led_blink_rate_key">pref_notification_led_blink_rate</string>
+    <string name="pref_notification_vibrate_key">pref_notification_vibrate</string>
+    <string name="pref_notification_vibrate_pattern_key">pref_notification_vibrate_pattern</string>
+    <string name="pref_savesession_key">pref_save_session</string>
+    <string name="pref_showhr_key">pref_showhr_key</string>
+    <string name="pref_showsec_key">pref_showsec_key</string>
+    <string name="pref_simmetricpick_key">pref_simmetricpicck_key</string>
+    <string name="pref_autostart_key">pref_autostart_key</string>
+    <string name="pref_pickstyle_key">pref_pickstyle_key</string>
+    <string name="pref_addalarmonstart_key">pref_addalarmonstart_key</string>
+    <string name="pref_cyclicmins_key">pref_cyclicmins_key</string>
+    <string name="pref_stoponrotate_key">pref_stoponrotate_key</string>
+    <string name="pref_shownames_key">pref_shownames_key</string>
+    <string name="pref_showsettbtn_key">pref_showsettbtn_key</string>
+    <string name="pref_volume_key">pref_volume_key</string>
+    <string name="pref_showdelall_key">pref_showdelall_key</string>
+    <string name="pref_soundfile_key">pref_soundfile_key</string>
+    <string name="pref_soundfile_path_key">pref_soundfile_path_key</string>    
+    <string name="pref_soundsource_key">pref_soundsource_key</string>
+    <string name="pref_showaddbtn_key">pref_showaddbtn_key</string>
+    <string name="pref_showrefreshbtn_key">pref_showrefreshbtn_key</string>
+    
+    <string name="pref_showpresetsbtn_key">pref_showpresetsbtn_key</string>
+    <string name="pref_showplaybtn_key">pref_showplaybtn_key</string>
+    <string name="pref_sortlist_key">pref_sortlist_key</string>
+    <string name="pref_overridevolume_key">pref_overridevolume_key</string>
+    <string name="pref_advancedsettings_key">pref_advancedsettings_key</string>
+    <string name="pref_hideadvsettings_key">pref_hideadvsettings_key</string>
+    <string name="pref_disablelock_key">pref_disablelock_key</string>
+    	
+    	
+    <string name="pref_bgfile_path_key">pref_bgfile_path_key</string>
+    <string name="pref_bgfile_key">pref_bgfile_key</string>
+    <string name="pref_bgsource_key">pref_bgsource_key</string>
+	<string name="pref_overridesettbg_key">pref_overridesettbg_key</string>
+ 	
+</resources>

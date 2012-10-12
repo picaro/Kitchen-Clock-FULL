@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="20dp" >
+
+    <com.op.kclock.ui.NumberPicker
+        android:id="@+id/hour"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+      	android:background="@drawable/timepicker_input" />
+      
+    <com.op.kclock.ui.NumberPicker
+        android:id="@+id/mins"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+   		android:background="@drawable/timepicker_input" />
+    
+    <com.op.kclock.ui.NumberPicker
+        android:id="@+id/secs"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+		android:background="@drawable/timepicker_input" />
+    
+</LinearLayout>

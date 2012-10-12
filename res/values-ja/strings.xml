@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">"キッチン時計"</string>
+    <string name="menu_settings">"の設定"</string>
+    <string name="main_alarmclock">"アラームクロック"</string>
+	
+	<string name="start">"起動"</string>
+    <string name="stop">"配信の停止"</string>
+    <string name="changelog_title">"更新履歴"</string>
+    
+    <string name="alarm_name">"入力された名前"</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">"ラインセンス"</string>
+    <string name="eula_accept">"受付"</string>
+    <string name="eula_refuse">"断る"</string>
+    <string name="name">"名前"</string>
+    <string name="save">"保存"</string>
+    <string name="edit">"編集"</string>
+    <string name="delete">"削除"</string>
+    <string name="ok">"確定"</string>
+    <string name="cancel">"取り消し"</string>
+    <string name="yes">"はい。"</string>
+    <string name="no">"いや"</string>
+    <string name="back">"戻る"</string>
+    <string name="add">"追加。"</string>
+    <string name="exit">"出る"</string>
+    <string name="info">"情報"</string>
+    <string name="settime">"時間を設定"</string>
+    <string name="delete_all">"すべて削除する"</string>
+    <string name="min">"分"</string>
+    <string name="hour">"時"</string>
+    <string name="sec">"秒"</string>
+    <string name="set">"Set"</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">"タイマーがスタート"</string>
+    <string name="click_to_open">"アプリケーションを開くにはここをクリック"</string>
+    <string name="countdown_ended">"カウントダウンが終了しました"</string>
+    <string name="toast_time_invalid">"時間はゼロではありませんする必要があります"</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">"バージョン"</string>
+    <string name="pref_info_version_error">"バージョンを確認することができません"</string>
+    <string name="pref_report_a_bug">"バグの報告"</string>
+    <string name="pref_report_a_bug_summary">"課題追跡に新規課題を送信"</string>
+    <string name="pref_display_changelog_summary">"アプリケーションの変更履歴を表示"</string>
+    <string name="pref_display_eula_summary">"アプリケーションのライセンスを表示"</string>
+    <string name="pref_show_tips">"起動時にヒントを表示"</string>
+    <string name="pref_display_settings">"画面設定"</string>
+    <string name="pref_keep_screen_on">"の画面を保つ"</string>
+    <string name="pref_keep_screen_on_summary_on">"プログラムの実行中に画面がアクティブのままになります"</string>
+    <string name="pref_keep_screen_on_summary_off">"画面には、システムの設定に応じてスタンバイに入る"</string>
+    <string name="pref_clear_timer_label">"クリアタイマーラベル"</string>
+    <string name="pref_clear_timer_label_summary_on">"あらかじめ設定した時間がそのアラームに到達した後、タイマーのラベルはデフォルト値に戻ります。"</string>
+    <string name="pref_clear_timer_label_summary_off">"タイマーのラベルは、最後に使用したプリセットの名前を保持します"</string>
+    <string name="pref_set_timers_names">"タイマー名を設定する"</string>
+    <string name="pref_notification_settings">"お知らせの設定"</string>
+    <string name="pref_notification_sound">"サウンド"</string>
+    <string name="pref_notification_sound_summary_on">"サウンド通知が有効になって"</string>
+    <string name="pref_notification_sound_summary_off">"サウンド通知の無効"</string>
+    <string name="pref_notification_insistent">"しつこい"</string>
+    <string name="pref_notification_insistent_summary_on">"上のしつこいモード"</string>
+    <string name="pref_notification_insistent_summary_off">"しつこいオフモード"</string>
+    <string name="pref_notification_custom_sound">"カスタムサウンド"</string>
+    <string name="pref_notification_custom_sound_summary_on">"カスタムサウンドを使用"</string>
+    <string name="pref_notification_custom_sound_summary_off">"デフォルトのサウンドを使用して、"</string>
+    <string name="pref_notification_ringtone">"アラーム音を選択"</string>
+    <string name="pref_notification_ringtone_summary">"利用可能なシステムのアラーム音からカスタムサウンドを選択"</string>
+    <string name="pref_notification_led">"LED"</string>
+    <string name="pref_notification_led_summary_on">"LED通知が有効になって"</string>
+    <string name="pref_notification_led_summary_off">"LED通知は無効"</string>
+    <string name="pref_notification_led_color">"LEDの色"</string>
+    <string name="pref_notification_led_color_summary">"LEDの色を変更する"</string>
+    <string name="pref_notification_led_color_dialogtitle">"あなたのLED色を選択してください"</string>
+    <string name="pref_notification_led_color_green">"緑"</string>
+    <string name="pref_notification_led_color_white">"白"</string>
+    <string name="pref_notification_led_color_red">"赤/デフォルト"</string>
+    <string name="pref_notification_led_color_blue">"青"</string>
+    <string name="pref_notification_led_color_yellow">"黄"</string>
+    <string name="pref_notification_led_color_cyan">"シアン"</string>
+    <string name="pref_notification_led_color_magenta">"マゼンダ"</string>
+    <string name="pref_notification_led_color_pink">"ピンク"</string>
+    <string name="pref_notification_led_color_orange">"オレンジ"</string>
+    <string name="pref_notification_led_color_light_blue">"明るい青"</string>
+    <string name="pref_notification_led_blink_rate">"LEDの点滅速度"</string>
+    <string name="pref_notification_led_blink_rate_summary">"LEDの点滅速度を変更する"</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">"あなたのLEDの点滅速度を選択"</string>
+    <string name="pref_notification_led_blink_rate_two">"2（ファスト）"</string>
+    <string name="pref_notification_led_blink_rate_three">"3"</string>
+    <string name="pref_notification_led_blink_rate_four">"4（中）"</string>
+    <string name="pref_notification_led_blink_rate_five">"5"</string>
+    <string name="pref_notification_led_blink_rate_six">"6（スロー）"</string>
+    <string name="pref_notification_vibrate">"バイブレーション"</string>
+    <string name="pref_notification_vibrate_summary_on">"通知が有効になって振動する"</string>
+    <string name="pref_notification_vibrate_summary_off">"無効通知を振動"</string>
+    <string name="pref_notification_vibrate_pattern">"パターンを振動"</string>
+    <string name="pref_notification_vibrate_pattern_summary">"パターンを振動させる変更"</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">"あなたの振動パターンを選択"</string>
+    <string name="pref_notification_vibrate_pattern_normal">"ノーマル"</string>
+    <string name="pref_notification_vibrate_pattern_medium">"媒体はバイブ"</string>
+    <string name="pref_notification_vibrate_pattern_long">"ロングバイブ"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">"複数の短い"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">"ロング複数"</string>
+    <string name="pref_pickstyle_wheel">"ホイール"</string>
+    <string name="pref_pickstyle_picker">"ピッカー"</string>
+    <string name="pref_pickstyle_number">"数"</string>
+    <string name="pref_showsec">"ピッカーに秒を表示"</string>
+    <string name="pref_showsec_summary_on">"ピッカーの秒で"</string>
+    <string name="pref_showsec_summary_off">"ピッカーで秒オフ"</string>
+    <string name="pref_showhr">"ピッカーで時間を表示する"</string>
+    <string name="pref_showhr_summary_on">"ピッカーで時間に"</string>
+    <string name="pref_showhr_summary_off">"ピッカーで時間外"</string>
+    <string name="pref_simmetricpick">"対称ピッカー"</string>
+    <string name="pref_simmetricpick_summary_on">"対称の"</string>
+    <string name="pref_simmetricpick_summary_off">"大きく分"</string>
+    <string name="pref_autostart">"自動タイマー"</string>
+    <string name="pref_autostart_summary_on">"上の自動起動"</string>
+    <string name="pref_autostart_summary_off">"自動オフ"</string>
+    <string name="pref_addalarmonstart">"開始時にタイマーを追加"</string>
+    <string name="pref_addalarmonstart_summary_on">"上で起動アドオンタイマーダイアログを表示"</string>
+    <string name="pref_addalarmonstart_summary_off">"オフタイマー起動時にダイアログを追加表示"</string>
+    <string name="pref_cyclicmins">"サイクリック分ホイール"</string>
+    <string name="pref_cyclicmins_summary_on">"上の周期的な分"</string>
+    <string name="pref_cyclicmins_summary_off">"サイクリック分オフ"</string>
+    <string name="pref_stoponrotate">"回転時に停止"</string>
+    <string name="pref_stoponrotate_summary_on">"携帯電話を上に回転させるに憂慮すべき停止"</string>
+    <string name="pref_stoponrotate_summary_off">"電話の電源を回転させる上で憂慮すべき停止"</string>
+    <string name="pref_pickstyle">"時間ダイアログを選ぶ"</string>
+    <string name="pref_pickstyle_summary">"時間ダイアログの種類を選ぶ"</string>
+    <string name="pref_pickstyle_dialogtitle">"ピッカースタイル"</string>
+    <string name="pref_shownames">"名を表示"</string>
+    <string name="pref_shownames_summary">"アラーム名を表示"</string>
+    <string name="pref_savesession">"アラームを保存"</string>
+    <string name="pref_musicon">"サウンド"</string>
+    <string name="pref_savesession_sum">"開始時にアラームを復元する"</string>
+    <string name="pref_musicon_sum">"アラーム音"</string>
+    
+	
+</resources>

@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">"Kuchyně Clock"</string>
+    <string name="menu_settings">"Nastavení"</string>
+    <string name="main_alarmclock">"Alarm"</string>
+	
+	<string name="start">"Začátek"</string>
+    <string name="stop">"stop."</string>
+    <string name="changelog_title">"ChangeLog"</string>
+    
+    <string name="alarm_name">"Vstup jméno"</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">"Licence"</string>
+    <string name="eula_accept">"Přijmout"</string>
+    <string name="eula_refuse">"Odmítnout"</string>
+    <string name="name">"Název"</string>
+    <string name="save">"Uložit"</string>
+    <string name="edit">"Editovat"</string>
+    <string name="delete">"Odstranit"</string>
+    <string name="ok">"Ok"</string>
+    <string name="cancel">"Zrušit"</string>
+    <string name="yes">"Ano"</string>
+    <string name="no">"Ne"</string>
+    <string name="back">"Zpět"</string>
+    <string name="add">"Přidat"</string>
+    <string name="exit">"Konec"</string>
+    <string name="info">"Informace"</string>
+    <string name="settime">"Nastavení času"</string>
+    <string name="delete_all">"Smaza_t vše"</string>
+    <string name="min">"min"</string>
+    <string name="hour">"hod"</string>
+    <string name="sec">"sec"</string>
+    <string name="set">"nastavení"</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">"Časový spínač   Začínáme"</string>
+    <string name="click_to_open">"Klikněte zde pro otevření aplikace"</string>
+    <string name="countdown_ended">"Odpočítávání skončilo"</string>
+    <string name="toast_time_invalid">"Čas by neměla být nula"</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">"Verze"</string>
+    <string name="pref_info_version_error">"Nepodařilo se zjistit verzi"</string>
+    <string name="pref_report_a_bug">"Oznámit chybu"</string>
+    <string name="pref_report_a_bug_summary">"Vložte novou otázku na sledování problémů"</string>
+    <string name="pref_display_changelog_summary">"Zobrazení aplikace changelog"</string>
+    <string name="pref_display_eula_summary">"Zobrazení licenci aplikace"</string>
+    <string name="pref_show_tips">"Zobrazit tipy při spuštění"</string>
+    <string name="pref_display_settings">"Nastavení displeje"</string>
+    <string name="pref_keep_screen_on">"Udržujte obrazovku na"</string>
+    <string name="pref_keep_screen_on_summary_on">"Obrazovka zůstane aktivní, dokud program běží"</string>
+    <string name="pref_keep_screen_on_summary_off">"Obrazovka se přepne do pohotovostního režimu podle nastavení systému"</string>
+    <string name="pref_clear_timer_label">"Clear Timer štítek"</string>
+    <string name="pref_clear_timer_label_summary_on">"Timer štítek se vrátí na výchozí hodnoty po nastavené době dosáhne své pobouření."</string>
+    <string name="pref_clear_timer_label_summary_off">"Timer štítek udržuje název naposledy použitého přednastavení"</string>
+    <string name="pref_set_timers_names">"Nastavit Timer jména"</string>
+    <string name="pref_notification_settings">"Nastavení oznámení"</string>
+    <string name="pref_notification_sound">"zvuk"</string>
+    <string name="pref_notification_sound_summary_on">"Zvukové upozornění povolen"</string>
+    <string name="pref_notification_sound_summary_off">"Zvukové upozornění vypnuto"</string>
+    <string name="pref_notification_insistent">"Neústupný"</string>
+    <string name="pref_notification_insistent_summary_on">"Neústupný režim na"</string>
+    <string name="pref_notification_insistent_summary_off">"Neústupný režim off"</string>
+    <string name="pref_notification_custom_sound">"Vlastní zvuk"</string>
+    <string name="pref_notification_custom_sound_summary_on">"Použít vlastní zvuk"</string>
+    <string name="pref_notification_custom_sound_summary_off">"Použít výchozí zvuk"</string>
+    <string name="pref_notification_ringtone">"Vyberte zvuk budíku"</string>
+    <string name="pref_notification_ringtone_summary">"Vyberte vlastní zvuk z dostupné systémové alarmu zazní
+"</string>
+    <string name="pref_notification_led">"LED dioda"</string>
+    <string name="pref_notification_led_summary_on">"LED oznámení povoleno"</string>
+    <string name="pref_notification_led_summary_off">"LED oznámení zakázáno"</string>
+    <string name="pref_notification_led_color">"Barva LED diody"</string>
+    <string name="pref_notification_led_color_summary">"Změna barvy LED"</string>
+    <string name="pref_notification_led_color_dialogtitle">"Vyberte si barvu LED"</string>
+    <string name="pref_notification_led_color_green">"zelené"</string>
+    <string name="pref_notification_led_color_white">"Bílý"</string>
+    <string name="pref_notification_led_color_red">"Red / Default"</string>
+    <string name="pref_notification_led_color_blue">"Modrá"</string>
+    <string name="pref_notification_led_color_yellow">"Žlutá"</string>
+    <string name="pref_notification_led_color_cyan">"Modrozelená"</string>
+    <string name="pref_notification_led_color_magenta">"fialová"</string>
+    <string name="pref_notification_led_color_pink">"Růžová:"</string>
+    <string name="pref_notification_led_color_orange">"Oranžová"</string>
+    <string name="pref_notification_led_color_light_blue">"světle modrá"</string>
+    <string name="pref_notification_led_blink_rate">"LED rychlost blikání"</string>
+    <string name="pref_notification_led_blink_rate_summary">"Změna rychlosti blikání LED"</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">"Vyberte si rychlost blikání LED"</string>
+    <string name="pref_notification_led_blink_rate_two">"2 (Fast)"</string>
+    <string name="pref_notification_led_blink_rate_three">"3"</string>
+    <string name="pref_notification_led_blink_rate_four">"4 (Medium)"</string>
+    <string name="pref_notification_led_blink_rate_five">"5"</string>
+    <string name="pref_notification_led_blink_rate_six">"6 (Slow)"</string>
+    <string name="pref_notification_vibrate">"Vibrovat"</string>
+    <string name="pref_notification_vibrate_summary_on">"Vibrace oznámení povolena"</string>
+    <string name="pref_notification_vibrate_summary_off">"Vibrace oznámení vypnuta"</string>
+    <string name="pref_notification_vibrate_pattern">"Vibrace vzor"</string>
+    <string name="pref_notification_vibrate_pattern_summary">"Změna vibrovat vzor"</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">"Vyberte si vibrace vzor"</string>
+    <string name="pref_notification_vibrate_pattern_normal">"normální"</string>
+    <string name="pref_notification_vibrate_pattern_medium">"Střední Vibrace"</string>
+    <string name="pref_notification_vibrate_pattern_long">"Long Vibrate"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">"Multiple Short"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">"Multiple Long"</string>
+    <string name="pref_pickstyle_wheel">"K=l="</string>
+    <string name="pref_pickstyle_picker">"Sběrač"</string>
+    <string name="pref_pickstyle_number">"Číslo"</string>
+    <string name="pref_showsec">"Zobrazit sekund v dialogu pro výběr"</string>
+    <string name="pref_showsec_summary_on">"Sekundy v dialogu pro výběr na"</string>
+    <string name="pref_showsec_summary_off">"Sekundy v dialogu pro výběr off"</string>
+    <string name="pref_showhr">"Zobrazit hodiny v dialogu pro výběr"</string>
+    <string name="pref_showhr_summary_on">"Hodiny v dialogu pro výběr na"</string>
+    <string name="pref_showhr_summary_off">"Hodiny v dialogu pro výběr off"</string>
+    <string name="pref_simmetricpick">"Symetrický sběrači"</string>
+    <string name="pref_simmetricpick_summary_on">"symetrický"</string>
+    <string name="pref_simmetricpick_summary_off">"minut větší"</string>
+    <string name="pref_autostart">"Autostart časovače"</string>
+    <string name="pref_autostart_summary_on">"autostart na"</string>
+    <string name="pref_autostart_summary_off">"autostart off"</string>
+    <string name="pref_addalarmonstart">"Přidat časovač na startu"</string>
+    <string name="pref_addalarmonstart_summary_on">"zobrazit přidat časovače dialog na začátku na"</string>
+    <string name="pref_addalarmonstart_summary_off">"zobrazit přidat časovače dialog na rozjezd"</string>
+    <string name="pref_cyclicmins">"Cyklické minut kolo"</string>
+    <string name="pref_cyclicmins_summary_on">"cyklické minut"</string>
+    <string name="pref_cyclicmins_summary_off">"cyklické minut vypnuto"</string>
+    <string name="pref_stoponrotate">"Zastavte na otočení"</string>
+    <string name="pref_stoponrotate_summary_on">"zastavit alarmující na telefonu otočení na"</string>
+    <string name="pref_stoponrotate_summary_off">"zastavit alarmující na telefonu obměněni"</string>
+    <string name="pref_pickstyle">"Vyberte časové okno"</string>
+    <string name="pref_pickstyle_summary">"vybrat časové dialogové typ"</string>
+    <string name="pref_pickstyle_dialogtitle">"Picker styl"</string>
+    <string name="pref_shownames">"Zobrazit názvy"</string>
+    <string name="pref_shownames_summary">"zobrazit poplachové jména"</string>
+    <string name="pref_savesession">"Uložit alarmy"</string>
+    <string name="pref_musicon">"zvuk"</string>
+    <string name="pref_savesession_sum">"obnoví alarmy začátku"</string>
+    <string name="pref_musicon_sum">"Výstražný zvuk"</string>
+    
+	
+</resources>

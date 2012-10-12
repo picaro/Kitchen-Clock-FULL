@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:gravity="center"
+			android:paddingLeft="12dp"
+			android:paddingRight="12dp"
+			android:paddingTop="20dp">
+
+			<kankan.wheel.widget.WheelView android:id="@+id/hour"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_width="70dp"
+				/>
+			<kankan.wheel.widget.WheelView android:id="@+id/mins"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_width="120dp"/>
+			<kankan.wheel.widget.WheelView android:id="@+id/secs"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_width="50dp"/>
+		</LinearLayout>	
+	
+	

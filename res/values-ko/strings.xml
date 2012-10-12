@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">"주방 시계"</string>
+    <string name="menu_settings">"설정"</string>
+    <string name="main_alarmclock">"알람"</string>
+	
+	<string name="start">"시작하다"</string>
+    <string name="stop">"멈추다"</string>
+    <string name="changelog_title">"Changelog"</string>
+    
+    <string name="alarm_name">"입력 이름"</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">"라이센스"</string>
+    <string name="eula_accept">"수락"</string>
+    <string name="eula_refuse">"거절하다"</string>
+    <string name="name">"이름"</string>
+    <string name="save">"저장"</string>
+    <string name="edit">"편집"</string>
+    <string name="delete">"삭제"</string>
+    <string name="ok">"오케이"</string>
+    <string name="cancel">"취소"</string>
+    <string name="yes">"예"</string>
+    <string name="no">"아니오"</string>
+    <string name="back">"뒤로가기"</string>
+    <string name="add">"추가"</string>
+    <string name="exit">"나가기"</string>
+    <string name="info">"관련정보"</string>
+    <string name="settime">"시간 설정"</string>
+    <string name="delete_all">"모두 삭제"</string>
+    <string name="min">"분"</string>
+    <string name="hour">"한시간"</string>
+    <string name="sec">"초"</string>
+    <string name="set">"설정"</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">"타이머 시작"</string>
+    <string name="click_to_open">"응용 프로그램을 열려면 여기를 클릭하십시오"</string>
+    <string name="countdown_ended">"카운트 다운이 종료"</string>
+    <string name="toast_time_invalid">"시간 제로하지이어야합니다"</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">"버전"</string>
+    <string name="pref_info_version_error">"버전을 확인 할 수 없습니다"</string>
+    <string name="pref_report_a_bug">"버그 신고"</string>
+    <string name="pref_report_a_bug_summary">"문제 추적기에 새로운 문제를 제출"</string>
+    <string name="pref_display_changelog_summary">"응용 프로그램을 ChangeLog에 표시"</string>
+    <string name="pref_display_eula_summary">"응용 프로그램 라이센스를 표시"</string>
+    <string name="pref_show_tips">"시작시 팁보기"</string>
+    <string name="pref_display_settings">"디스플레이 설정"</string>
+    <string name="pref_keep_screen_on">"에서 화면 유지"</string>
+    <string name="pref_keep_screen_on_summary_on">"프로그램이 실행되는 동안 화면이 활성 상태로 유지됩니다"</string>
+    <string name="pref_keep_screen_on_summary_off">"화면은 시스템 설정에 따라 대기로갑니다"</string>
+    <string name="pref_clear_timer_label">"지우기 타이머 레이블"</string>
+    <string name="pref_clear_timer_label_summary_on">"사전 설정 시간의 알람에 도달 한 후 타이머 라벨이 기본 값으로 반환합니다."</string>
+    <string name="pref_clear_timer_label_summary_off">"타이머 레이블은 마지막으로 사용 된 사전 설정의 이름을 유지"</string>
+    <string name="pref_set_timers_names">"타이머 이름을 설정"</string>
+    <string name="pref_notification_settings">"알림 설정"</string>
+    <string name="pref_notification_sound">"음향"</string>
+    <string name="pref_notification_sound_summary_on">"사운드 알림 활성화"</string>
+    <string name="pref_notification_sound_summary_off">"사운드 알림 해제"</string>
+    <string name="pref_notification_insistent">"강요하는"</string>
+    <string name="pref_notification_insistent_summary_on">"에 대한 주장 모드"</string>
+    <string name="pref_notification_insistent_summary_off">"오프 주장 모드"</string>
+    <string name="pref_notification_custom_sound">"사용자 정의 소리"</string>
+    <string name="pref_notification_custom_sound_summary_on">"사용자 정의 사운드를 사용"</string>
+    <string name="pref_notification_custom_sound_summary_off">"기본 사운드를 사용하여"</string>
+    <string name="pref_notification_ringtone">"알람 소리를 선택"</string>
+    <string name="pref_notification_ringtone_summary">"사용할 수있는 시스템 알람 소리에서 사용자 지정 소리를 선택"</string>
+    <string name="pref_notification_led">"LED"</string>
+    <string name="pref_notification_led_summary_on">"LED 알림을 사용하도록 설정"</string>
+    <string name="pref_notification_led_summary_off">"LED 알림 비활성화"</string>
+    <string name="pref_notification_led_color">"LED 색상"</string>
+    <string name="pref_notification_led_color_summary">"LED 색상을 변경"</string>
+    <string name="pref_notification_led_color_dialogtitle">"귀하의 LED 색상을 선택"</string>
+    <string name="pref_notification_led_color_green">"녹색 :"</string>
+    <string name="pref_notification_led_color_white">"백색"</string>
+    <string name="pref_notification_led_color_red">"레드 / 기본"</string>
+    <string name="pref_notification_led_color_blue">"파랑"</string>
+    <string name="pref_notification_led_color_yellow">"황색 :"</string>
+    <string name="pref_notification_led_color_cyan">"청록색"</string>
+    <string name="pref_notification_led_color_magenta">"마젠타"</string>
+    <string name="pref_notification_led_color_pink">"분홍색:"</string>
+    <string name="pref_notification_led_color_orange">"주황색:"</string>
+    <string name="pref_notification_led_color_light_blue">"라이트 블루"</string>
+    <string name="pref_notification_led_blink_rate">"LED 깜박이는 속도"</string>
+    <string name="pref_notification_led_blink_rate_summary">"LED 깜박이는 속도를 변경"</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">"귀하의 LED 깜박이는 속도를 선택하십시오"</string>
+    <string name="pref_notification_led_blink_rate_two">"2 (빠른)"</string>
+    <string name="pref_notification_led_blink_rate_three">"3"</string>
+    <string name="pref_notification_led_blink_rate_four">"4 (중)"</string>
+    <string name="pref_notification_led_blink_rate_five">"5"</string>
+    <string name="pref_notification_led_blink_rate_six">"6 (느린)"</string>
+    <string name="pref_notification_vibrate">"진동"</string>
+    <string name="pref_notification_vibrate_summary_on">"활성화 통지를 진동"</string>
+    <string name="pref_notification_vibrate_summary_off">"비활성화 통지를 진동"</string>
+    <string name="pref_notification_vibrate_pattern">"패턴을 진동"</string>
+    <string name="pref_notification_vibrate_pattern_summary">"패턴을 진동 변경"</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">"당신의 진동 패턴을 선택"</string>
+    <string name="pref_notification_vibrate_pattern_normal">"일반"</string>
+    <string name="pref_notification_vibrate_pattern_medium">"매체는 진동"</string>
+    <string name="pref_notification_vibrate_pattern_long">"긴 진동"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">"짧은 여러 개의"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">"긴 복수"</string>
+    <string name="pref_pickstyle_wheel">"바퀴"</string>
+    <string name="pref_pickstyle_picker">"양털을 깎는​​ 기계"</string>
+    <string name="pref_pickstyle_number">"Number"</string>
+    <string name="pref_showsec">"선택기에 초 표시"</string>
+    <string name="pref_showsec_summary_on">"선택 도구에서 초에"</string>
+    <string name="pref_showsec_summary_off">"선택기에서의 초"</string>
+    <string name="pref_showhr">"선택기에 시간을 표시"</string>
+    <string name="pref_showhr_summary_on">"선택 도구에서 시간에"</string>
+    <string name="pref_showhr_summary_off">"선택기에서의 시간"</string>
+    <string name="pref_simmetricpick">"대칭적인 털이"</string>
+    <string name="pref_simmetricpick_summary_on">"대칭적인"</string>
+    <string name="pref_simmetricpick_summary_off">"분 더"</string>
+    <string name="pref_autostart">"자동 시작 타이머"</string>
+    <string name="pref_autostart_summary_on">"에 자동 시작"</string>
+    <string name="pref_autostart_summary_off">"자동 시작 해제"</string>
+    <string name="pref_addalarmonstart">"시작에 타이머를 추가합니다"</string>
+    <string name="pref_addalarmonstart_summary_on">"시작에 타이머 대화 상자를 추가 표시"</string>
+    <string name="pref_addalarmonstart_summary_off">"시작에 타이머 대화 상자를 추가 표시"</string>
+    <string name="pref_cyclicmins">"주기적 분 휠"</string>
+    <string name="pref_cyclicmins_summary_on">"에 주기적 분"</string>
+    <string name="pref_cyclicmins_summary_off">"주기적 분 해제"</string>
+    <string name="pref_stoponrotate">"회전에 중지"</string>
+    <string name="pref_stoponrotate_summary_on">"에 회전 휴대 전화에 경고 중지"</string>
+    <string name="pref_stoponrotate_summary_off">"회전 전화 오프에서 경고 중지"</string>
+    <string name="pref_pickstyle">"시간 대화 상자를 선택"</string>
+    <string name="pref_pickstyle_summary">"시간 대화 유형을 선택"</string>
+    <string name="pref_pickstyle_dialogtitle">"선택기 스타일"</string>
+    <string name="pref_shownames">"이름을 표시"</string>
+    <string name="pref_shownames_summary">"알람 이름을 표시"</string>
+    <string name="pref_savesession">"알람을 저장"</string>
+    <string name="pref_musicon">"음향"</string>
+    <string name="pref_savesession_sum">"시작에 복원 경보"</string>
+    <string name="pref_musicon_sum">"경보 음"</string>
+    
+	
+</resources>

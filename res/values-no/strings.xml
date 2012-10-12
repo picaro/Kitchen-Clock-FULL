@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">"Kjøkken klokke"</string>
+    <string name="menu_settings">"Innstillinger"</string>
+    <string name="main_alarmclock">"Alarm Clock"</string>
+	
+	<string name="start">"Start"</string>
+    <string name="stop">"Stopp"</string>
+    <string name="changelog_title">"Changelog"</string>
+    
+    <string name="alarm_name">"alarm navn"</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">"Lisens"</string>
+    <string name="eula_accept">"Godta"</string>
+    <string name="eula_refuse">"Nekte"</string>
+    <string name="name">"Navn"</string>
+    <string name="save">"Lagre"</string>
+    <string name="edit">"Rediger"</string>
+    <string name="delete">"Slett"</string>
+    <string name="ok">"OK"</string>
+    <string name="cancel">"Avbryt"</string>
+    <string name="yes">"Ja"</string>
+    <string name="no">"Nei"</string>
+    <string name="back">"Tilbake"</string>
+    <string name="add">"Legg til"</string>
+    <string name="exit">"Utgang"</string>
+    <string name="info">"Info:"</string>
+    <string name="settime">"Angitt tid"</string>
+    <string name="delete_all">"Slett alle"</string>
+    <string name="min">"min"</string>
+    <string name="hour">"Time"</string>
+    <string name="sec">"sek"</string>
+    <string name="set">"Serie"</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">"Timer Startet"</string>
+    <string name="click_to_open">"Klikk her for å åpne programmet"</string>
+    <string name="countdown_ended">"Nedtelling endte"</string>
+    <string name="toast_time_invalid">"Tid bør ikke være null"</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">"Versjon"</string>
+    <string name="pref_info_version_error">"Kan ikke fastslå versjon"</string>
+    <string name="pref_report_a_bug">"Rapporter en feil"</string>
+    <string name="pref_report_a_bug_summary">"Send inn en ny sak til problemet tracker"</string>
+    <string name="pref_display_changelog_summary">"Vise søknad changelog"</string>
+    <string name="pref_display_eula_summary">"Vise programlisensen"</string>
+    <string name="pref_show_tips">"Vis tips ved oppstart"</string>
+    <string name="pref_display_settings">"Displayinnstillinger"</string>
+    <string name="pref_keep_screen_on">"Hold Screen On"</string>
+    <string name="pref_keep_screen_on_summary_on">"Skjermen forblir aktiv mens programmet kjører"</string>
+    <string name="pref_keep_screen_on_summary_off">"Skjermen går i standby etter systeminnstillinger"</string>
+    <string name="pref_clear_timer_label">"Klart Timer etiketten"</string>
+    <string name="pref_clear_timer_label_summary_on">"Timer merket tilbake til standardverdien etter en forhåndsinnstilt tid når sin alarm."</string>
+    <string name="pref_clear_timer_label_summary_off">"Timer merket beholder navnet for den siste forhåndsinnstillingen"</string>
+    <string name="pref_set_timers_names">"Still Timer navn"</string>
+    <string name="pref_notification_settings">"Varslingsinnstillinger"</string>
+    <string name="pref_notification_sound">"Høres"</string>
+    <string name="pref_notification_sound_summary_on">"Lydvarsler aktivert"</string>
+    <string name="pref_notification_sound_summary_off">"Lydvarsler deaktivert"</string>
+    <string name="pref_notification_insistent">"Insisterende"</string>
+    <string name="pref_notification_insistent_summary_on">"Insisterende modus på"</string>
+    <string name="pref_notification_insistent_summary_off">"Insisterende modus avslått"</string>
+    <string name="pref_notification_custom_sound">"Custom lyd"</string>
+    <string name="pref_notification_custom_sound_summary_on">"Bruk egendefinerte lyd"</string>
+    <string name="pref_notification_custom_sound_summary_off">"Bruk standard lyd"</string>
+    <string name="pref_notification_ringtone">"Velg alarmlyd"</string>
+    <string name="pref_notification_ringtone_summary">"Velg en egendefinert lyd fra tilgjengelig system alarm høres
+"</string>
+    <string name="pref_notification_led">"LED"</string>
+    <string name="pref_notification_led_summary_on">"LED-varsel aktivert"</string>
+    <string name="pref_notification_led_summary_off">"LED-varsel deaktivert"</string>
+    <string name="pref_notification_led_color">"LED-farge"</string>
+    <string name="pref_notification_led_color_summary">"Endre LED-farge"</string>
+    <string name="pref_notification_led_color_dialogtitle">"Velg LED farge"</string>
+    <string name="pref_notification_led_color_green">"Grønn"</string>
+    <string name="pref_notification_led_color_white">"Hvit"</string>
+    <string name="pref_notification_led_color_red">"Rød / Default"</string>
+    <string name="pref_notification_led_color_blue">"Blå"</string>
+    <string name="pref_notification_led_color_yellow">"Gul"</string>
+    <string name="pref_notification_led_color_cyan">"Cyan"</string>
+    <string name="pref_notification_led_color_magenta">"Magenta"</string>
+    <string name="pref_notification_led_color_pink">"Pink"</string>
+    <string name="pref_notification_led_color_orange">"Appelsin."</string>
+    <string name="pref_notification_led_color_light_blue">"Lyseblå"</string>
+    <string name="pref_notification_led_blink_rate">"LED blinke rente"</string>
+    <string name="pref_notification_led_blink_rate_summary">"Endringen førte blinke rente"</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">"Velg LED blinke rente"</string>
+    <string name="pref_notification_led_blink_rate_two">"2 (Fast)"</string>
+    <string name="pref_notification_led_blink_rate_three">"3
+"</string>
+    <string name="pref_notification_led_blink_rate_four">"4 (Medium)"</string>
+    <string name="pref_notification_led_blink_rate_five">"5"</string>
+    <string name="pref_notification_led_blink_rate_six">"6 (Sakte)"</string>
+    <string name="pref_notification_vibrate">"Vibrere"</string>
+    <string name="pref_notification_vibrate_summary_on">"Vibrere melding aktivert"</string>
+    <string name="pref_notification_vibrate_summary_off">"Vibrere melding deaktivert"</string>
+    <string name="pref_notification_vibrate_pattern">"Vibrere mønster"</string>
+    <string name="pref_notification_vibrate_pattern_summary">"Endre vibrere mønster"</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">"Velg vibrere mønster"</string>
+    <string name="pref_notification_vibrate_pattern_normal">"Normal"</string>
+    <string name="pref_notification_vibrate_pattern_medium">"Medium Vibrer"</string>
+    <string name="pref_notification_vibrate_pattern_long">"Long Vibrer"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">"Flere korte"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">"Flere lange"</string>
+    <string name="pref_pickstyle_wheel">"Hjul"</string>
+    <string name="pref_pickstyle_picker">"Picker"</string>
+    <string name="pref_pickstyle_number">"Antall"</string>
+    <string name="pref_showsec">"Vis sekunder i picker"</string>
+    <string name="pref_showsec_summary_on">"Sekunder i picker på"</string>
+    <string name="pref_showsec_summary_off">"Sekunder i picker off"</string>
+    <string name="pref_showhr">"Vis timer i picker"</string>
+    <string name="pref_showhr_summary_on">"Timer i picker på"</string>
+    <string name="pref_showhr_summary_off">"Timer i picker off"</string>
+    <string name="pref_simmetricpick">"Symmetriske plukkere"</string>
+    <string name="pref_simmetricpick_summary_on">"symmetrisk"</string>
+    <string name="pref_simmetricpick_summary_off">"minutter større"</string>
+    <string name="pref_autostart">"Autostart tidtakere"</string>
+    <string name="pref_autostart_summary_on">"autostart på"</string>
+    <string name="pref_autostart_summary_off">"autostart av"</string>
+    <string name="pref_addalarmonstart">"Legg timer på start"</string>
+    <string name="pref_addalarmonstart_summary_on">"Vis Legg timer dialog på start på"</string>
+    <string name="pref_addalarmonstart_summary_off">"Vis Legg timer dialog om starter"</string>
+    <string name="pref_cyclicmins">"Syklisk minutter hjul"</string>
+    <string name="pref_cyclicmins_summary_on">"sykliske minutter på"</string>
+    <string name="pref_cyclicmins_summary_off">"sykliske minutter av"</string>
+    <string name="pref_stoponrotate">"Stopp på rotere"</string>
+    <string name="pref_stoponrotate_summary_on">"stoppe alarmerende på rotere telefonen på"</string>
+    <string name="pref_stoponrotate_summary_off">"stoppe alarmerende på rotere telefonen"</string>
+    <string name="pref_pickstyle">"Plukk tid dialog"</string>
+    <string name="pref_pickstyle_summary">"plukke tid dialog typen"</string>
+    <string name="pref_pickstyle_dialogtitle">"Picker stil"</string>
+    <string name="pref_shownames">"Vis navn"</string>
+    <string name="pref_shownames_summary">"viser alarm navn"</string>
+    <string name="pref_savesession">"Lagre alarmer"</string>
+    <string name="pref_musicon">"Høres"</string>
+    <string name="pref_savesession_sum">"gjenopprette alarmer på start"</string>
+    <string name="pref_musicon_sum">"alarmlyd"</string>
+    
+    <string name="pref_showsettbtn">"Vis innstillinger knappen"</string>
+    <string name="pref_showsettbtn_summary">"vise innstillinger knappen i actionbar"</string>
+    <string name="pref_volume">"Alarmvolum"</string>
+    <string name="pref_volume_summary">"satt alarmvolum"</string>
+    <string name="pref_showdelall">"Vis del knapp"</string>
+    <string name="pref_showdelall_summary">"viser knappen Slett alle i actionbar"</string>
+    <string name="pref_soundfile">"Custom Sound"</string>
+    <string name="pref_soundfile_summary">"velge egendefinert lyd"</string>
+	<string name="pref_soundsource_system">"system"</string>
+    <string name="pref_soundsource_custom">"Egendefinert"</string>
+    <string name="pref_soundsource_summary">"Velg lydkilde"</string>	
+    <string name="pref_soundsource_dialogtitle">"Lydkilde"</string>
+    <string name="alarm_settings">"Alarminnstillinger"</string>
+    <string name="main_settings">"Hovedinnstillinger"</string>
+    <string name="interface_settings">"Grensesnittinnstillinger"</string>
+
+    <string name="pref_showaddbtn">"Vis legge knapp"</string>
+    <string name="pref_showaddbtn_summary">"Vis Legg knappen i actionbar"</string>	
+    <string name="pref_showrefreshbtn">"Vis oppdateringsknappen"</string>
+    <string name="pref_showrefreshbtn_summary">"vis oppdatere alle knappen i actionbar"</string>	
+    	
+    <string name="pref_sorttype_unsorted">"usortert"</string>
+    <string name="pref_sorttype_runnedfirst">"aktiv første"</string>
+    <string name="pref_sorttype_smallfirst">"nærmeste først"</string>
+    <string name="pref_sortlist">"Sortering"</string>
+    <string name="pref_sortlist_summary">"alarmer sorteringstype"</string>
+    
+	<string name="preset_list_empty">"Forhåndsinnstilt listen tom"</string>
+    <string name="presets_saved">"Forhåndsinnstillinger lagret i"</string>
+    <string name="presets">"Forhåndsinnstillinger"</string>
+    <string name="delete_preset_title">"Slette alle forhåndsinnstillingene?"</string>
+    <string name="delete_preset_message">"Er du sikker på at du vil slette alle forhåndsinnstillingene?"</string>
+    <string name="logs">"Historie"</string>
+    
+</resources>

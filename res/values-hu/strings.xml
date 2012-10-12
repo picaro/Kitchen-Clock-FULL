@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">"Konyha Óra"</string>
+    <string name="menu_settings">"Beállítások"</string>
+    <string name="main_alarmclock">"Alarm Clock"</string>
+	
+	<string name="start">"kezdés"</string>
+    <string name="stop">"(Leállás)"</string>
+    <string name="changelog_title">"Változások"</string>
+    
+    <string name="alarm_name">"riasztás neve"</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">"Licenc."</string>
+    <string name="eula_accept">"Elfogad"</string>
+    <string name="eula_refuse">"Hulladék"</string>
+    <string name="name">"Név"</string>
+    <string name="save">"Mentés"</string>
+    <string name="edit">"Szerkesztés"</string>
+    <string name="delete">"Törlés"</string>
+    <string name="ok">"OK"</string>
+    <string name="cancel">"Mégse"</string>
+    <string name="yes">"Igen"</string>
+    <string name="no">"Nem"</string>
+    <string name="back">"Vissza"</string>
+    <string name="add">"Hozzáadás"</string>
+    <string name="exit">"Kijárat"</string>
+    <string name="info">"Információ"</string>
+    <string name="settime">"Idő beállítása"</string>
+    <string name="delete_all">"Mindent töröl"</string>
+    <string name="min">"perc"</string>
+    <string name="hour">"óra"</string>
+    <string name="sec">"sec"</string>
+    <string name="set">"Beállítások"</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">"Timer lépések"</string>
+    <string name="click_to_open">"Kattintson ide, hogy megnyissa az alkalmazást"</string>
+    <string name="countdown_ended">"Visszaszámlálás véget ért"</string>
+    <string name="toast_time_invalid">"Idő kell, nem lehet nulla"</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">"Változat"</string>
+    <string name="pref_info_version_error">"Nem sikerült meghatározni változat"</string>
+    <string name="pref_report_a_bug">"Programhiba bejelentése"</string>
+    <string name="pref_report_a_bug_summary">"Nyújtson be egy új kérdés a kérdés tracker"</string>
+    <string name="pref_display_changelog_summary">"Kijelző alkalmazás changelog"</string>
+    <string name="pref_display_eula_summary">"Kijelző alkalmazás engedély"</string>
+    <string name="pref_show_tips">"Megjelenítés Tippek indításkor"</string>
+    <string name="pref_display_settings">"Kijelző beállítása"</string>
+    <string name="pref_keep_screen_on">"Tartsa képernyő"</string>
+    <string name="pref_keep_screen_on_summary_on">"A képernyő aktív marad, amíg a program futása"</string>
+    <string name="pref_keep_screen_on_summary_off">"A képernyő készenléti szerint a rendszer beállításait"</string>
+    <string name="pref_clear_timer_label">"Kódolatlan Timer címke"</string>
+    <string name="pref_clear_timer_label_summary_on">"A Timer címke visszatér az alapértelmezett érték egy adott idő elteltével eléri a riasztást."</string>
+    <string name="pref_clear_timer_label_summary_off">"A Timer címke megtartja a nevét, a legutóbb használt preset"</string>
+    <string name="pref_set_timers_names">"Időzítő beállítása nevek"</string>
+    <string name="pref_notification_settings">"Értesítési beállítások"</string>
+    <string name="pref_notification_sound">"Sound"</string>
+    <string name="pref_notification_sound_summary_on">"Hang értesítés engedélyezve"</string>
+    <string name="pref_notification_sound_summary_off">"Hang értesítés letiltva"</string>
+    <string name="pref_notification_insistent">"Ragaszkodó"</string>
+    <string name="pref_notification_insistent_summary_on">"Kitartó mód"</string>
+    <string name="pref_notification_insistent_summary_off">"Kitartó mód kikapcsolása"</string>
+    <string name="pref_notification_custom_sound">"Egyedi hangzás"</string>
+    <string name="pref_notification_custom_sound_summary_on">"Az egyéni hang"</string>
+    <string name="pref_notification_custom_sound_summary_off">"Alapértelmezett hang"</string>
+    <string name="pref_notification_ringtone">"Válassza a riasztási hang"</string>
+    <string name="pref_notification_ringtone_summary">"Válasszon egy egyéni hangot álló rendszer riasztás megszólal
+"</string>
+    <string name="pref_notification_led">"LED"</string>
+    <string name="pref_notification_led_summary_on">"LED értesítés engedélyezve"</string>
+    <string name="pref_notification_led_summary_off">"LED bejelentés letiltva"</string>
+    <string name="pref_notification_led_color">"LED színe"</string>
+    <string name="pref_notification_led_color_summary">"Módosítása LED színe"</string>
+    <string name="pref_notification_led_color_dialogtitle">"Válassza ki a LED színe"</string>
+    <string name="pref_notification_led_color_green">"zöld"</string>
+    <string name="pref_notification_led_color_white">"(FEHÉR)"</string>
+    <string name="pref_notification_led_color_red">"Piros / Default"</string>
+    <string name="pref_notification_led_color_blue">"kék"</string>
+    <string name="pref_notification_led_color_yellow">"SÁRGA"</string>
+    <string name="pref_notification_led_color_cyan">"Cián"</string>
+    <string name="pref_notification_led_color_magenta">"Bíborvörös"</string>
+    <string name="pref_notification_led_color_pink">"Rózsaszín:"</string>
+    <string name="pref_notification_led_color_orange">"Narancs"</string>
+    <string name="pref_notification_led_color_light_blue">"Light Blue"</string>
+    <string name="pref_notification_led_blink_rate">"LED villog ráta"</string>
+    <string name="pref_notification_led_blink_rate_summary">"Változás LED villogás üteme"</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">"Válassza ki a LED villog ráta"</string>
+    <string name="pref_notification_led_blink_rate_two">"2 (Fast)"</string>
+    <string name="pref_notification_led_blink_rate_three">"3"</string>
+    <string name="pref_notification_led_blink_rate_four">"4 (Medium)"</string>
+    <string name="pref_notification_led_blink_rate_five">"5"</string>
+    <string name="pref_notification_led_blink_rate_six">"6 (lassú)"</string>
+    <string name="pref_notification_vibrate">"Rezeg"</string>
+    <string name="pref_notification_vibrate_summary_on">"Rezgés értesítés engedélyezve"</string>
+    <string name="pref_notification_vibrate_summary_off">"Rezgés értesítés letiltva"</string>
+    <string name="pref_notification_vibrate_pattern">"Rezgés minta"</string>
+    <string name="pref_notification_vibrate_pattern_summary">"Változás rezeg minta"</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">"Válassza ki a rezgő minta"</string>
+    <string name="pref_notification_vibrate_pattern_normal">"Normális"</string>
+    <string name="pref_notification_vibrate_pattern_medium">"Medium Rezgés"</string>
+    <string name="pref_notification_vibrate_pattern_long">"Long Rezgés"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">"Több rövid"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">"Több Long"</string>
+    <string name="pref_pickstyle_wheel">"Kerék"</string>
+    <string name="pref_pickstyle_picker">"Csákányozó"</string>
+    <string name="pref_pickstyle_number">"Szám"</string>
+    <string name="pref_showsec">"Megjelenítés másodpercig picker"</string>
+    <string name="pref_showsec_summary_on">"Másodpercig picker on"</string>
+    <string name="pref_showsec_summary_off">"Másodpercig picker off"</string>
+    <string name="pref_showhr">"Megjelenítés óra picker"</string>
+    <string name="pref_showhr_summary_on">"Hours in picker on"</string>
+    <string name="pref_showhr_summary_off">"Hours in picker off"</string>
+    <string name="pref_simmetricpick">"Szimmetrikus válogatókig"</string>
+    <string name="pref_simmetricpick_summary_on">"szimmetrikus"</string>
+    <string name="pref_simmetricpick_summary_off">"perc nagyobb"</string>
+    <string name="pref_autostart">"Autostart időzítők"</string>
+    <string name="pref_autostart_summary_on">"autostart on"</string>
+    <string name="pref_autostart_summary_off">"autostart off"</string>
+    <string name="pref_addalarmonstart">"Felvétel időzítő indítás"</string>
+    <string name="pref_addalarmonstart_summary_on">"azt mutatják, add időzítő párbeszédablak kezdődhet"</string>
+    <string name="pref_addalarmonstart_summary_off">"azt mutatják, add időzítő párbeszédablak elindul"</string>
+    <string name="pref_cyclicmins">"Ciklikus perc kerék"</string>
+    <string name="pref_cyclicmins_summary_on">"ciklikus perc"</string>
+    <string name="pref_cyclicmins_summary_off">"ciklusos perc off"</string>
+    <string name="pref_stoponrotate">"Stop forgatni"</string>
+    <string name="pref_stoponrotate_summary_on">"megáll riasztó a forgatás telefon"</string>
+    <string name="pref_stoponrotate_summary_off">"megáll riasztó be rotate ki a telefont"</string>
+    <string name="pref_pickstyle">"Pick idő párbeszédpanel"</string>
+    <string name="pref_pickstyle_summary">"vedd idő párbeszédpanel típus"</string>
+    <string name="pref_pickstyle_dialogtitle">"Picker style"</string>
+    <string name="pref_shownames">"Megjelenítés nevek"</string>
+    <string name="pref_shownames_summary">"megjelenítése riasztás nevek"</string>
+    <string name="pref_savesession">"Mentés riasztások"</string>
+    <string name="pref_musicon">"\sound"</string>
+    <string name="pref_savesession_sum">"helyreállítása riasztások a start"</string>
+    <string name="pref_musicon_sum">"riasztási hang"</string>
+    
+    <string name="pref_showsettbtn">"Megjelenítés beállításai gomb"</string>
+    <string name="pref_showsettbtn_summary">"mutatják beállítások gombra actionbar"</string>
+    <string name="pref_volume">"Alarm Volume"</string>
+    <string name="pref_volume_summary">"meghatározott riasztási hangerő"</string>
+    <string name="pref_showdelall">"Térkép del gomb"</string>
+    <string name="pref_showdelall_summary">"azt mutatják, törölje az összes gomb actionbar"</string>
+    <string name="pref_soundfile">"Custom Sound"</string>
+    <string name="pref_soundfile_summary">"válasszuk az egyéni hang"</string>
+	<string name="pref_soundsource_system">"rendszeren belül."</string>
+    <string name="pref_soundsource_custom">"Egyedi"</string>
+    <string name="pref_soundsource_summary">"válasszuk a hangforrás"</string>	
+    <string name="pref_soundsource_dialogtitle">"Hangforrás"</string>
+    <string name="alarm_settings">"Alarm Settings"</string>
+    <string name="main_settings">"Fő beállítások"</string>
+    <string name="interface_settings">"Interfész beállítások"</string>
+
+    <string name="pref_showaddbtn">"Megjelenítés hozzáadni gomb"</string>
+    <string name="pref_showaddbtn_summary">"mutatják hozzáadni gomb actionbar"</string>	
+    <string name="pref_showrefreshbtn">"Térkép frissítés gombra"</string>
+    <string name="pref_showrefreshbtn_summary">"megjelenítése frissítse összes gomb actionbar"</string>	
+    	
+    <string name="pref_sorttype_unsorted">"osztályozatlan"</string>
+    <string name="pref_sorttype_runnedfirst">"aktív 1."</string>
+    <string name="pref_sorttype_smallfirst">"legközelebbi 1."</string>
+    <string name="pref_sortlist">"Osztályozás"</string>
+    <string name="pref_sortlist_summary">"riasztások lista rendezési típus"</string>
+    
+	<string name="preset_list_empty">"Preset lista üres"</string>
+    <string name="presets_saved">"Presets mentett"</string>
+    <string name="presets">"Sablonok"</string>
+    <string name="delete_preset_title">"Mindent töröl készletek?"</string>
+    <string name="delete_preset_message">"Biztos benne, hogy törli az összes készletek?"</string>
+    <string name="logs">"Története"</string>
+    
+</resources>

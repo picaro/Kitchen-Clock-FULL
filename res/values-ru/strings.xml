@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Кухонный Таймер</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="main_alarmclock">Таймер</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="changelog_title">Changelog</string>
+    <string name="alarm_name">введите имя</string>
+
+    <!-- Eula -->
+    <string name="eula_title">Лицензия</string>
+    <string name="eula_accept">Принять</string>
+    <string name="eula_refuse">Отказаться</string>
+    <string name="name">Имя</string>
+    <string name="save">Сохранить</string>
+    <string name="edit">Редактировать</string>
+    <string name="delete">Удалить</string>
+    <string name="ok">OK</string>
+    <string name="cancel">отмена</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="back">Назад</string>
+    <string name="add">Новый</string>
+    <string name="exit">Выход</string>
+    <string name="info">Инфо</string>
+    <string name="settime">Установить время</string>
+    <string name="delete_all">Удалить все</string>
+    <string name="min">мин</string>
+    <string name="hour">час</string>
+    <string name="sec">сек</string>
+    <string name="set">ок</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">Таймер запущен</string>
+    <string name="click_to_open">Нажмите для открытия приложение</string>
+    <string name="countdown_ended">Таймер завершен</string>
+    <string name="toast_time_invalid">Время должно быть больше нуля</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">Версия</string>
+    <string name="pref_info_version_error">Невозможно определить версию</string>
+    <string name="pref_report_a_bug">Сообщить об ошибке</string>
+    <string name="pref_report_a_bug_summary">Добавить новый тикет с ошибкой.</string>
+    <string name="pref_display_changelog_summary">Отобразить изменения в обновлении</string>
+    <string name="pref_display_eula_summary">Показать лицензию приложения</string>
+    <string name="pref_show_tips">Показывать подсказки при загрузке</string>
+    <string name="pref_display_settings">Настройки экрана</string>
+    <string name="pref_keep_screen_on">Держать экран включенным</string>
+    <string name="pref_keep_screen_on_summary_on">The screen will remain active while the program is running</string>
+    <string name="pref_keep_screen_on_summary_off">The screen goes into standby according to system settings</string>
+    <string name="pref_clear_timer_label_summary_on">The Timer label returns to the default value after a preset time
+		reaches its alarm.</string>
+    <string name="pref_clear_timer_label_summary_off">The Timer label keeps the name of the last used preset</string>
+    <string name="pref_set_timers_names">Set Timer names</string>
+    <string name="pref_notification_settings">Notification settings</string>
+    <string name="pref_notification_sound">Звук</string>
+    <string name="pref_notification_sound_summary_on">Звуковое уведомление включено</string>
+    <string name="pref_notification_sound_summary_off">Звуковое уведомление выкл</string>
+    <string name="pref_notification_insistent">Настойчиво</string>
+    <string name="pref_notification_insistent_summary_on">Настойчивый режим включен</string>
+    <string name="pref_notification_insistent_summary_off">Настойчивый режим выкл</string>
+    <string name="pref_notification_custom_sound">Своя мелодия</string>
+    <string name="pref_notification_custom_sound_summary_on">Использовать свою мелодию</string>
+    <string name="pref_notification_custom_sound_summary_off">Использовать мелодию по умолчанию</string>
+    <string name="pref_notification_ringtone">Звук будильника</string>
+    <string name="pref_notification_ringtone_summary">Выбрать свой звук из доступных в системе
+</string>
+    <string name="pref_notification_led">Индикация</string>
+    <string name="pref_notification_led_summary_on">Световая индикация включена</string>
+    <string name="pref_notification_led_summary_off">Световая индикация выкл</string>
+    <string name="pref_notification_led_color">Цвет света</string>
+    <string name="pref_notification_led_color_summary">Изменить цвет индикации</string>
+    <string name="pref_notification_led_color_dialogtitle">Выбрать цвет индикации</string>
+    <string name="pref_notification_led_color_green">Зеленый</string>
+    <string name="pref_notification_led_color_white">Белый</string>
+    <string name="pref_notification_led_color_red">Красный/По умолчанию</string>
+    <string name="pref_notification_led_color_blue">Синий</string>
+    <string name="pref_notification_led_color_yellow">Желтый</string>
+    <string name="pref_notification_led_color_cyan">Голубой</string>
+    <string name="pref_notification_led_color_magenta">Пурпурный</string>
+    <string name="pref_notification_led_color_pink">Розовый</string>
+    <string name="pref_notification_led_color_orange">Оранжевый</string>
+    <string name="pref_notification_led_color_light_blue">Светло-голубой</string>
+    <string name="pref_notification_led_blink_rate">Частота мигания</string>
+    <string name="pref_notification_led_blink_rate_summary">Изменить частоту мигания индикации</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">Установить свою частоту мигания индикации</string>
+    <string name="pref_notification_led_blink_rate_two">2 (Быстро)</string>
+    <string name="pref_notification_led_blink_rate_three">3</string>
+    <string name="pref_notification_led_blink_rate_four">4 (Средне)</string>
+    <string name="pref_notification_led_blink_rate_five">5</string>
+    <string name="pref_notification_led_blink_rate_six">6 (Медленно)</string>
+    <string name="pref_notification_vibrate">Вибрация</string>
+    <string name="pref_notification_vibrate_summary_on">Вибрация включена</string>
+    <string name="pref_notification_vibrate_summary_off">Вибрация выключена</string>
+    <string name="pref_notification_vibrate_pattern">Шаблон вибрации</string>
+    <string name="pref_notification_vibrate_pattern_summary">Изменить шаблон вибрации</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">Шаблон вибрации</string>
+    <string name="pref_notification_vibrate_pattern_normal">Нормальная</string>
+    <string name="pref_notification_vibrate_pattern_medium">Средняя</string>
+    <string name="pref_notification_vibrate_pattern_long">Длинная</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">Несколько коротких</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">Несколько длинных</string>
+    <string name="pref_pickstyle_wheel">Прокрутка</string>
+    <string name="pref_pickstyle_picker">Кнопочный</string>
+    <string name="pref_pickstyle_number">Числовой</string>
+    <string name="pref_showsec">Выбирать секунды</string>
+    <string name="pref_showsec_summary_on">секунды при выборе вкл</string>
+    <string name="pref_showsec_summary_off">секунды при выборе выкл</string>
+    <string name="pref_showhr">Выбирать часы</string>
+    <string name="pref_showhr_summary_on">час при выборе вкл</string>
+    <string name="pref_showhr_summary_off">час при выборе выкл</string>
+    <string name="pref_simmetricpick">Симметричные поля</string>
+    <string name="pref_simmetricpick_summary_on">поля выбора времени симметричные</string>
+    <string name="pref_simmetricpick_summary_off">минуты больше при выборе времени</string>
+    <string name="pref_autostart">Автозапуск таймера</string>
+    <string name="pref_autostart_summary_on">автозапуск таймера вкл</string>
+    <string name="pref_autostart_summary_off">автозапуск таймера выкл</string>
+    <string name="pref_pickstyle">Окно установки времени</string>
+    <string name="pref_pickstyle_summary">тип окна</string>
+    <string name="pref_pickstyle_dialogtitle">Выберите тип</string>
+    <string name="pref_addalarmonstart">Новый таймер если пусто</string>
+    <string name="pref_addalarmonstart_summary_on">показывать диалог добавления таймера вкл</string>
+    <string name="pref_addalarmonstart_summary_off">показывать диалог добавления таймера выкл</string>
+    <string name="pref_stoponrotate">Выключение при повороте</string>
+    <string name="pref_stoponrotate_summary_on">выключение таймера при повороте телефона вкл</string>
+    <string name="pref_stoponrotate_summary_off">выключение таймера при повороте телефона выкл</string>
+    <string name="pref_cyclicmins">Минуты по кругу</string>
+    <string name="pref_cyclicmins_summary_on">минуты по кругу вкл</string>
+    <string name="pref_cyclicmins_summary_off">минуты по кругу выкл</string>
+    <string name="pref_shownames">Названия таймеров</string>
+    <string name="pref_shownames_summary">показывать названия таймеров</string>
+    <string name="pref_savesession">Сохранять таймеры</string>
+    <string name="pref_musicon">Звук</string>
+    <string name="pref_savesession_sum">восстановить таймеры при запуске</string>
+    <string name="pref_musicon_sum">звук по таймеру</string>
+    <string name="pref_showsettbtn">Кнопка "Настройки"</string>
+    <string name="pref_showsettbtn_summary">показывать кнопку настроек</string>
+    <string name="pref_volume">Громкость</string>
+    <string name="pref_volume_summary">установить громкость</string>
+    <string name="pref_showdelall">Кнопка "Удалить Все"</string>
+    <string name="pref_showdelall_summary">показывать кнопку Удалить Все</string>
+    <string name="pref_soundfile">Своя мелодия</string>
+    <string name="pref_soundfile_summary">выбрать свою мелодию</string>
+
+    
+	<string name="pref_soundsource_system">системный</string>
+    <string name="pref_soundsource_custom">свой</string>
+    <string name="pref_soundsource_summary">выберите источник звука</string>	
+    <string name="pref_soundsource_dialogtitle">Источник звука</string>
+    <string name="alarm_settings">оповещение</string>
+    <string name="main_settings">главные</string>
+    <string name="interface_settings">интерфейс</string>
+    <string name="pref_showaddbtn">Кнопка "Добавить"</string>
+    <string name="pref_showaddbtn_summary">показывать кнопку Добавить Таймер</string>	
+    <string name="pref_showrefreshbtn">Кнопка "Обновить"</string>
+    <string name="pref_showrefreshbtn_summary">показывать кнопку Обновить</string>
+    
+    <string name="pref_sorttype_unsorted">без сортировки</string>
+    <string name="pref_sorttype_runnedfirst">активные первыми</string>
+    <string name="pref_sorttype_smallfirst">ближайшие первыми</string>
+    <string name="pref_sortlist">Сортировка</string>
+    <string name="pref_sortlist_summary">сортировка списка таймеров</string>	
+
+		
+	<string name="preset_list_empty">Список пресетов пуст</string>
+    <string name="presets_saved">Пресеты сохранены</string>
+    <string name="presets">Пресет</string>
+    <string name="delete_preset_title">Удалить все?</string>
+    <string name="delete_preset_message">Вы уверены, что хотите удалить все пресеты?</string>
+    <string name="logs">История</string>
+	<string name="pref_overridevolume">Приоритет громкости</string>
+    <string name="pref_overridevolume_summary_on">использовать свою громкость</string>	
+    <string name="pref_overridevolume_summary_off">использовать системную громкость</string>	
+	<string name="addpreset">Add preset</string>
+    <string name="pref_advancedsettings">show advanced settings</string>	
+    <string name="pref_advancedsettings_summary">show additional</string>	
+    <string name="pref_hideadvsettings">hide advanced settings</string>	
+    <string name="pref_hideadvsettings_summary">hide additional</string>
+	<string name="assigncode">Связать штрихкод</string>	
+	<string name="dcodenotfound">Штрихкод не найден</string>	
+
+	<string name="pref_disablelock">Выключить блокировку</string>
+    <string name="pref_disablelock_summary_on">блокировка выкл</string>	
+    <string name="pref_disablelock_summary_off">блокировка вкл</string>	
+	<string name="installzxingscan">Пожалуйста установите сканер штрихкодов ZXing</string>	
+
+    <string name="pref_bgfile">Выбрать фон</string>	
+    <string name="pref_bgfile_summary">выбор фона</string>
+	<string name="pref_bgsource_system">умолчания</string>
+    <string name="pref_bgsource_custom">свой</string>
+    <string name="pref_bgsource_summary">выберите источник фона</string>	
+    <string name="pref_bgsource_dialogtitle">Источник фона</string>
+
+	<string name="pref_overridesettbg">Фон для пресетов</string>
+    <string name="pref_overridesettbg_summary">тот же фон для пресетов</string>	
+	
+   <string name="lookcode">Сканер</string>	
+		
+   <string name="pref_bg_wood">дерево</string>	
+   <string name="pref_bg_strawberry">клубничка</string>	
+    <string name="pref_bg_coffee">кофеёк</string>	
+    <string name="pref_bg_garlic">чесночек</string>	
+    <string name="pref_bg_greenpeas">горошек</string>	
+    <string name="pref_bg_spaghetti">спагетти</string>	
+
+		</resources>

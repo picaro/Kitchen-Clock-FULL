@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">"שעון המטבח"</string>
+    <string name="menu_settings">"הגדרות"</string>
+    <string name="main_alarmclock">"שעון מעורר"</string>
+	
+	<string name="start">"התחלה"</string>
+    <string name="stop">"עצור!"</string>
+    <string name="changelog_title">"רשימת שינויים"</string>
+    
+    <string name="alarm_name">"שם מעורר"</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">"רשיון"</string>
+    <string name="eula_accept">"קבל"</string>
+    <string name="eula_refuse">"לסרב"</string>
+    <string name="name">"שם"</string>
+    <string name="save">"שמור"</string>
+    <string name="edit">"עריכה"</string>
+    <string name="delete">"מחק"</string>
+    <string name="ok">"אישור"</string>
+    <string name="cancel">"ביטול"</string>
+    <string name="yes">"כן"</string>
+    <string name="no">"לא"</string>
+    <string name="back">"הקודם"</string>
+    <string name="add">"הוסף"</string>
+    <string name="exit">"יציאה"</string>
+    <string name="info">"מידע"</string>
+    <string name="settime">"הגדר שעה"</string>
+    <string name="delete_all">"מחק הכל"</string>
+    <string name="min">"דקות"</string>
+    <string name="hour">"שעה"</string>
+    <string name="sec">"שניות"</string>
+    <string name="set">"מערכת"</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">"טיימר Started"</string>
+    <string name="click_to_open">"לחץ כאן כדי לפתוח את היישום"</string>
+    <string name="countdown_ended">"הספירה לאחור הסתיימה"</string>
+    <string name="toast_time_invalid">"זמן צריך להיות לא אפס"</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">"גרסה"</string>
+    <string name="pref_info_version_error">"אין אפשרות לקבוע את הגרסה"</string>
+    <string name="pref_report_a_bug">"דווח על תקלה"</string>
+    <string name="pref_report_a_bug_summary">"שלח נושא חדש לגשש הנושא"</string>
+    <string name="pref_display_changelog_summary">"להציג היישום changelog"</string>
+    <string name="pref_display_eula_summary">"להציג רישיון יישום"</string>
+    <string name="pref_show_tips">"צג עצות באתחול"</string>
+    <string name="pref_display_settings">"הגדרות תצוגה"</string>
+    <string name="pref_keep_screen_on">"השאר מסך דלוק"</string>
+    <string name="pref_keep_screen_on_summary_on">"המסך יישאר פעיל בזמן שהתכנית פועלת"</string>
+    <string name="pref_keep_screen_on_summary_off">"המסך עובר למצב מתנה בהתאם להגדרות מערכת"</string>
+    <string name="pref_clear_timer_label">"תווית טיימר ברורה"</string>
+    <string name="pref_clear_timer_label_summary_on">"תווית טיימר מחזירה את ערך ברירת המחדל לאחר זמן מוגדר מראש מגיע האזעקה שלה."</string>
+    <string name="pref_clear_timer_label_summary_off">"תווית טיימר שומרת את השם מראש בשימוש לאחרונה"</string>
+    <string name="pref_set_timers_names">"הגדרת שמות טיימר"</string>
+    <string name="pref_notification_settings">"הגדרות הודעה"</string>
+    <string name="pref_notification_sound">"צליל"</string>
+    <string name="pref_notification_sound_summary_on">"הודעת צליל אפשרה"</string>
+    <string name="pref_notification_sound_summary_off">"התראה קולית מושבתת"</string>
+    <string name="pref_notification_insistent">"עקשן"</string>
+    <string name="pref_notification_insistent_summary_on">"מצב מתעקש"</string>
+    <string name="pref_notification_insistent_summary_off">"מצב עיקש את"</string>
+    <string name="pref_notification_custom_sound">"צליל מותאם אישית"</string>
+    <string name="pref_notification_custom_sound_summary_on">"השתמש צליל מותאם אישית"</string>
+    <string name="pref_notification_custom_sound_summary_off">"השתמש בצליל ברירת מחדל"</string>
+    <string name="pref_notification_ringtone">"בחר צליל התראה"</string>
+    <string name="pref_notification_ringtone_summary">"בחר צליל מותאם אישית ממערכת אזעקה נשמעת זמינה
+"</string>
+    <string name="pref_notification_led">"LED"</string>
+    <string name="pref_notification_led_summary_on">"נורית ההתראה אפשרה"</string>
+    <string name="pref_notification_led_summary_off">"הודעת LED נכים"</string>
+    <string name="pref_notification_led_color">"צבע LED"</string>
+    <string name="pref_notification_led_color_summary">"שינוי צבע LED"</string>
+    <string name="pref_notification_led_color_dialogtitle">"בחר צבע LED שלך"</string>
+    <string name="pref_notification_led_color_green">"ירוק"</string>
+    <string name="pref_notification_led_color_white">"לבן"</string>
+    <string name="pref_notification_led_color_red">"אדום / מחדל"</string>
+    <string name="pref_notification_led_color_blue">"כחול"</string>
+    <string name="pref_notification_led_color_yellow">"צהוב"</string>
+    <string name="pref_notification_led_color_cyan">"ציאן"</string>
+    <string name="pref_notification_led_color_magenta">"ארגמן"</string>
+    <string name="pref_notification_led_color_pink">"ורוד"</string>
+    <string name="pref_notification_led_color_orange">"כתום"</string>
+    <string name="pref_notification_led_color_light_blue">"תכלת"</string>
+    <string name="pref_notification_led_blink_rate">"קצב ההבהוב LED"</string>
+    <string name="pref_notification_led_blink_rate_summary">"שינוי קצב ההבהוב LED"</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">"בחר קצב הבהוב LED שלך"</string>
+    <string name="pref_notification_led_blink_rate_two">"2 (מהיר)"</string>
+    <string name="pref_notification_led_blink_rate_three">"3"</string>
+    <string name="pref_notification_led_blink_rate_four">"4 (בינוני)"</string>
+    <string name="pref_notification_led_blink_rate_five">"5"</string>
+    <string name="pref_notification_led_blink_rate_six">"6 (איטי)"</string>
+    <string name="pref_notification_vibrate">"רטט"</string>
+    <string name="pref_notification_vibrate_summary_on">"רטט הודעה אפשרה"</string>
+    <string name="pref_notification_vibrate_summary_off">"רטט הודעת נכים"</string>
+    <string name="pref_notification_vibrate_pattern">"רטט דפוס"</string>
+    <string name="pref_notification_vibrate_pattern_summary">"שינוי דפוס לרטוט"</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">"בחר דפוס הרטט שלך"</string>
+    <string name="pref_notification_vibrate_pattern_normal">"רגיל"</string>
+    <string name="pref_notification_vibrate_pattern_medium">"בינוני רטט"</string>
+    <string name="pref_notification_vibrate_pattern_long">"לונג רטט"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">"מרובה קצר"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">"מרובה ארוך"</string>
+    <string name="pref_pickstyle_wheel">"גלגל"</string>
+    <string name="pref_pickstyle_picker">"קוטף"</string>
+    <string name="pref_pickstyle_number">"מספר"</string>
+    <string name="pref_showsec">"צג שניות בבורר"</string>
+    <string name="pref_showsec_summary_on">"שניות בבורר על"</string>
+    <string name="pref_showsec_summary_off">"שניות בבורר את"</string>
+    <string name="pref_showhr">"צג שעות בבורר"</string>
+    <string name="pref_showhr_summary_on">"שעות בבורר על"</string>
+    <string name="pref_showhr_summary_off">"שעות בבורר את"</string>
+    <string name="pref_simmetricpick">"קוטפים סימטריים"</string>
+    <string name="pref_simmetricpick_summary_on">"סימטרי"</string>
+    <string name="pref_simmetricpick_summary_off">"דקות גדולות"</string>
+    <string name="pref_autostart">"טיימרים autostart"</string>
+    <string name="pref_autostart_summary_on">"autostart על"</string>
+    <string name="pref_autostart_summary_off">"autostart את"</string>
+    <string name="pref_addalarmonstart">"הוסף שעון על התחלה"</string>
+    <string name="pref_addalarmonstart_summary_on">"להראות להוסיף שיח טיימר בהתחלה על"</string>
+    <string name="pref_addalarmonstart_summary_off">"להראות להוסיף שיח טיימר על להתחיל"</string>
+    <string name="pref_cyclicmins">"גלגל מחזורי דקות"</string>
+    <string name="pref_cyclicmins_summary_on">"דקות מחזוריות על"</string>
+    <string name="pref_cyclicmins_summary_off">"דקות מחזוריות off"</string>
+    <string name="pref_stoponrotate">"עצור בסיבוב"</string>
+    <string name="pref_stoponrotate_summary_on">"תפסיק מדאיג בטלפון סיבוב על"</string>
+    <string name="pref_stoponrotate_summary_off">"תפסיק מדאיג בטלפון לסובב את"</string>
+    <string name="pref_pickstyle">"פיק שיח זמן"</string>
+    <string name="pref_pickstyle_summary">"תבחר את סוג שיח זמן"</string>
+    <string name="pref_pickstyle_dialogtitle">"סגנון פיקר"</string>
+    <string name="pref_shownames">"צג שמות"</string>
+    <string name="pref_shownames_summary">"מראה שמות אזעקה"</string>
+    <string name="pref_savesession">"שמור אזעקות"</string>
+    <string name="pref_musicon">"צליל"</string>
+    <string name="pref_savesession_sum">"שחזור אזעקות בתחילה"</string>
+    <string name="pref_musicon_sum">"צליל אזעקה"</string>
+    
+    <string name="pref_showsettbtn">"צג כפתור הגדרות"</string>
+    <string name="pref_showsettbtn_summary">"להראות כפתור הגדרות בactionbar"</string>
+    <string name="pref_volume">"עוצמת התראה"</string>
+    <string name="pref_volume_summary">"להגדיר את עוצמת אזעקה"</string>
+    <string name="pref_showdelall">"צג דל כפתור"</string>
+    <string name="pref_showdelall_summary">"להראות למחוק כל הכפתור בactionbar"</string>
+    <string name="pref_soundfile">"צליל מותאם אישית"</string>
+    <string name="pref_soundfile_summary">"בחר צליל מותאם אישית"</string>
+	<string name="pref_soundsource_system">"המערכת"</string>
+    <string name="pref_soundsource_custom">"מותאם אישית"</string>
+    <string name="pref_soundsource_summary">"בחירת מקור צליל"</string>	
+    <string name="pref_soundsource_dialogtitle">"מקור קול"</string>
+    <string name="alarm_settings">"הגדרות אזעקה"</string>
+    <string name="main_settings">"הגדרות עיקריות"</string>
+    <string name="interface_settings">"הגדרותממשק"</string>
+
+    <string name="pref_showaddbtn">"צג להוסיף כפתור"</string>
+    <string name="pref_showaddbtn_summary">"להראות להוסיף כפתור בactionbar"</string>	
+    <string name="pref_showrefreshbtn">"צג רענון כפתור"</string>
+    <string name="pref_showrefreshbtn_summary">"להראות לרענן כל הכפתור בactionbar"</string>	
+    	
+    <string name="pref_sorttype_unsorted">"לא ממוין"</string>
+    <string name="pref_sorttype_runnedfirst">"1 פעיל"</string>
+    <string name="pref_sorttype_smallfirst">"הקרוב ביותר 1"</string>
+    <string name="pref_sortlist">"מיון"</string>
+    <string name="pref_sortlist_summary">"אזעקות סוג מיון רשימה"</string>
+    
+	<string name="preset_list_empty">"רשימה ריקה מוגדרת מראש"</string>
+    <string name="presets_saved">"הגדרות קבועות מראש שנשמרו ב"</string>
+    <string name="presets">"הגדרות קבועות מראש"</string>
+    <string name="delete_preset_title">"מחק את כל הגדרות קבועות מראש?"</string>
+    <string name="delete_preset_message">"האם אתה בטוח ברצונך למחוק את כל הגדרות קבועות מראש?"</string>
+    <string name="logs">"היסטוריה"</string>
+    
+</resources>

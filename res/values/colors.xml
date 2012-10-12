@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <item type="color" name="white">@android:color/white</item>
+    <color name="gray">#ffaaaaaa</color>
+    <color name="gray_dark">#ff333333</color>
+    <item type="color" name="black">@android:color/black</item>
+    <color name="indian_red_1">#fff75d59</color>
+		
+	<drawable name="gray">#ffaaaaaa</drawable>
+	<drawable name="gray_dark">#ff333333</drawable>
+	<drawable name="white">@android:color/white</drawable> 
+	<drawable name="black">@android:color/black</drawable>
+ 	
+		
+</resources>

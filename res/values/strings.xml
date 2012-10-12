@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kitchen Clock</string>
+    <string name="menu_settings">Settings</string>
+    <string name="main_alarmclock">Alarm Clock</string>
+	
+	<string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="changelog_title">Changelog</string>
+    
+    <string name="alarm_name">alarm name</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">License</string>
+    <string name="eula_accept">Accept</string>
+    <string name="eula_refuse">Refuse</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="back">Back</string>
+    <string name="add">Add</string>
+    <string name="exit">Exit</string>
+    <string name="info">Info</string>
+    <string name="settime">Set time</string>
+    <string name="delete_all">Delete all</string>
+    <string name="min">min</string>
+    <string name="hour">hour</string>
+    <string name="sec">sec</string>
+    <string name="set">Set</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">Timer Started</string>
+    <string name="click_to_open">Click here to open the application</string>
+    <string name="countdown_ended">Countdown ended</string>
+    <string name="toast_time_invalid">Time should be not zero</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">Version</string>
+    <string name="pref_info_version_error">Unable to determine version</string>
+    <string name="pref_report_a_bug">Report a Bug</string>
+    <string name="pref_report_a_bug_summary">Submit a new issue to the issue tracker</string>
+    <string name="pref_display_changelog_summary">Display application changelog</string>
+    <string name="pref_display_eula_summary">Display application license</string>
+    <string name="pref_show_tips">Show Tips at Startup</string>
+    <string name="pref_display_settings">Display settings</string>
+    <string name="pref_keep_screen_on">Keep Screen On</string>
+    <string name="pref_keep_screen_on_summary_on">The screen will remain active while the program is running</string>
+    <string name="pref_keep_screen_on_summary_off">The screen goes into standby according to system settings</string>
+    <string name="pref_clear_timer_label">Clear Timer label</string>
+    <string name="pref_clear_timer_label_summary_on">The Timer label returns to the default value after a preset time
+		reaches its alarm.</string>
+    <string name="pref_clear_timer_label_summary_off">The Timer label keeps the name of the last used preset</string>
+    <string name="pref_set_timers_names">Set Timer names</string>
+    <string name="pref_notification_settings">Notification settings</string>
+    <string name="pref_notification_sound">Sound</string>
+    <string name="pref_notification_sound_summary_on">Sound notification enabled</string>
+    <string name="pref_notification_sound_summary_off">Sound notification disabled</string>
+    <string name="pref_notification_insistent">Insistent</string>
+    <string name="pref_notification_insistent_summary_on">Insistent mode on</string>
+    <string name="pref_notification_insistent_summary_off">Insistent mode off</string>
+    <string name="pref_notification_custom_sound">Custom sound</string>
+    <string name="pref_notification_custom_sound_summary_on">Use custom sound</string>
+    <string name="pref_notification_custom_sound_summary_off">Use default sound</string>
+    <string name="pref_notification_ringtone">Select alarm sound</string>
+    <string name="pref_notification_ringtone_summary">Select a custom sound from available system alarm sounds
+</string>
+    <string name="pref_notification_led">LED</string>
+    <string name="pref_notification_led_summary_on">LED notification enabled</string>
+    <string name="pref_notification_led_summary_off">LED notification disabled</string>
+    <string name="pref_notification_led_color">LED color</string>
+    <string name="pref_notification_led_color_summary">Change LED color</string>
+    <string name="pref_notification_led_color_dialogtitle">Select your LED color</string>
+    <string name="pref_notification_led_color_green">Green</string>
+    <string name="pref_notification_led_color_white">White</string>
+    <string name="pref_notification_led_color_red">Red/Default</string>
+    <string name="pref_notification_led_color_blue">Blue</string>
+    <string name="pref_notification_led_color_yellow">Yellow</string>
+    <string name="pref_notification_led_color_cyan">Cyan</string>
+    <string name="pref_notification_led_color_magenta">Magenta</string>
+    <string name="pref_notification_led_color_pink">Pink</string>
+    <string name="pref_notification_led_color_orange">Orange</string>
+    <string name="pref_notification_led_color_light_blue">Light Blue</string>
+    <string name="pref_notification_led_blink_rate">LED blink rate</string>
+    <string name="pref_notification_led_blink_rate_summary">Change LED blink rate</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">Select your LED blink rate</string>
+    <string name="pref_notification_led_blink_rate_two">2 (Fast)</string>
+    <string name="pref_notification_led_blink_rate_three">3</string>
+    <string name="pref_notification_led_blink_rate_four">4 (Medium)</string>
+    <string name="pref_notification_led_blink_rate_five">5</string>
+    <string name="pref_notification_led_blink_rate_six">6 (Slow)</string>
+    <string name="pref_notification_vibrate">Vibrate</string>
+    <string name="pref_notification_vibrate_summary_on">Vibrate notification enabled</string>
+    <string name="pref_notification_vibrate_summary_off">Vibrate notification disabled</string>
+    <string name="pref_notification_vibrate_pattern">Vibrate pattern</string>
+    <string name="pref_notification_vibrate_pattern_summary">Change vibrate pattern</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">Select your vibrate pattern</string>
+    <string name="pref_notification_vibrate_pattern_normal">Normal</string>
+    <string name="pref_notification_vibrate_pattern_medium">Medium Vibrate</string>
+    <string name="pref_notification_vibrate_pattern_long">Long Vibrate</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">Multiple Short</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">Multiple Long</string>
+    <string name="pref_pickstyle_wheel">Wheel</string>
+    <string name="pref_pickstyle_picker">Picker</string>
+    <string name="pref_pickstyle_number">Number</string>
+    <string name="pref_showsec">Show seconds in picker</string>
+    <string name="pref_showsec_summary_on">Seconds in picker on</string>
+    <string name="pref_showsec_summary_off">Seconds in picker off</string>
+    <string name="pref_showhr">Show hours in picker</string>
+    <string name="pref_showhr_summary_on">Hours in picker on</string>
+    <string name="pref_showhr_summary_off">Hours in picker off</string>
+    <string name="pref_simmetricpick">Symmetrical pickers</string>
+    <string name="pref_simmetricpick_summary_on">symmetrical</string>
+    <string name="pref_simmetricpick_summary_off">minutes bigger</string>
+    <string name="pref_autostart">Autostart timers</string>
+    <string name="pref_autostart_summary_on">autostart on</string>
+    <string name="pref_autostart_summary_off">autostart off</string>
+    <string name="pref_addalarmonstart">Add timer on start</string>
+    <string name="pref_addalarmonstart_summary_on">show add timer dialog on start on</string>
+    <string name="pref_addalarmonstart_summary_off">show add timer dialog on start off</string>
+    <string name="pref_cyclicmins">Cyclic minutes wheel</string>
+    <string name="pref_cyclicmins_summary_on">cyclic minutes on</string>
+    <string name="pref_cyclicmins_summary_off">cyclic minutes off</string>
+    <string name="pref_stoponrotate">Stop on rotate</string>
+    <string name="pref_stoponrotate_summary_on">stop alarming on rotate phone on</string>
+    <string name="pref_stoponrotate_summary_off">stop alarming on rotate phone off</string>
+    <string name="pref_pickstyle">Pick time dialog</string>
+    <string name="pref_pickstyle_summary">pick time dialog type</string>
+    <string name="pref_pickstyle_dialogtitle">Picker style</string>
+    <string name="pref_shownames">Show names</string>
+    <string name="pref_shownames_summary">show alarm names</string>
+    <string name="pref_savesession">Save alarms</string>
+    <string name="pref_musicon">Sound</string>
+    <string name="pref_savesession_sum">restore alarms on start</string>
+    <string name="pref_musicon_sum">alarm sound</string>
+    
+    <string name="pref_showsettbtn">Show settings button</string>
+    <string name="pref_showsettbtn_summary">show settings button in actionbar</string>
+    <string name="pref_volume">Alarm Volume</string>
+    <string name="pref_volume_summary">set alarm volume</string>
+    <string name="pref_showdelall">Show del button</string>
+    <string name="pref_showdelall_summary">show delete All button in actionbar</string>
+    <string name="pref_soundfile">Custom Sound</string>
+    <string name="pref_soundfile_summary">select custom sound</string>
+	<string name="pref_soundsource_system">system</string>
+    <string name="pref_soundsource_custom">custom</string>
+    <string name="pref_soundsource_summary">select sound source</string>	
+    <string name="pref_soundsource_dialogtitle">Sound source</string>
+    <string name="alarm_settings">Alarm Settings</string>
+    <string name="main_settings">Main Settings</string>
+    <string name="interface_settings">Interface Settings</string>
+
+    <string name="pref_showaddbtn">Show add button</string>
+    <string name="pref_showaddbtn_summary">show add button in actionbar</string>	
+    <string name="pref_showrefreshbtn">Show refresh button</string>
+    <string name="pref_showrefreshbtn_summary">show refresh all button in actionbar</string>	
+    	
+    <string name="pref_sorttype_unsorted">unsorted</string>
+    <string name="pref_sorttype_runnedfirst">active first</string>
+    <string name="pref_sorttype_smallfirst">nearest first</string>
+    <string name="pref_sortlist">Sorting</string>
+    <string name="pref_sortlist_summary">alarms list sort type</string>
+    
+	<string name="preset_list_empty">Preset list empty</string>
+    <string name="presets_saved">Presets saved in</string>
+    <string name="presets">Presets</string>
+    <string name="delete_preset_title">Delete all presets?</string>
+    <string name="delete_preset_message">Are you sure want to delete all presets?</string>
+    <string name="logs">History</string>
+	<string name="pref_overridevolume">Override volume</string>
+    <string name="pref_overridevolume_summary_on">used custom volume</string>	
+    <string name="pref_overridevolume_summary_off">used system volume</string>	
+     <string name="addpreset">Add preset</string>
+    <string name="pref_advancedsettings">show advanced settings</string>	
+    <string name="pref_advancedsettings_summary">show additional</string>	
+    <string name="pref_hideadvsettings">hide advanced settings</string>	
+    <string name="pref_hideadvsettings_summary">hide additional</string>
+	<string name="assigncode">Assign barcode</string>	
+	<string name="dcodenotfound">Barcode not found</string>	
+		
+	<string name="pref_disablelock">Disable lock</string>
+    <string name="pref_disablelock_summary_on">phone lock disabled</string>	
+    <string name="pref_disablelock_summary_off">phone lock enabled</string>	
+	<string name="installzxingscan">Please install ZXing barcode scaner</string>	
+    
+    <string name="pref_bgfile">Custom background</string>	
+    <string name="pref_bgfile_summary">select background *.png</string>
+	<string name="pref_bgsource_system">default</string>
+    <string name="pref_bgsource_custom">custom</string>
+    <string name="pref_bgsource_summary">select source</string>	
+    <string name="pref_bgsource_dialogtitle">Background source</string>
+
+	<string name="pref_overridesettbg">Background for presets</string>
+    <string name="pref_overridesettbg_summary">used new bg for presets page</string>	
+    <string name="liteallow">4 timers,6 presets in Lite ver.</string>	
+    <string name="lookcode">Scaner</string>	
+    
+    <string name="pref_bg_wood">wood</string>	
+   <string name="pref_bg_strawberry">strawberry</string>	
+    <string name="pref_bg_coffee">coffee</string>	
+    <string name="pref_bg_garlic">garlic</string>	
+    <string name="pref_bg_greenpeas">green peas</string>	
+    <string name="pref_bg_spaghetti">spaghetti</string>	
+	
+</resources>

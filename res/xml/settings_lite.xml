@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2009 The Android Open Source Project
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/menu_settings" >
+
+    <PreferenceCategory android:title="@string/main_settings" >
+        <Preference
+            style="?android:preferenceInformationStyle"
+            android:key="@string/pref_info_version_key"
+            android:title="@string/pref_info_version" />
+
+       </PreferenceCategory>
+    <PreferenceCategory android:title="@string/interface_settings" >
+		<ListPreference
+            android:defaultValue="unsorted"
+            android:entries="@array/pref_sorttype_entries"
+            android:entryValues="@array/pref_sorttype_values"
+            android:key="@string/pref_sortlist_key"
+            android:summary="@string/pref_sortlist_summary"
+            android:dialogTitle="@string/pref_sortlist"
+            android:title="@string/pref_sortlist" />
+    
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_cyclicmins_key"
+            android:summaryOff="@string/pref_cyclicmins_summary_off"
+            android:summaryOn="@string/pref_cyclicmins_summary_on"
+            android:title="@string/pref_cyclicmins" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_shownames_key"
+            android:summary="@string/pref_shownames_summary"
+            android:title="@string/pref_shownames" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_autostart_key"
+            android:summaryOff="@string/pref_autostart_summary_off"
+            android:summaryOn="@string/pref_autostart_summary_on"
+            android:title="@string/pref_autostart" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_addalarmonstart_key"
+            android:summaryOff="@string/pref_addalarmonstart_summary_off"
+            android:summaryOn="@string/pref_addalarmonstart_summary_on"
+            android:title="@string/pref_addalarmonstart" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_showrefreshbtn_key"
+            android:summary="@string/pref_showrefreshbtn_summary"
+            android:title="@string/pref_showrefreshbtn" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_showsettbtn_key"
+            android:summary="@string/pref_showsettbtn_summary"
+            android:title="@string/pref_showsettbtn" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pref_showdelall_key"
+            android:summary="@string/pref_showdelall_summary"
+            android:title="@string/pref_showdelall" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/alarm_settings" >
+        <ListPreference
+            android:defaultValue="system"
+            android:dialogTitle="@string/pref_soundsource_dialogtitle"
+            android:entries="@array/pref_soundsource_entries"
+            android:entryValues="@array/pref_soundsource_values"
+            android:key="@string/pref_soundsource_key"
+            android:summary="@string/pref_soundsource_summary"
+            android:title="@string/pref_soundsource_dialogtitle" />
+
+        <RingtonePreference
+            android:key="@string/pref_notification_ringtone_key"
+            android:ringtoneType="alarm"
+            android:showSilent="true"
+            android:summary="@string/pref_notification_ringtone_summary"
+            android:title="@string/pref_notification_ringtone" />
+
+        <EditTextPreference
+            android:key="@string/pref_soundfile_path_key"
+            android:title="" />
+
+        <Preference
+            android:key="@string/pref_soundfile_key"
+            android:summary="@string/pref_soundfile_summary"
+            android:title="@string/pref_soundfile" />
+
+        <VolumePreference
+            android:name="Volume Preference"
+            android:key="@string/pref_volume_key"
+            android:summary="@string/pref_volume_summary"
+            android:title="@string/pref_volume" />
+
+   		<CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_overridevolume_key"
+            android:summaryOff="@string/pref_overridevolume_summary_off"
+            android:summaryOn="@string/pref_overridevolume_summary_on"
+            android:title="@string/pref_overridevolume" />			
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_notification_vibrate_key"
+            android:summaryOff="@string/pref_notification_vibrate_summary_off"
+            android:summaryOn="@string/pref_notification_vibrate_summary_on"
+            android:title="@string/pref_notification_vibrate" />
+
+      
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pref_stoponrotate_key"
+            android:summaryOff="@string/pref_stoponrotate_summary_off"
+            android:summaryOn="@string/pref_stoponrotate_summary_on"
+            android:title="@string/pref_stoponrotate" />
+
+             <Preference
+            android:key="@string/pref_advancedsettings_key"
+            android:summary="@string/pref_advancedsettings_summary"
+            android:title="@string/pref_advancedsettings" />
+        
+        </PreferenceCategory>
+
+    
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <style name="JDsTheme" parent="@android:style/Theme.Black">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+	    <style name="ActionBarItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_margin">0px</item>
+    </style>
+</resources>

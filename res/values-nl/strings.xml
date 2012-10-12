@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">"Keuken Klok"</string>
+    <string name="menu_settings">"instellingen"</string>
+    <string name="main_alarmclock">"Wekker"</string>
+	
+	<string name="start">"start"</string>
+    <string name="stop">"STOP"</string>
+    <string name="changelog_title">"Changelog"</string>
+    
+    <string name="alarm_name">"input name"</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">"Licentie"</string>
+    <string name="eula_accept">"Akkoord"</string>
+    <string name="eula_refuse">"Weigeren"</string>
+    <string name="name">"Naam"</string>
+    <string name="save">"Opslaan"</string>
+    <string name="edit">"Bewerken"</string>
+    <string name="delete">"Verwijderen"</string>
+    <string name="ok">"OK"</string>
+    <string name="cancel">"Annuleren"</string>
+    <string name="yes">"Ja"</string>
+    <string name="no">"Nee"</string>
+    <string name="back">"Terug"</string>
+    <string name="add">"Toevoegen"</string>
+    <string name="exit">"Afsluiten"</string>
+    <string name="info">"Info"</string>
+    <string name="settime">"Tijd instellen..."</string>
+    <string name="delete_all">"Verwijder alle"</string>
+    <string name="min">"min"</string>
+    <string name="hour">"uur"</string>
+    <string name="sec">"sec."</string>
+    <string name="set">"instellingen"</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">"Timer gestart"</string>
+    <string name="click_to_open">"Klik hier om de toepassing te openen"</string>
+    <string name="countdown_ended">"Countdown afgelopen"</string>
+    <string name="toast_time_invalid">"Tijd moet niet nul"</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">"Versie"</string>
+    <string name="pref_info_version_error">"Kan versie te bepalen"</string>
+    <string name="pref_report_a_bug">"Een bug rapporteren"</string>
+    <string name="pref_report_a_bug_summary">"Voeg een nieuw onderwerp aan de issue tracker"</string>
+    <string name="pref_display_changelog_summary">"Weergave toepassing changelog"</string>
+    <string name="pref_display_eula_summary">"Weergave programmalicentie"</string>
+    <string name="pref_show_tips">"Toon tips bij starten"</string>
+    <string name="pref_display_settings">"Weergave-instellingen"</string>
+    <string name="pref_keep_screen_on">"Keep Screen On"</string>
+    <string name="pref_keep_screen_on_summary_on">"Het scherm blijft actief terwijl het programma loopt"</string>
+    <string name="pref_keep_screen_on_summary_off">"Het scherm gaat in standby afhankelijk van de systeeminstellingen"</string>
+    <string name="pref_clear_timer_label">"Timer wissen label"</string>
+    <string name="pref_clear_timer_label_summary_on">"De Timer label keert terug naar de standaard waarde na een vooraf ingestelde tijd bereikt zijn alarm."</string>
+    <string name="pref_clear_timer_label_summary_off">"De Timer label houdt de naam van de laatst gebruikte preset"</string>
+    <string name="pref_set_timers_names">"Set Timer namen"</string>
+    <string name="pref_notification_settings">"Meldingsinstellingen"</string>
+    <string name="pref_notification_sound">"Geluid"</string>
+    <string name="pref_notification_sound_summary_on">"Geluid melding ingeschakeld"</string>
+    <string name="pref_notification_sound_summary_off">"Geluid kennisgeving uitgeschakeld"</string>
+    <string name="pref_notification_insistent">"Dringend"</string>
+    <string name="pref_notification_insistent_summary_on">"Vasthoudend-modus op"</string>
+    <string name="pref_notification_insistent_summary_off">"Vasthoudend modus uit"</string>
+    <string name="pref_notification_custom_sound">"Aangepaste geluid"</string>
+    <string name="pref_notification_custom_sound_summary_on">"Gebruik aangepaste geluid"</string>
+    <string name="pref_notification_custom_sound_summary_off">"Gebruik standaard geluid"</string>
+    <string name="pref_notification_ringtone">"Selecteer alarmgeluid"</string>
+    <string name="pref_notification_ringtone_summary">"Selecteer een aangepast geluid uit de beschikbare systeem alarm klinkt
+"</string>
+    <string name="pref_notification_led">"Led"</string>
+    <string name="pref_notification_led_summary_on">"LED-waarschuwing is ingeschakeld"</string>
+    <string name="pref_notification_led_summary_off">"LED-waarschuwing uitgeschakeld"</string>
+    <string name="pref_notification_led_color">"LED-kleur"</string>
+    <string name="pref_notification_led_color_summary">"Wijzig LED-kleur"</string>
+    <string name="pref_notification_led_color_dialogtitle">"Selecteer uw LED kleur"</string>
+    <string name="pref_notification_led_color_green">"Groen"</string>
+    <string name="pref_notification_led_color_white">"Wit"</string>
+    <string name="pref_notification_led_color_red">"Rood / Standaard"</string>
+    <string name="pref_notification_led_color_blue">"Blauw"</string>
+    <string name="pref_notification_led_color_yellow">"Geel"</string>
+    <string name="pref_notification_led_color_cyan">"Cyaan"</string>
+    <string name="pref_notification_led_color_magenta">"Magenta"</string>
+    <string name="pref_notification_led_color_pink">"Roze"</string>
+    <string name="pref_notification_led_color_orange">"Oranje"</string>
+    <string name="pref_notification_led_color_light_blue">"Lichtblauw"</string>
+    <string name="pref_notification_led_blink_rate">"LED knipperen tarief"</string>
+    <string name="pref_notification_led_blink_rate_summary">"Wijzig LED knipperen tarief"</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">"Selecteer uw LED knipperen tarief"</string>
+    <string name="pref_notification_led_blink_rate_two">"2 (Fast)"</string>
+    <string name="pref_notification_led_blink_rate_three">"3"</string>
+    <string name="pref_notification_led_blink_rate_four">"4 (Medium)"</string>
+    <string name="pref_notification_led_blink_rate_five">"5"</string>
+    <string name="pref_notification_led_blink_rate_six">"6 (Langzaam)"</string>
+    <string name="pref_notification_vibrate">"Trillen"</string>
+    <string name="pref_notification_vibrate_summary_on">"Trillen ingeschakeld kennisgeving"</string>
+    <string name="pref_notification_vibrate_summary_off">"Trillen uitgeschakeld kennisgeving"</string>
+    <string name="pref_notification_vibrate_pattern">"Trillen patroon"</string>
+    <string name="pref_notification_vibrate_pattern_summary">"Wijzig trillen patroon"</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">"Selecteer uw trillen patroon"</string>
+    <string name="pref_notification_vibrate_pattern_normal">"Normaal"</string>
+    <string name="pref_notification_vibrate_pattern_medium">"Medium Trillen"</string>
+    <string name="pref_notification_vibrate_pattern_long">"Lange Trillen"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">"Meerdere korte"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">"Meerdere Lange"</string>
+    <string name="pref_pickstyle_wheel">"Wiel"</string>
+    <string name="pref_pickstyle_picker">"Pipet"</string>
+    <string name="pref_pickstyle_number">"Nummer"</string>
+    <string name="pref_showsec">"Toon seconden in picker"</string>
+    <string name="pref_showsec_summary_on">"Seconden in picker op"</string>
+    <string name="pref_showsec_summary_off">"Seconden in picker off"</string>
+    <string name="pref_showhr">"Toon uur in picker"</string>
+    <string name="pref_showhr_summary_on">"Uren in picker op"</string>
+    <string name="pref_showhr_summary_off">"Uren in picker off"</string>
+    <string name="pref_simmetricpick">"Symmetrische plukkers"</string>
+    <string name="pref_simmetricpick_summary_on">"symmetrisch"</string>
+    <string name="pref_simmetricpick_summary_off">"minuut groter"</string>
+    <string name="pref_autostart">"Autostart timers"</string>
+    <string name="pref_autostart_summary_on">"autostart op"</string>
+    <string name="pref_autostart_summary_off">"autostart uit"</string>
+    <string name="pref_addalarmonstart">"Voeg timer op start"</string>
+    <string name="pref_addalarmonstart_summary_on">"tonen toe te voegen timer dialoogvenster op start op"</string>
+    <string name="pref_addalarmonstart_summary_off">"tonen toe te voegen timer dialoog op te beginnen"</string>
+    <string name="pref_cyclicmins">"Cyclische minuten wiel"</string>
+    <string name="pref_cyclicmins_summary_on">"cyclische minuten"</string>
+    <string name="pref_cyclicmins_summary_off">"cyclische minuten uit"</string>
+    <string name="pref_stoponrotate">"Stop op draai"</string>
+    <string name="pref_stoponrotate_summary_on">"stop alarmerende op draaien telefoon op"</string>
+    <string name="pref_stoponrotate_summary_off">"stop alarmerende op draaien telefoon uit"</string>
+    <string name="pref_pickstyle">"Pick tijd dialoogvenster"</string>
+    <string name="pref_pickstyle_summary">"pick tijd dialoogvenster soort"</string>
+    <string name="pref_pickstyle_dialogtitle">"Picker stijl"</string>
+    <string name="pref_shownames">"Namen weergeven"</string>
+    <string name="pref_shownames_summary">"geeft alarm namen"</string>
+    <string name="pref_savesession">"Sla alarm"</string>
+    <string name="pref_musicon">"Geluid"</string>
+    <string name="pref_savesession_sum">"herstellen alarmen op start"</string>
+    <string name="pref_musicon_sum">"alarmgeluid"</string>
+    
+	
+</resources>

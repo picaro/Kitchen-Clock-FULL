@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">"रसोई घड़ी"</string>
+    <string name="menu_settings">"सेटिंग्स"</string>
+    <string name="main_alarmclock">"अलार्म घड़ी"</string>
+	
+	<string name="start">"प्रारंभ करना"</string>
+    <string name="stop">"रुकें"</string>
+    <string name="changelog_title">"लॉग बदलें "</string>
+    
+    <string name="alarm_name">"अलार्म नाम"</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">"लाइसेंस"</string>
+    <string name="eula_accept">"स्वीकारें"</string>
+    <string name="eula_refuse">"मना करना"</string>
+    <string name="name">"नाम"</string>
+    <string name="save">"सहेजें"</string>
+    <string name="edit">"संपादन"</string>
+    <string name="delete">"डिलीट करें (हटाएं)"</string>
+    <string name="ok">"स्वीकारें"</string>
+    <string name="cancel">"निरस्त"</string>
+    <string name="yes">"हाँ"</string>
+    <string name="no">"नंबर"</string>
+    <string name="back">"पीछे"</string>
+    <string name="add">"जोड़ें"</string>
+    <string name="exit">"निकास"</string>
+    <string name="info">"जानकारी"</string>
+    <string name="settime">"समय सेट करें"</string>
+    <string name="delete_all">"सबको मिटाएँ "</string>
+    <string name="min">"न्यूनतम"</string>
+    <string name="hour">"घंटा "</string>
+    <string name="sec">"सेकंड"</string>
+    <string name="set">"'''सेट्स'''"</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">"टाइमर शुरू किया"</string>
+    <string name="click_to_open">"आवेदन को खोलने के लिए यहां क्लिक करें"</string>
+    <string name="countdown_ended">"उलटी गिनती समाप्त हो गया"</string>
+    <string name="toast_time_invalid">"समय शून्य नहीं होना चाहिए"</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">"संस्करण"</string>
+    <string name="pref_info_version_error">"संस्करण का निर्धारण करने में असमर्थ"</string>
+    <string name="pref_report_a_bug">"एक बग की रिपोर्ट करें"</string>
+    <string name="pref_report_a_bug_summary">"मुद्दा नजर रखने के लिए एक नया मुद्दा भेजें"</string>
+    <string name="pref_display_changelog_summary">"प्रदर्शन आवेदन changelog"</string>
+    <string name="pref_display_eula_summary">"आवेदन लाइसेंस प्रदर्शित"</string>
+    <string name="pref_show_tips">"स्टार्टअप पर सुझाव दिखाएं"</string>
+    <string name="pref_display_settings">"डिस्प्ले सेटिंग्स "</string>
+    <string name="pref_keep_screen_on">"स्क्रीन पर रखें"</string>
+    <string name="pref_keep_screen_on_summary_on">"स्क्रीन सक्रिय रहते हैं, जबकि कार्यक्रम चल रहा है"</string>
+    <string name="pref_keep_screen_on_summary_off">"स्क्रीन प्रणाली सेटिंग्स के अनुसार standby में चला जाता है"</string>
+    <string name="pref_clear_timer_label">"साफ़ टाइमर लेबल"</string>
+    <string name="pref_clear_timer_label_summary_on">"टाइमर लेबल मूलभूत मान देता है एक पूर्व निर्धारित समय के बाद अपने अलार्म तक पहुँचता है."</string>
+    <string name="pref_clear_timer_label_summary_off">"टाइमर लेबल पिछले इस्तेमाल पूर्व निर्धारित के नाम रहता है"</string>
+    <string name="pref_set_timers_names">"टाइमर नाम सेट"</string>
+    <string name="pref_notification_settings">"सूचना सेटिंग"</string>
+    <string name="pref_notification_sound">"ध्वनि"</string>
+    <string name="pref_notification_sound_summary_on">"ध्वनि अधिसूचना सक्षम"</string>
+    <string name="pref_notification_sound_summary_off">"ध्वनि अधिसूचना अक्षम"</string>
+    <string name="pref_notification_insistent">"आग्रहपूर्ण"</string>
+    <string name="pref_notification_insistent_summary_on">"पर आग्रहपूर्ण मोड"</string>
+    <string name="pref_notification_insistent_summary_off">"आग्रहपूर्ण मोड बंद"</string>
+    <string name="pref_notification_custom_sound">"कस्टम ध्वनि"</string>
+    <string name="pref_notification_custom_sound_summary_on">"कस्टम ध्वनि का प्रयोग करें"</string>
+    <string name="pref_notification_custom_sound_summary_off">"डिफ़ॉल्ट ध्वनि का प्रयोग करें"</string>
+    <string name="pref_notification_ringtone">"अलार्म ध्वनि का चयन करें"</string>
+    <string name="pref_notification_ringtone_summary">"उपलब्ध सिस्टम अलार्म लगता है से एक कस्टम ध्वनि का चयन करें
+"</string>
+    <string name="pref_notification_led">"एलईडी"</string>
+    <string name="pref_notification_led_summary_on">"एलईडी अधिसूचना सक्षम"</string>
+    <string name="pref_notification_led_summary_off">"एलईडी अधिसूचना अक्षम"</string>
+    <string name="pref_notification_led_color">"एलईडी रंग"</string>
+    <string name="pref_notification_led_color_summary">"एलईडी रंग बदलें"</string>
+    <string name="pref_notification_led_color_dialogtitle">"अपने एलईडी रंग का चयन करें"</string>
+    <string name="pref_notification_led_color_green">"हरा"</string>
+    <string name="pref_notification_led_color_white">"सफेद"</string>
+    <string name="pref_notification_led_color_red">"लाल / डिफ़ॉल्ट"</string>
+    <string name="pref_notification_led_color_blue">"नीला "</string>
+    <string name="pref_notification_led_color_yellow">"पीला  "</string>
+    <string name="pref_notification_led_color_cyan">"बैंगनी (स्यान) "</string>
+    <string name="pref_notification_led_color_magenta">"मजेंटा "</string>
+    <string name="pref_notification_led_color_pink">"गुलाबी"</string>
+    <string name="pref_notification_led_color_orange">"नारंगी "</string>
+    <string name="pref_notification_led_color_light_blue">"हल्का नीला रंग"</string>
+    <string name="pref_notification_led_blink_rate">"एलईडी पलक दर"</string>
+    <string name="pref_notification_led_blink_rate_summary">"एलईडी पलक दर बदलें"</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">"अपने एलईडी पलक दर चुनें"</string>
+    <string name="pref_notification_led_blink_rate_two">"2 (फास्ट)"</string>
+    <string name="pref_notification_led_blink_rate_three">"३"</string>
+    <string name="pref_notification_led_blink_rate_four">"4 (मध्यम)"</string>
+    <string name="pref_notification_led_blink_rate_five">"5"</string>
+    <string name="pref_notification_led_blink_rate_six">"6 (धीरे)"</string>
+    <string name="pref_notification_vibrate">"कंपन करें "</string>
+    <string name="pref_notification_vibrate_summary_on">"सक्षम अधिसूचना Vibrate"</string>
+    <string name="pref_notification_vibrate_summary_off">"अक्षम अधिसूचना Vibrate"</string>
+    <string name="pref_notification_vibrate_pattern">"पैटर्न कंपन"</string>
+    <string name="pref_notification_vibrate_pattern_summary">"पैटर्न कांपना बदलें"</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">"अपने कंपन पैटर्न का चयन करें"</string>
+    <string name="pref_notification_vibrate_pattern_normal">"सामान्य"</string>
+    <string name="pref_notification_vibrate_pattern_medium">"मध्यम Vibrate"</string>
+    <string name="pref_notification_vibrate_pattern_long">"लंबे समय से कंपन"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">"लघु एकाधिक"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">"लंबी एकाधिक"</string>
+    <string name="pref_pickstyle_wheel">"पहिया"</string>
+    <string name="pref_pickstyle_picker">"कुदाल"</string>
+    <string name="pref_pickstyle_number">"संख्या "</string>
+    <string name="pref_showsec">"सेकंड पिकर में दिखाएं"</string>
+    <string name="pref_showsec_summary_on">"पिकर में सेकंड पर"</string>
+    <string name="pref_showsec_summary_off">"बंद पिकर में सेकंड"</string>
+    <string name="pref_showhr">"पिकर में घंटे दिखाएं"</string>
+    <string name="pref_showhr_summary_on">"पिकर में घंटे पर"</string>
+    <string name="pref_showhr_summary_off">"बंद पिकर में घंटे"</string>
+    <string name="pref_simmetricpick">"सममित पिकर्स"</string>
+    <string name="pref_simmetricpick_summary_on">"सममित"</string>
+    <string name="pref_simmetricpick_summary_off">"मिनट बड़ा"</string>
+    <string name="pref_autostart">"Autostart टाइमर"</string>
+    <string name="pref_autostart_summary_on">"पर autostart"</string>
+    <string name="pref_autostart_summary_off">"बंद autostart"</string>
+    <string name="pref_addalarmonstart">"शुरू करने पर टाइमर जोड़ें"</string>
+    <string name="pref_addalarmonstart_summary_on">"संवाद पर शुरू पर टाइमर जोड़ें"</string>
+    <string name="pref_addalarmonstart_summary_off">"बंद शुरू टाइमर संवाद जोड़ें"</string>
+    <string name="pref_cyclicmins">"चक्रीय मिनट पहिया"</string>
+    <string name="pref_cyclicmins_summary_on">"पर चक्रीय मिनट"</string>
+    <string name="pref_cyclicmins_summary_off">"चक्रीय बंद मिनट"</string>
+    <string name="pref_stoponrotate">"बारी बारी से पर रोक"</string>
+    <string name="pref_stoponrotate_summary_on">"बारी बारी से फोन पर खतरनाक को रोकने के"</string>
+    <string name="pref_stoponrotate_summary_off">"घुमाएगी फोन बंद पर खतरनाक को रोकने के"</string>
+    <string name="pref_pickstyle">"समय संवाद उठाओ"</string>
+    <string name="pref_pickstyle_summary">"समय लेने संवाद प्रकार"</string>
+    <string name="pref_pickstyle_dialogtitle">"पिकर शैली"</string>
+    <string name="pref_shownames">"नाम दिखायें"</string>
+    <string name="pref_shownames_summary">"अलार्म नाम दिखायें"</string>
+    <string name="pref_savesession">"अलार्म सहेजें"</string>
+    <string name="pref_musicon">"ध्वनि"</string>
+    <string name="pref_savesession_sum">"शुरू करने पर बहाल अलार्म"</string>
+    <string name="pref_musicon_sum">"अलार्म ध्वनि"</string>
+    
+    <string name="pref_showsettbtn">"सेटिंग्स बटन"</string>
+    <string name="pref_showsettbtn_summary">"actionbar में सेटिंग्स बटन दिखाई"</string>
+    <string name="pref_volume">"अलार्म वॉल्यूम"</string>
+    <string name="pref_volume_summary">"अलार्म मात्रा निर्धारित"</string>
+    <string name="pref_showdelall">"डेल बटन दिखाएँ"</string>
+    <string name="pref_showdelall_summary">"दिखाएँ actionbar में सभी बटन हटा"</string>
+    <string name="pref_soundfile">"कस्टम ध्वनि"</string>
+    <string name="pref_soundfile_summary">"कस्टम ध्वनि का चयन"</string>
+	<string name="pref_soundsource_system">"क्रमबद्ध "</string>
+    <string name="pref_soundsource_custom">"कस्टम"</string>
+    <string name="pref_soundsource_summary">"ध्वनि स्रोत का चयन करें"</string>	
+    <string name="pref_soundsource_dialogtitle">"ध्वनि स्रोत"</string>
+    <string name="alarm_settings">"अलार्म सेटिंग्स"</string>
+    <string name="main_settings">"मुख्य सेटिंग्स"</string>
+    <string name="interface_settings">"इंटरफ़ेस सेटिंग्स"</string>
+
+    <string name="pref_showaddbtn">"दिखाएँ बटन जोड़ने के लिए"</string>
+    <string name="pref_showaddbtn_summary">"दिखाएँ actionbar में बटन जोड़ने"</string>	
+    <string name="pref_showrefreshbtn">"ताज़ा बटन दिखाएँ"</string>
+    <string name="pref_showrefreshbtn_summary">"दिखाएँ actionbar में सभी बटन ताज़ा"</string>	
+    	
+    <string name="pref_sorttype_unsorted">"unsorted"</string>
+    <string name="pref_sorttype_runnedfirst">"सक्रिय 1"</string>
+    <string name="pref_sorttype_smallfirst">"निकटतम 1"</string>
+    <string name="pref_sortlist">"छंटाई "</string>
+    <string name="pref_sortlist_summary">"अलार्म सूची को सॉर्ट प्रकार"</string>
+    
+	<string name="preset_list_empty">"पूर्व निर्धारित खाली सूची"</string>
+    <string name="presets_saved">"Presets में बचाया"</string>
+    <string name="presets">"प्रीसेट"</string>
+    <string name="delete_preset_title">"सभी presets हटवायच्या?"</string>
+    <string name="delete_preset_message">"क्या आप यकीन है कि सभी presets को नष्ट करना चाहते हैं?"</string>
+    <string name="logs">"इतिहास "</string>
+    
+</resources>

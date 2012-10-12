@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">"Kök Klocka"</string>
+    <string name="menu_settings">"Inställningar"</string>
+    <string name="main_alarmclock">"VÄCKARKLOCKA"</string>
+	
+	<string name="start">"Början"</string>
+    <string name="stop">"STOPP"</string>
+    <string name="changelog_title">"Progamuppdateringar"</string>
+    
+    <string name="alarm_name">"Alarmnamn"</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">"Licens:"</string>
+    <string name="eula_accept">"Godkänn"</string>
+    <string name="eula_refuse">"Avslå"</string>
+    <string name="name">"Namn"</string>
+    <string name="save">"Spara"</string>
+    <string name="edit">"Redigera"</string>
+    <string name="delete">"Radera"</string>
+    <string name="ok">"OK"</string>
+    <string name="cancel">"Avbryt"</string>
+    <string name="yes">"Ja"</string>
+    <string name="no">"Nej"</string>
+    <string name="back">"Tillbaka"</string>
+    <string name="add">"Lägg till"</string>
+    <string name="exit">"Avsluta"</string>
+    <string name="info">"Info"</string>
+    <string name="settime">"Ställ in tid"</string>
+    <string name="delete_all">"Radera alla"</string>
+    <string name="min">"min"</string>
+    <string name="hour">"timma"</string>
+    <string name="sec">"sek"</string>
+    <string name="set">"Sätt"</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">"Timer igång"</string>
+    <string name="click_to_open">"Klicka här för att öppna programmet"</string>
+    <string name="countdown_ended">"Nedräkning slutade"</string>
+    <string name="toast_time_invalid">"Tid bör inte noll"</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">"Version"</string>
+    <string name="pref_info_version_error">"Kunde inte fastställa version"</string>
+    <string name="pref_report_a_bug">"Anmäl ett fel"</string>
+    <string name="pref_report_a_bug_summary">"Skicka en ny fråga till frågan tracker"</string>
+    <string name="pref_display_changelog_summary">"Visa tillämpning changelog"</string>
+    <string name="pref_display_eula_summary">"Visa programlicensen"</string>
+    <string name="pref_show_tips">"Visa tips vid start"</string>
+    <string name="pref_display_settings">"Displayinställningar"</string>
+    <string name="pref_keep_screen_on">"Håll skärmen på"</string>
+    <string name="pref_keep_screen_on_summary_on">"Skärmen förblir aktiv när programmet körs"</string>
+    <string name="pref_keep_screen_on_summary_off">"Skärmen går i viloläge efter systeminställningar"</string>
+    <string name="pref_clear_timer_label">"Rensa timer etikett"</string>
+    <string name="pref_clear_timer_label_summary_on">"Timer Etiketten återgår till standardvärdet efter en förinställd tid når sin larm."</string>
+    <string name="pref_clear_timer_label_summary_off">"Timer Etiketten håller namnet på den senast använda förinställningen"</string>
+    <string name="pref_set_timers_names">"Ställ Timer namn"</string>
+    <string name="pref_notification_settings">"Meddelandeinställningar"</string>
+    <string name="pref_notification_sound">"Ljud"</string>
+    <string name="pref_notification_sound_summary_on">"Ljud anmälan aktiverat"</string>
+    <string name="pref_notification_sound_summary_off">"Ljud anmälan inaktiverat"</string>
+    <string name="pref_notification_insistent">"ENTRÄGEN"</string>
+    <string name="pref_notification_insistent_summary_on">"Insisterar läge på"</string>
+    <string name="pref_notification_insistent_summary_off">"Envisa läge av"</string>
+    <string name="pref_notification_custom_sound">"Anpassad ljud"</string>
+    <string name="pref_notification_custom_sound_summary_on">"Använda anpassade ljud"</string>
+    <string name="pref_notification_custom_sound_summary_off">"Använd standard ljud"</string>
+    <string name="pref_notification_ringtone">"Välj larmet"</string>
+    <string name="pref_notification_ringtone_summary">"Välja en anpassad ljud från tillgängligt system ljuder
+"</string>
+    <string name="pref_notification_led">"LED"</string>
+    <string name="pref_notification_led_summary_on">"LED Anmälan aktiverat"</string>
+    <string name="pref_notification_led_summary_off">"LED-anmälan inaktiverat"</string>
+    <string name="pref_notification_led_color">"LED-färg"</string>
+    <string name="pref_notification_led_color_summary">"Förändring LED-färg"</string>
+    <string name="pref_notification_led_color_dialogtitle">"Välj din LED-färg"</string>
+    <string name="pref_notification_led_color_green">"Grön"</string>
+    <string name="pref_notification_led_color_white">"Vit"</string>
+    <string name="pref_notification_led_color_red">"Röd / Standard"</string>
+    <string name="pref_notification_led_color_blue">"Blå"</string>
+    <string name="pref_notification_led_color_yellow">"Gul"</string>
+    <string name="pref_notification_led_color_cyan">"Cyan"</string>
+    <string name="pref_notification_led_color_magenta">"Magenta"</string>
+    <string name="pref_notification_led_color_pink">"Rosa"</string>
+    <string name="pref_notification_led_color_orange">"Orange"</string>
+    <string name="pref_notification_led_color_light_blue">"Ljus Blå"</string>
+    <string name="pref_notification_led_blink_rate">"LED blinkhastighet"</string>
+    <string name="pref_notification_led_blink_rate_summary">"Ändra LED blinkhastighet"</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">"Välj din LED blinkhastighet"</string>
+    <string name="pref_notification_led_blink_rate_two">"2 (Snabb)"</string>
+    <string name="pref_notification_led_blink_rate_three">"3"</string>
+    <string name="pref_notification_led_blink_rate_four">"4 (Medium)"</string>
+    <string name="pref_notification_led_blink_rate_five">"5"</string>
+    <string name="pref_notification_led_blink_rate_six">"6 (långsam)"</string>
+    <string name="pref_notification_vibrate">"Vibrera"</string>
+    <string name="pref_notification_vibrate_summary_on">"Vibrera anmälan aktiverat"</string>
+    <string name="pref_notification_vibrate_summary_off">"Vibrera anmälan inaktiverat"</string>
+    <string name="pref_notification_vibrate_pattern">"Vibrera mönster"</string>
+    <string name="pref_notification_vibrate_pattern_summary">"Förändring vibrera mönster"</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">"Välj din vibrera mönster"</string>
+    <string name="pref_notification_vibrate_pattern_normal">"Normal"</string>
+    <string name="pref_notification_vibrate_pattern_medium">"Mellan Vibrera"</string>
+    <string name="pref_notification_vibrate_pattern_long">"Lång Vibrera"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">"Flera kort"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">"Flera Lång"</string>
+    <string name="pref_pickstyle_wheel">"Ledhjul"</string>
+    <string name="pref_pickstyle_picker">"Picker"</string>
+    <string name="pref_pickstyle_number">"Nummer"</string>
+    <string name="pref_showsec">"Visa sekunder i Picker"</string>
+    <string name="pref_showsec_summary_on">"Sekunder i picker på"</string>
+    <string name="pref_showsec_summary_off">"Sekunder i picker av"</string>
+    <string name="pref_showhr">"Visa timmar i Picker"</string>
+    <string name="pref_showhr_summary_on">"Timmar i picker på"</string>
+    <string name="pref_showhr_summary_off">"Timmar i picker av"</string>
+    <string name="pref_simmetricpick">"Symmetriska plockare"</string>
+    <string name="pref_simmetricpick_summary_on">"symmetrisk"</string>
+    <string name="pref_simmetricpick_summary_off">"minuter större"</string>
+    <string name="pref_autostart">"Autostart timers"</string>
+    <string name="pref_autostart_summary_on">"autostart på"</string>
+    <string name="pref_autostart_summary_off">"autostart av"</string>
+    <string name="pref_addalarmonstart">"Lägg timer på start"</string>
+    <string name="pref_addalarmonstart_summary_on">"Visa Lägg timer dialogrutan vid start på"</string>
+    <string name="pref_addalarmonstart_summary_off">"Visa Lägg timer dialogrutan vid start av"</string>
+    <string name="pref_cyclicmins">"Cyklisk minuter hjul"</string>
+    <string name="pref_cyclicmins_summary_on">"cykliska minuter på"</string>
+    <string name="pref_cyclicmins_summary_off">"cykliska minuter utanför"</string>
+    <string name="pref_stoponrotate">"Stopp på rotera"</string>
+    <string name="pref_stoponrotate_summary_on">"stopp alarmerande på Rotera telefon på"</string>
+    <string name="pref_stoponrotate_summary_off">"stopp alarmerande på Rotera telefonen"</string>
+    <string name="pref_pickstyle">"Välj tid dialogrutan"</string>
+    <string name="pref_pickstyle_summary">"Pick typ tid dialogrutan"</string>
+    <string name="pref_pickstyle_dialogtitle">"Picker stil"</string>
+    <string name="pref_shownames">"Visa namn"</string>
+    <string name="pref_shownames_summary">"visa larm namn"</string>
+    <string name="pref_savesession">"Spara larm"</string>
+    <string name="pref_musicon">"Ljud"</string>
+    <string name="pref_savesession_sum">"återställa larm på start"</string>
+    <string name="pref_musicon_sum">"alarmljud"</string>
+    
+    <string name="pref_showsettbtn">"Visa knappen Inställningar"</string>
+    <string name="pref_showsettbtn_summary">"visa knappen Inställningar i actionbar"</string>
+    <string name="pref_volume">"Alarmvolym"</string>
+    <string name="pref_volume_summary">"ställa larmvolym"</string>
+    <string name="pref_showdelall">"Visa DEL-knappen"</string>
+    <string name="pref_showdelall_summary">"visa knappen Ta bort alla i actionbar"</string>
+    <string name="pref_soundfile">"Anpassad ljud"</string>
+    <string name="pref_soundfile_summary">"Välj anpassad ljud"</string>
+	<string name="pref_soundsource_system">"system"</string>
+    <string name="pref_soundsource_custom">"kund"</string>
+    <string name="pref_soundsource_summary">"väljer ljudkälla"</string>	
+    <string name="pref_soundsource_dialogtitle">"Ljudkälla"</string>
+    <string name="alarm_settings">"Alarminställningar"</string>
+    <string name="main_settings">"Huvudinställningar"</string>
+    <string name="interface_settings">"Gränssnittsinställningar"</string>
+
+    <string name="pref_showaddbtn">"Visa Knappen Lägg"</string>
+    <string name="pref_showaddbtn_summary">"Visa Lägg knappen i actionbar"</string>	
+    <string name="pref_showrefreshbtn">"Visa uppdateringsknappen"</string>
+    <string name="pref_showrefreshbtn_summary">"visa uppdatera alla knapp i actionbar"</string>	
+    	
+    <string name="pref_sorttype_unsorted">"osorterat"</string>
+    <string name="pref_sorttype_runnedfirst">"aktiva första"</string>
+    <string name="pref_sorttype_smallfirst">"närmast först"</string>
+    <string name="pref_sortlist">"Sortering"</string>
+    <string name="pref_sortlist_summary">"larm listan sorteringstyp"</string>
+    
+	<string name="preset_list_empty">"Förinställda listan tom"</string>
+    <string name="presets_saved">"Förinställningar sparas i"</string>
+    <string name="presets">"Förval"</string>
+    <string name="delete_preset_title">"Ta bort alla förinställningar?"</string>
+    <string name="delete_preset_message">"Är du säker på att vill ta bort alla förinställningar?"</string>
+    <string name="logs">"Historia."</string>
+    
+</resources>

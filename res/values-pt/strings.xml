@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">"Relógio de cozinha"</string>
+    <string name="menu_settings">"Configurações"</string>
+    <string name="main_alarmclock">"Despertador"</string>
+	
+	<string name="start">"será iníciado"</string>
+    <string name="stop">"parar"</string>
+    <string name="changelog_title">"Changelog"</string>
+    
+    <string name="alarm_name">"nome do alarme"</string>
+    
+
+    <!-- Eula -->
+    <string name="eula_title">"Licença"</string>
+    <string name="eula_accept">"Aceitar"</string>
+    <string name="eula_refuse">"Recusar"</string>
+    <string name="name">"Nome"</string>
+    <string name="save">"Salvar"</string>
+    <string name="edit">"Editar"</string>
+    <string name="delete">"Apagar"</string>
+    <string name="ok">"Aceitar"</string>
+    <string name="cancel">"Cancelar"</string>
+    <string name="yes">"Sim"</string>
+    <string name="no">"Não"</string>
+    <string name="back">"Voltar"</string>
+    <string name="add">"Adicionar."</string>
+    <string name="exit">"Sair"</string>
+    <string name="info">"Informaçao"</string>
+    <string name="settime">"Definir tempo"</string>
+    <string name="delete_all">"Apagar tudo"</string>
+    <string name="min">"min"</string>
+    <string name="hour">"hora"</string>
+    <string name="sec">"segundo(s)"</string>
+    <string name="set">"Sets"</string>
+
+    <!-- Notifications -->
+    <string name="timer_started">"Iniciado temporizador"</string>
+    <string name="click_to_open">"Clique aqui para abrir o aplicativo"</string>
+    <string name="countdown_ended">"Contagem regressiva terminou"</string>
+    <string name="toast_time_invalid">"O tempo deve ser diferente de zero"</string>
+
+    <!-- Preferences -->
+    <string name="pref_info_version">"Versão"</string>
+    <string name="pref_info_version_error">"Não foi possível determinar a versão"</string>
+    <string name="pref_report_a_bug">"Informar um bug"</string>
+    <string name="pref_report_a_bug_summary">"Enviar um novo problema para o issue tracker"</string>
+    <string name="pref_display_changelog_summary">"Mostrar aplicação changelog"</string>
+    <string name="pref_display_eula_summary">"Mostrar licença do aplicativo"</string>
+    <string name="pref_show_tips">"&amp;Mostrar dicas ao iniciar"</string>
+    <string name="pref_display_settings">"Vídeo"</string>
+    <string name="pref_keep_screen_on">"Mantenha On Screen"</string>
+    <string name="pref_keep_screen_on_summary_on">"A tela permanecerá ativo enquanto o programa está em execução"</string>
+    <string name="pref_keep_screen_on_summary_off">"A tela fica em modo de espera de acordo com as configurações do sistema"</string>
+    <string name="pref_clear_timer_label">"Etiqueta Limpar timer"</string>
+    <string name="pref_clear_timer_label_summary_on">"A etiqueta temporizador retorna para o valor padrão depois de um tempo atinge o seu alarme."</string>
+    <string name="pref_clear_timer_label_summary_off">"A etiqueta temporizador mantém o nome da última predefinição utilizada"</string>
+    <string name="pref_set_timers_names">"Definir nomes Temporizador"</string>
+    <string name="pref_notification_settings">"Configurações de notificação"</string>
+    <string name="pref_notification_sound">"Som"</string>
+    <string name="pref_notification_sound_summary_on">"Notificação som habilitado"</string>
+    <string name="pref_notification_sound_summary_off">"Notificação de som desativado"</string>
+    <string name="pref_notification_insistent">"Insistente"</string>
+    <string name="pref_notification_insistent_summary_on">"Modo insistente em"</string>
+    <string name="pref_notification_insistent_summary_off">"Modo insistente fora"</string>
+    <string name="pref_notification_custom_sound">"Som personalizado"</string>
+    <string name="pref_notification_custom_sound_summary_on">"Use som personalizado"</string>
+    <string name="pref_notification_custom_sound_summary_off">"Use som padrão"</string>
+    <string name="pref_notification_ringtone">"Selecione o som do alarme"</string>
+    <string name="pref_notification_ringtone_summary">"Selecione um som personalizado a partir de sistema de alarme soa disponível
+"</string>
+    <string name="pref_notification_led">"LED "</string>
+    <string name="pref_notification_led_summary_on">"LED de notificação habilitado"</string>
+    <string name="pref_notification_led_summary_off">"LED de notificação desativado"</string>
+    <string name="pref_notification_led_color">"Cor do LED"</string>
+    <string name="pref_notification_led_color_summary">"Alterar a cor do LED"</string>
+    <string name="pref_notification_led_color_dialogtitle">"Escolha sua cor LED"</string>
+    <string name="pref_notification_led_color_green">"Verde"</string>
+    <string name="pref_notification_led_color_white">"Branco"</string>
+    <string name="pref_notification_led_color_red">"Vermelho / Default"</string>
+    <string name="pref_notification_led_color_blue">"Azul"</string>
+    <string name="pref_notification_led_color_yellow">"Amarelo"</string>
+    <string name="pref_notification_led_color_cyan">"Ciano"</string>
+    <string name="pref_notification_led_color_magenta">"Magenta"</string>
+    <string name="pref_notification_led_color_pink">"Rosa"</string>
+    <string name="pref_notification_led_color_orange">"Laranjas"</string>
+    <string name="pref_notification_led_color_light_blue">"Azul claro"</string>
+    <string name="pref_notification_led_blink_rate">"Ritmo da intermitência do LED"</string>
+    <string name="pref_notification_led_blink_rate_summary">"Alterar taxa de intermitência do LED"</string>
+    <string name="pref_notification_led_blink_rate_dialogtitle">"Selecione sua taxa de intermitência do LED"</string>
+    <string name="pref_notification_led_blink_rate_two">"2 (Fast)"</string>
+    <string name="pref_notification_led_blink_rate_three">"3"</string>
+    <string name="pref_notification_led_blink_rate_four">"4 (Médio)"</string>
+    <string name="pref_notification_led_blink_rate_five">"5"</string>
+    <string name="pref_notification_led_blink_rate_six">"6 (lenta)"</string>
+    <string name="pref_notification_vibrate">"Vibrar"</string>
+    <string name="pref_notification_vibrate_summary_on">"Vibrar notificação habilitado"</string>
+    <string name="pref_notification_vibrate_summary_off">"Vibrar notificação desativado"</string>
+    <string name="pref_notification_vibrate_pattern">"Modo de vibração"</string>
+    <string name="pref_notification_vibrate_pattern_summary">"Alterar vibrar padrão"</string>
+    <string name="pref_notification_vibrate_pattern_dialogtitle">"Selecione o seu padrão de vibração"</string>
+    <string name="pref_notification_vibrate_pattern_normal">"Normal"</string>
+    <string name="pref_notification_vibrate_pattern_medium">"Médio Vibrar"</string>
+    <string name="pref_notification_vibrate_pattern_long">"Vibração longa"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_short">"Múltipla curta"</string>
+    <string name="pref_notification_vibrate_pattern_multiple_long">"Múltipla longa"</string>
+    <string name="pref_pickstyle_wheel">"Roda"</string>
+    <string name="pref_pickstyle_picker">"Apanhador"</string>
+    <string name="pref_pickstyle_number">"Numero"</string>
+    <string name="pref_showsec">"Mostrar segundos em selecionador"</string>
+    <string name="pref_showsec_summary_on">"Segundos em selecionador de"</string>
+    <string name="pref_showsec_summary_off">"Segundos em selecionador de fora"</string>
+    <string name="pref_showhr">"Mostrar horas em selecionador"</string>
+    <string name="pref_showhr_summary_on">"Horas em selecionador de"</string>
+    <string name="pref_showhr_summary_off">"Horas em selecionador fora"</string>
+    <string name="pref_simmetricpick">"Catadores simétricas"</string>
+    <string name="pref_simmetricpick_summary_on">"simétrico"</string>
+    <string name="pref_simmetricpick_summary_off">"minutos maior"</string>
+    <string name="pref_autostart">"Temporizadores autostart"</string>
+    <string name="pref_autostart_summary_on">"autostart em"</string>
+    <string name="pref_autostart_summary_off">"autostart fora"</string>
+    <string name="pref_addalarmonstart">"Adicionar temporizador no início"</string>
+    <string name="pref_addalarmonstart_summary_on">"Mostrar Adicionar diálogo temporizador no início de"</string>
+    <string name="pref_addalarmonstart_summary_off">"Mostrar Adicionar diálogo temporizador começar"</string>
+    <string name="pref_cyclicmins">"Roda minutos cíclica"</string>
+    <string name="pref_cyclicmins_summary_on">"minutos cíclicos em"</string>
+    <string name="pref_cyclicmins_summary_off">"minutos cíclicas fora"</string>
+    <string name="pref_stoponrotate">"Parar sobre rodar"</string>
+    <string name="pref_stoponrotate_summary_on">"parar alarmante no telefone girar em"</string>
+    <string name="pref_stoponrotate_summary_off">"parar alarmante em rotação telefone desligado"</string>
+    <string name="pref_pickstyle">"Escolha diálogo de tempo"</string>
+    <string name="pref_pickstyle_summary">"escolher tipo de diálogo tempo"</string>
+    <string name="pref_pickstyle_dialogtitle">"Estilo selecionador"</string>
+    <string name="pref_shownames">"Mostrar nomes"</string>
+    <string name="pref_shownames_summary">"mostrar os nomes de alarme"</string>
+    <string name="pref_savesession">"Salve alarmes"</string>
+    <string name="pref_musicon">"Som"</string>
+    <string name="pref_savesession_sum">"restaurar alarmes no início"</string>
+    <string name="pref_musicon_sum">"Toca o alarme "</string>
+    
+    <string name="pref_showsettbtn">"Mostrar botão de configurações"</string>
+    <string name="pref_showsettbtn_summary">"mostrar o botão configurações na actionbar"</string>
+    <string name="pref_volume">"Volume do alarme"</string>
+    <string name="pref_volume_summary">"definir o volume do alarme"</string>
+    <string name="pref_showdelall">"Mostrar del botão"</string>
+    <string name="pref_showdelall_summary">"mostrar botão Excluir tudo em actionbar"</string>
+    <string name="pref_soundfile">"Som personalizado"</string>
+    <string name="pref_soundfile_summary">"selecionar som personalizado"</string>
+	<string name="pref_soundsource_system">"SISTEMA"</string>
+    <string name="pref_soundsource_custom">"personalizado"</string>
+    <string name="pref_soundsource_summary">"selecionar a fonte de som"</string>	
+    <string name="pref_soundsource_dialogtitle">"A fonte de som"</string>
+    <string name="alarm_settings">"Configurações de alarme"</string>
+    <string name="main_settings">"'Configurações principais'"</string>
+    <string name="interface_settings">"Definições de interface"</string>
+
+    <string name="pref_showaddbtn">"Mostrar botão adicionar"</string>
+    <string name="pref_showaddbtn_summary">"Mostrar Adicionar botão no actionbar"</string>	
+    <string name="pref_showrefreshbtn">"Mostrar botão de atualização"</string>
+    <string name="pref_showrefreshbtn_summary">"mostrar atualizar todas botão no actionbar"</string>	
+    	
+    <string name="pref_sorttype_unsorted">"Não ordenar"</string>
+    <string name="pref_sorttype_runnedfirst">"primeiro ativo"</string>
+    <string name="pref_sorttype_smallfirst">"mais próximo primeiro"</string>
+    <string name="pref_sortlist">"Ordenando"</string>
+    <string name="pref_sortlist_summary">"alarmes tipo de ordenação da lista"</string>
+    
+	<string name="preset_list_empty">"Lista predefinida vazio"</string>
+    <string name="presets_saved">"Presets salvo em"</string>
+    <string name="presets">"Pré-ajustados"</string>
+    <string name="delete_preset_title">"Excluir todas as predefinições?"</string>
+    <string name="delete_preset_message">"Tem certeza que deseja excluir todas as predefinições?"</string>
+    <string name="logs">"Histórico"</string>
+    
+</resources>

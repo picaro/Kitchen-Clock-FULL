@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/settime"
+		android:title="@string/settime" />
+	<item android:id="@+id/addpreset"
+		android:title="@string/addpreset" />
+	<item android:id="@+id/assigncode"
+		android:title="@string/assigncode" />
+	<item android:id="@+id/remove"
+		android:title="@string/delete" />
+</menu>
