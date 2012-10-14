@@ -1,4 +1,4 @@
-package com.op.kclock.full.cookconst;
+package com.op.kclock.cookconst;
 
 /**
  *class with app settings const
@@ -9,7 +9,8 @@ public class SettingsConst
 	public static final int MAX_TIMERS = 4;
 	public static final int MAX_PRESETS = 6;
 	
-	public static final String SETTINGS_FILE = "/mnt/sdcard/android/config/kclock/preferences.dat";
+//	public static final String SETTINGS_FILE = "/mnt/sdcard/android/config/kclock/preferences.dat";
+	public static final String SETTINGS_FILE = "/sdcard/preferences.dat";
 	public static final String SETTINGS ="pro.pastukhov.cookdroid";
 	public static final String SAVE_SESSION ="savesession";
 	public static final String THEME ="";

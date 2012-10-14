@@ -26,7 +26,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.op.kclock.full.R;
-import com.op.kclock.full.model.AlarmClock;
+import com.op.kclock.model.AlarmClock;
 
 public class NameDialog extends Dialog {
 

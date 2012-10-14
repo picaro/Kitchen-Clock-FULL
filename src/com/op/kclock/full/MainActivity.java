@@ -71,17 +71,17 @@ import android.widget.Toast;
 import com.markupartist.android.widget.ActionBar;
 import com.markupartist.android.widget.ActionBar.Action;
 import com.markupartist.android.widget.ActionBar.IntentAction;
+import com.op.kclock.cookconst.SettingsConst;
 import com.op.kclock.full.R;
 import com.op.kclock.full.alarm.AlarmSingleServiceImpl;
 import com.op.kclock.full.alarm.WakeUpLock;
-import com.op.kclock.full.cookconst.SettingsConst;
 import com.op.kclock.full.dialogs.NameDialog;
 import com.op.kclock.full.dialogs.TimePickDialog;
-import com.op.kclock.full.misc.*;
-import com.op.kclock.full.model.AlarmClock;
-import com.op.kclock.full.model.AlarmClock.TimerState;
-import com.op.kclock.full.utils.*;
+import com.op.kclock.misc.*;
+import com.op.kclock.model.AlarmClock;
+import com.op.kclock.model.AlarmClock.TimerState;
 import com.op.kclock.ui.TextViewWithMenu;
+import com.op.kclock.utils.*;
 
 public class MainActivity extends Activity implements OnClickListener,
 		OnSharedPreferenceChangeListener {

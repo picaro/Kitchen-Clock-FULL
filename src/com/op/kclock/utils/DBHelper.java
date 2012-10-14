@@ -17,7 +17,7 @@
  *  
  */
 
-package com.op.kclock.full.utils;
+package com.op.kclock.utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,10 +28,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.op.kclock.cookconst.*;
 import com.op.kclock.full.MainActivity;
-import com.op.kclock.full.cookconst.*;
-import com.op.kclock.full.misc.*;
-import com.op.kclock.full.model.*;
+import com.op.kclock.misc.*;
+import com.op.kclock.model.*;
 
  /**
     Work with DB. Without orm -

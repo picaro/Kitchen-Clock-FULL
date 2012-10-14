@@ -28,8 +28,8 @@ import android.preference.PreferenceManager;
 
 import com.op.kclock.full.R;
 import com.op.kclock.full.MainActivity;
-import com.op.kclock.full.misc.Log;
-import com.op.kclock.full.model.AlarmClock;
+import com.op.kclock.misc.Log;
+import com.op.kclock.model.AlarmClock;
 
 /**
  * Class that handles Putting alarm to file and to device. So that we can wake

@@ -25,15 +25,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.markupartist.android.widget.ActionBar;
+import com.op.kclock.cookconst.*;
 import com.op.kclock.full.R;
 
 import android.widget.*;
 import android.view.*;
 
-import com.op.kclock.full.cookconst.*;
 import com.op.kclock.full.dialogs.*;
-import com.op.kclock.full.model.AlarmClock;
-import com.op.kclock.full.utils.*;
+import com.op.kclock.model.AlarmClock;
+import com.op.kclock.utils.*;
 
 import android.content.*;
 import java.io.*;

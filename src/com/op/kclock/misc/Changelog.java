@@ -17,12 +17,12 @@
  *  
  */ 
 
-package com.op.kclock.full.misc;
+package com.op.kclock.misc;
 
 
+import com.op.kclock.cookconst.SettingsConst;
 import com.op.kclock.full.R;
-import com.op.kclock.full.cookconst.SettingsConst;
-import com.op.kclock.full.utils.*;
+import com.op.kclock.utils.*;
 //import com.op.kclock.full.settings.Utils;
 
 import android.app.Activity;

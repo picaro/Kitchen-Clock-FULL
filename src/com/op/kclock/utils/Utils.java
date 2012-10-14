@@ -1,4 +1,4 @@
-package com.op.kclock.full.utils ;
+package com.op.kclock.utils ;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.TimeZone;
 import java.util.Map.Entry;
 import com.op.kclock.full.R;
-import com.op.kclock.full.misc.Log;
+import com.op.kclock.misc.Log;
 
 
 import android.content.Context;

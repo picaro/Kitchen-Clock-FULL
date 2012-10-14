@@ -39,7 +39,7 @@ import android.widget.Toast;
 
 import com.op.kclock.full.R;
 import com.op.kclock.full.MainActivity;
-import com.op.kclock.full.model.AlarmClock;
+import com.op.kclock.model.AlarmClock;
 import com.op.kclock.ui.INumberPicker;
 import com.op.kclock.ui.NumberPicker;
 
