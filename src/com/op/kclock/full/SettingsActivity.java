@@ -273,9 +273,10 @@ public class SettingsActivity extends PreferenceActivity implements
 	@Override
 	protected void onPause(){
 		super.onPause();
+		File dirPath = new File(SettingsConst.SETTINGS_FILE.substring(0,SettingsConst.SETTINGS_FILE.lastIndexOf('/')));
+		if (!dirPath.exists()) dirPath.mkdirs();
 		File prefFile = new File(SettingsConst.SETTINGS_FILE);
 		try {
-			prefFile.mkdirs();
 			prefFile.createNewFile();
 			Utils.saveSharedPreferencesToFile(prefFile, getApplicationContext());
 		} catch (IOException e) {

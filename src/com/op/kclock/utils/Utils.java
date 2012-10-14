@@ -1,4 +1,4 @@
-package com.op.kclock.utils ;
+package com.op.kclock.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,6 @@ import java.util.Map.Entry;
 import com.op.kclock.full.R;
 import com.op.kclock.misc.Log;
 
-
 import android.content.Context;
 import android.os.Environment;
 import android.view.View;
@@ -20,7 +19,6 @@ import android.content.*;
 import android.content.SharedPreferences.*;
 import java.util.*;
 import android.preference.*;
-
 
 public class Utils {
 
@@ -49,8 +47,7 @@ public class Utils {
 		}
 	}
 
-
-	public static float dp2px(int dip, Context context){
+	public static float dp2px(int dip, Context context) {
 		float scale = context.getResources().getDisplayMetrics().density;
 		return dip * scale + 0.5f;
 	}
@@ -58,17 +55,19 @@ public class Utils {
 	public static View dialogWebView(Context context, String fileName) {
 		View view = View.inflate(context, R.layout.dialog_webview, null);
 		WebView web = (WebView) view.findViewById(R.id.wv_dialog);
-		web.loadUrl("file:///android_asset/"+fileName);
+		web.loadUrl("file:///android_asset/" + fileName);
 		return view;
 	}
 
 	public static CharSequence readTextFile(Context context, String fileName) {
 		BufferedReader in = null;
 		try {
-			in = new BufferedReader(new InputStreamReader(context.getAssets().open(fileName)));
+			in = new BufferedReader(new InputStreamReader(context.getAssets()
+					.open(fileName)));
 			String line;
 			StringBuilder buffer = new StringBuilder();
-			while ((line = in.readLine()) != null) buffer.append(line).append('\n');
+			while ((line = in.readLine()) != null)
+				buffer.append(line).append('\n');
 			return buffer;
 		} catch (IOException e) {
 			Log.e("readTextFile", "Error readind file " + fileName, e);
@@ -84,84 +83,86 @@ public class Utils {
 		}
 	}
 
-
 	public static boolean isSdPresent() {
-		return Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED);
+		return Environment.getExternalStorageState().equals(
+				android.os.Environment.MEDIA_MOUNTED);
 	}
 
 	private static String prefName = "com.op.kclock.full";
 
-public static boolean saveSharedPreferencesToFile(File dst, Context context) {
-    boolean res = false;
-    ObjectOutputStream output = null;
-    try {
-        output = new ObjectOutputStream(new FileOutputStream(dst));
-        SharedPreferences pref = 
-			PreferenceManager.getDefaultSharedPreferences(context);//(prefName, context.MODE_PRIVATE);
-        output.writeObject(pref.getAll());
+	public static boolean saveSharedPreferencesToFile(File dst, Context context) {
+		boolean res = false;
+		ObjectOutputStream output = null;
+		try {
+			output = new ObjectOutputStream(new FileOutputStream(dst));
+			SharedPreferences pref = PreferenceManager
+					.getDefaultSharedPreferences(context);// (prefName,
+															// context.MODE_PRIVATE);
+			output.writeObject(pref.getAll());
 
-        res = true;
-    } catch (FileNotFoundException e) {
-        e.printStackTrace();
-    } catch (IOException e) {
-        e.printStackTrace();
-    }finally {
-        try {
-            if (output != null) {
-                output.flush();
-                output.close();
-            }
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-    }
-    return res;
-}
+			res = true;
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (output != null) {
+					output.flush();
+					output.close();
+				}
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+		return res;
+	}
 
-@SuppressWarnings({ "unchecked" })
-public static boolean loadSharedPreferencesFromFile(File src, Context context) {
-    boolean res = false;
-    ObjectInputStream input = null;
-    try {
-        input = new ObjectInputStream(new FileInputStream(src));
-		Editor prefEdit =	PreferenceManager.getDefaultSharedPreferences(context) //context.getSharedPreferences(prefName,context.MODE_PRIVATE)
-			.edit();
-            prefEdit.clear();
-            Map<String, ?> entries = (Map<String, ?>) input.readObject();
-            for (Entry<String, ?> entry : entries.entrySet()) {
-                Object v = entry.getValue();
-                String key = entry.getKey();
+	@SuppressWarnings({ "unchecked" })
+	public static boolean loadSharedPreferencesFromFile(File src,
+			Context context) {
+		boolean res = false;
+		ObjectInputStream input = null;
+		try {
+			input = new ObjectInputStream(new FileInputStream(src));
+			Editor prefEdit = PreferenceManager.getDefaultSharedPreferences(
+					context) // context.getSharedPreferences(prefName,context.MODE_PRIVATE)
+					.edit();
+			prefEdit.clear();
+			Map<String, ?> entries = (Map<String, ?>) input.readObject();
+			for (Entry<String, ?> entry : entries.entrySet()) {
+				Object v = entry.getValue();
+				String key = entry.getKey();
 
-                if (v instanceof Boolean)
-                    prefEdit.putBoolean(key, ((Boolean) v).booleanValue());
-                else if (v instanceof Float)
-                    prefEdit.putFloat(key, ((Float) v).floatValue());
-                else if (v instanceof Integer)
-                    prefEdit.putInt(key, ((Integer) v).intValue());
-                else if (v instanceof Long)
-                    prefEdit.putLong(key, ((Long) v).longValue());
-                else if (v instanceof String)
-                    prefEdit.putString(key, ((String) v));
-            }
-            prefEdit.commit();
-        res = true;         
-    } catch (FileNotFoundException e) {
-        e.printStackTrace();
-    } catch (IOException e) {
-        e.printStackTrace();
-    } catch (ClassNotFoundException e) {
-        e.printStackTrace();
-    }finally {
-        try {
-            if (input != null) {
-                input.close();
-            }
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-    }
-    return res;
-}
-
+				if (v instanceof Boolean)
+					prefEdit.putBoolean(key, ((Boolean) v).booleanValue());
+				else if (v instanceof Float)
+					prefEdit.putFloat(key, ((Float) v).floatValue());
+				else if (v instanceof Integer)
+					prefEdit.putInt(key, ((Integer) v).intValue());
+				else if (v instanceof Long)
+					prefEdit.putLong(key, ((Long) v).longValue());
+				else if (v instanceof String)
+					prefEdit.putString(key, ((String) v));
+			}
+			prefEdit.commit();
+			res = true;
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (input != null) {
+					input.close();
+				}
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+		return res;
+	}
 
 }

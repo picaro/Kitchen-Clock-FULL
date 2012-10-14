@@ -130,12 +130,13 @@ public class MainActivity extends Activity implements OnClickListener,
 
 		mPrefs = PreferenceManager.getDefaultSharedPreferences(this
 				.getApplicationContext());
-		if (Utils.isSdPresent()) {
+		if (!mPrefs.getBoolean(SettingsConst.PREF_EULA_ACCEPTED, false) && Utils.isSdPresent()) {
 			File prefFile = new File(SettingsConst.SETTINGS_FILE);
-			// Utils.loadSharedPreferencesFromFile(prefFile,
-			// this.getApplicationContext());
+			Utils.loadSharedPreferencesFromFile(prefFile, this.getApplicationContext());
+			mPrefs = PreferenceManager.getDefaultSharedPreferences(this
+					.getApplicationContext());
 		}
-		;
+
 
 		mPrefs.registerOnSharedPreferenceChangeListener(this);
 
