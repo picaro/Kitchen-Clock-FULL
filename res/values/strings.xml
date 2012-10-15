@@ -206,5 +206,7 @@
     <string name="pref_bg_garlic">garlic</string>	
     <string name="pref_bg_greenpeas">green peas</string>	
     <string name="pref_bg_spaghetti">spaghetti</string>	
+
+ <string name="toast_press_back">Press Back once more to exit</string>
 	
 </resources>
