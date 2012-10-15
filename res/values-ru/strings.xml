@@ -205,4 +205,6 @@
     <string name="pref_bg_greenpeas">горошек</string>	
     <string name="pref_bg_spaghetti">спагетти</string>	
 
+ <string name="toast_press_back">Нажмите назад ещё раз для выхода</string>
+
 		</resources>
