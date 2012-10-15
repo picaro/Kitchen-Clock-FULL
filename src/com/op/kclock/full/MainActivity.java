@@ -111,6 +111,9 @@ public class MainActivity extends Activity implements OnClickListener,
 	public static final int SWIPE_THRESHOLD_VELOCITY = 200;
 	private GestureDetector gestureDetector;
 
+	private long lastPressTime;
+	private static final long DOUBLE_PRESS_INTERVAL = 3000000000l; // value in ns. (3 sek.)
+
 	// ACTIONBAR actions
 	private Action settingsButtonAction;
 	private Action delallAction;
@@ -1253,6 +1256,20 @@ public class MainActivity extends Activity implements OnClickListener,
 				// Handle cancel
 			}
 		}
+	}
+
+
+    @Override
+	public void onBackPressed() {
+		Log.v(LOG_TAG, "onBackPressed() called");
+		long pressTime = System.nanoTime();
+		if (pressTime - lastPressTime <= DOUBLE_PRESS_INTERVAL) {
+			// this is a double click event
+			super.onBackPressed();
+		} else {
+			Toast.makeText(this, getString(R.string.toast_press_back), Toast.LENGTH_SHORT).show();
+		}
+		lastPressTime = pressTime;
 	}
 
 }
