@@ -1,15 +1,12 @@
-#Kitchen-Clock-Lite
+#Kitchen-Clock-Full
 ==================
 
-Android Market: http://goo.gl/EWvy2
 
 ![Kitchen-Clock-Lite](https://lh5.ggpht.com/ZtiLM1nWVGQrfXFeKIrGCR9-JlmNIRUmj4sUiG9whFa2hZfjzC7GU1Vl8Hs7LlGpcCE=h230 "Kitchen-Clock-Lite")  
 
 
 Current work: AlarmClock - will be used for Recipes App
-####    - digital fonts
-####    - tests
-     
+  
       
 
 
