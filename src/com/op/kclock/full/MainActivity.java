@@ -790,16 +790,21 @@ public class MainActivity extends Activity implements OnClickListener,
 			return true;
 		}
 		case R.id.menu_exit: {
-			mNotificationManager.cancelAll();
-			Intent intent = new Intent(Intent.ACTION_MAIN);
-			intent.addCategory(Intent.CATEGORY_HOME);
-			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			startActivity(intent);
-			finish();
+			exit();
 		}
 
 		}
 		return false;
+	}
+
+	private void exit()
+	{
+		mNotificationManager.cancelAll();
+		Intent intent = new Intent(Intent.ACTION_MAIN);
+		intent.addCategory(Intent.CATEGORY_HOME);
+		intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		startActivity(intent);
+		finish();
 	}
 
 	private Intent goSettings() {
@@ -1261,11 +1266,12 @@ public class MainActivity extends Activity implements OnClickListener,
 
     @Override
 	public void onBackPressed() {
-		Log.v(LOG_TAG, "onBackPressed() called");
+		Log.v(TAG, "onBackPressed() called");
 		long pressTime = System.nanoTime();
 		if (pressTime - lastPressTime <= DOUBLE_PRESS_INTERVAL) {
 			// this is a double click event
 			super.onBackPressed();
+			exit();
 		} else {
 			Toast.makeText(this, getString(R.string.toast_press_back), Toast.LENGTH_SHORT).show();
 		}
