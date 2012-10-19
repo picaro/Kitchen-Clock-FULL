@@ -1291,13 +1291,18 @@ public class MainActivity extends Activity implements OnClickListener,
 		}
 	}
 
-	final String URL_GET_PRODUCT_BY_BARCODE = "http://cookapp-cloud.cloudfoundry.com/barcode/";
+	final String URL_GET_PRODUCT_BY_BARCODE = 
+			//"http://api.flickr.com/services/rest/?method=flickr.test.echo&api_key=7bd34ffecaa99671dd679e6a4dd71c29&format=json&nojsoncallback=1&api_sig=93bd49f3f340bf4772050e1d85f35b9c";
+			
+			"http://cookapp-cloud.cloudfoundry.com/barcode/";
 
 	private JSONObject getProductFromGlobalDB(String contents)
 			throws ClientProtocolException, IOException, JSONException {
 		StringBuilder fullUrl = new StringBuilder(URL_GET_PRODUCT_BY_BARCODE);
 		fullUrl.append(contents);
 		HttpClient client = new DefaultHttpClient();
+		
+		Log.e(TAG,"getProd");
 
 		HttpContext localContext = new BasicHttpContext();
 		
@@ -1306,7 +1311,8 @@ public class MainActivity extends Activity implements OnClickListener,
 		//HttpResponse response = client.execute(get);
 		//client.
 		int statusCode = response.getStatusLine().getStatusCode();
-		if (statusCode == 404) {
+		Log.e(TAG,"getProdstatus" + statusCode);
+		if (statusCode == 200) {
 			HttpEntity entity = response.getEntity();
 			String json = EntityUtils.toString(entity);
 			//JSONArray bunchOfTweets = new JSONArray(json);
