@@ -27,6 +27,19 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.protocol.BasicHttpContext;
+import org.apache.http.protocol.HttpContext;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import android.app.Activity;
 import android.app.AlarmManager;
 import android.app.Notification;
@@ -112,7 +125,9 @@ public class MainActivity extends Activity implements OnClickListener,
 	private GestureDetector gestureDetector;
 
 	private long lastPressTime;
-	private static final long DOUBLE_PRESS_INTERVAL = 3000000000l; // value in ns. (3 sek.)
+	private static final long DOUBLE_PRESS_INTERVAL = 3000000000l; // value in
+																	// ns. (3
+																	// sek.)
 
 	// ACTIONBAR actions
 	private Action settingsButtonAction;
@@ -133,13 +148,14 @@ public class MainActivity extends Activity implements OnClickListener,
 
 		mPrefs = PreferenceManager.getDefaultSharedPreferences(this
 				.getApplicationContext());
-		if (!mPrefs.getBoolean(SettingsConst.PREF_EULA_ACCEPTED, false) && Utils.isSdPresent()) {
+		if (!mPrefs.getBoolean(SettingsConst.PREF_EULA_ACCEPTED, false)
+				&& Utils.isSdPresent()) {
 			File prefFile = new File(SettingsConst.SETTINGS_FILE);
-			Utils.loadSharedPreferencesFromFile(prefFile, this.getApplicationContext());
+			Utils.loadSharedPreferencesFromFile(prefFile,
+					this.getApplicationContext());
 			mPrefs = PreferenceManager.getDefaultSharedPreferences(this
 					.getApplicationContext());
 		}
-
 
 		mPrefs.registerOnSharedPreferenceChangeListener(this);
 
@@ -797,8 +813,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		return false;
 	}
 
-	private void exit()
-	{
+	private void exit() {
 		mNotificationManager.cancelAll();
 		Intent intent = new Intent(Intent.ACTION_MAIN);
 		intent.addCategory(Intent.CATEGORY_HOME);
@@ -1240,6 +1255,19 @@ public class MainActivity extends Activity implements OnClickListener,
 					toast.show();
 					return;
 				} else {
+					try {
+						getProductFromGlobalDB(contents);
+					} catch (ClientProtocolException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (JSONException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+
 					DBHelper dbHelper = new DBHelper(getApplicationContext());
 					// select min alarm and make caller
 					AlarmClock alarm = dbHelper.presetBySCode(contents);
@@ -1263,8 +1291,36 @@ public class MainActivity extends Activity implements OnClickListener,
 		}
 	}
 
+	final String URL_GET_PRODUCT_BY_BARCODE = "http://cookapp-cloud.cloudfoundry.com/barcode/";
 
-    @Override
+	private JSONObject getProductFromGlobalDB(String contents)
+			throws ClientProtocolException, IOException, JSONException {
+		StringBuilder fullUrl = new StringBuilder(URL_GET_PRODUCT_BY_BARCODE);
+		fullUrl.append(contents);
+		HttpClient client = new DefaultHttpClient();
+
+		HttpContext localContext = new BasicHttpContext();
+		
+		HttpGet get = new HttpGet(fullUrl.toString());
+		HttpResponse response = client.execute(get, localContext);
+		//HttpResponse response = client.execute(get);
+		//client.
+		int statusCode = response.getStatusLine().getStatusCode();
+		if (statusCode == 404) {
+			HttpEntity entity = response.getEntity();
+			String json = EntityUtils.toString(entity);
+			//JSONArray bunchOfTweets = new JSONArray(json);
+			JSONObject mostRecentTweet = new JSONObject(json);//bunchOfTweets.getJSONObject(0);
+			return mostRecentTweet;
+		} else {
+			String reason = response.getStatusLine().getReasonPhrase();
+			throw new RuntimeException("Trouble reading status(code="
+					+ statusCode + "):" + reason);
+		}
+
+	}
+
+	@Override
 	public void onBackPressed() {
 		Log.v(TAG, "onBackPressed() called");
 		long pressTime = System.nanoTime();
@@ -1273,7 +1329,8 @@ public class MainActivity extends Activity implements OnClickListener,
 			super.onBackPressed();
 			exit();
 		} else {
-			Toast.makeText(this, getString(R.string.toast_press_back), Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, getString(R.string.toast_press_back),
+					Toast.LENGTH_SHORT).show();
 		}
 		lastPressTime = pressTime;
 	}
