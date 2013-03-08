@@ -99,7 +99,7 @@ import com.op.kclock.utils.*;
 public class MainActivity extends Activity implements OnClickListener,
 		OnSharedPreferenceChangeListener {
 
-	private static final int MAX_ALARM_TSIZE = 200;
+	private static final int MAX_ALARM_TSIZE = 150;
 	private static final String SCANER_ACTIVITY = "com.google.zxing.client.android.SCAN";
 	private static final int ALPHA_CLOCK = 80;
 	private static final int DEF_TEXT_SIZE = 66;
@@ -144,7 +144,7 @@ public class MainActivity extends Activity implements OnClickListener,
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.alarmclock);
+		setContentView(R.layout.alarmclock_tab);
 
 		mPrefs = PreferenceManager.getDefaultSharedPreferences(this
 				.getApplicationContext());
@@ -166,6 +166,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		}
 
 		Log.d(TAG, "start");
+		
 
 		mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 		notification();
@@ -233,7 +234,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		}
 
 		gestureDetector = new GestureDetector(new MyGestureDetector());
-		View mainview = findViewById(R.id.mainScroll);
+		View mainview = findViewById(R.id.alarm_layout_main);
 		// Set the touch listener for the main view to be our custom gesture
 		// listener
 		mainview.setOnTouchListener(new View.OnTouchListener() {
@@ -254,6 +255,8 @@ public class MainActivity extends Activity implements OnClickListener,
 								false));
 
 	}
+	
+	
 
 	private void updateBackGround() {
 		boolean vLay = getWindowManager().getDefaultDisplay().getHeight() > getWindowManager()
@@ -480,16 +483,31 @@ public class MainActivity extends Activity implements OnClickListener,
 	@Override
 	protected void onStart() {
 		super.onStart();
-
 		Log.d(TAG, "MainActivity: onStart()");
+		turnOnValue();
+	}
+
+
+
+	private void turnOnValue() {
+		//turn on sound
+		if (mPrefs.getBoolean(
+			   getApplicationContext().getString(
+						R.string.pref_overridevolume_key), true)) {
+			AudioManager audioManager = 
+				    (AudioManager)getSystemService(Context.AUDIO_SERVICE);
+			if (audioManager.getStreamVolume(AudioManager.STREAM_MUSIC) < 2){
+				audioManager.setStreamVolume(AudioManager.STREAM_MUSIC,
+				                             10, 0);
+			}
+		}
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
-		if (isTimerActive()) {
+		turnOnValue();
 
-		}
 
 		if (alarmList.size() == 0) {
 			if (mPrefs.getBoolean(SettingsConst.PREF_EULA_ACCEPTED, false)
@@ -569,16 +587,12 @@ public class MainActivity extends Activity implements OnClickListener,
 	protected void onRestoreInstanceState(Bundle savedInstanceState) {
 		Log.d("oo", "onrestore");
 		super.onRestoreInstanceState(savedInstanceState);
-		// alarmList =
-		// savedInstanceState.getParcelableArrayList("SAVE_SELECTED");
 	}
 
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {
 		Log.d("oo", "onsave");
 		super.onSaveInstanceState(savedInstanceState);
-		// savedInstanceState.putParcelableArrayList("SAVE_SELECTED",
-		// alarmList);
 	}
 
 	private void drawAlarms() {
@@ -729,7 +743,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		final float scaledPx = DEF_TEXT_SIZE * densityMultiplier;
 		paint.setTextSize(scaledPx);
 		final float size = paint.measureText("00:00:00");
-		int tsize = (int) (DEF_TEXT_SIZE * (width / size) - 10);
+		int tsize = (int) ((DEF_TEXT_SIZE * (width / size) - 10)/2.3);
 		if (tsize > MAX_ALARM_TSIZE)
 			tsize = (int) (tsize - tsize * 0.3);
 		alarm.getWidget().setTextSize(tsize);
@@ -897,6 +911,21 @@ public class MainActivity extends Activity implements OnClickListener,
 			toast.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
 			toast.show();
 		}
+		
+        refreshPresets();
+		
+        
+	}
+
+
+
+	private void refreshPresets() {
+		PresetsFragment fragment = (PresetsFragment) getFragmentManager()
+                .findFragmentById(R.id.lpresetsf);
+        final LinearLayout presetsList = (LinearLayout) fragment.getView().findViewById(R.id.presets_list);
+        presetsList.refreshDrawableState();
+        fragment.getActivity().finish();
+        fragment.startActivity(fragment.getActivity().getIntent());
 	}
 
 	// ============================================================
@@ -1172,6 +1201,14 @@ public class MainActivity extends Activity implements OnClickListener,
 
 	class MyGestureDetector extends SimpleOnGestureListener {
 
+//        @Override
+//        public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+//            if(Math.abs(distanceY) > Math.abs(distanceX)) {
+//                 return false;
+//            }
+//            return true;
+//        }
+	    
 		@Override
 		public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
 				float velocityY) {
@@ -1255,18 +1292,18 @@ public class MainActivity extends Activity implements OnClickListener,
 					toast.show();
 					return;
 				} else {
-					try {
-						getProductFromGlobalDB(contents);
-					} catch (ClientProtocolException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} catch (IOException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					} catch (JSONException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+//					try {
+//						getProductFromGlobalDB(contents);
+//					} catch (ClientProtocolException e) {
+//						// TODO Auto-generated catch block
+//						e.printStackTrace();
+//					} catch (IOException e) {
+//						// TODO Auto-generated catch block
+//						e.printStackTrace();
+//					} catch (JSONException e) {
+//						// TODO Auto-generated catch block
+//						e.printStackTrace();
+//					}
 
 					DBHelper dbHelper = new DBHelper(getApplicationContext());
 					// select min alarm and make caller

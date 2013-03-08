@@ -109,22 +109,6 @@ public class AlarmSingleServiceImpl implements Runnable {
 				Log.d(MainActivity.TAG, ":" + isRunning);
 				AudioManager am = (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
 				if (isRunning) {
-					if (mPrefs.getBoolean(
-							context.getString(
-									R.string.pref_overridevolume_key), false)) {
-						ringerMode = am.getRingerMode();
-						am.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
-						// am.setMode(AudioManager.MODE_NORMAL);
-
-//						int vol = mPrefs
-//								.getInt(context.getString(
-//										R.string.pref_volume_key), 1);
-						//Log.e(TAG,"vol-"+ am.getStreamVolume(AudioManager.STREAM_NOTIFICATION));
-						// Set the volume of played media to maximum.
-						am.setStreamVolume(AudioManager.STREAM_NOTIFICATION ,
-						  am.getStreamMaxVolume(AudioManager.STREAM_NOTIFICATION),0);
-					}
-
 					WakeUpLock.acquire(context);
 				} else {
 					if (ringerMode != null) am.setRingerMode(ringerMode);					

@@ -70,7 +70,7 @@
     <string name="pref_notification_led">Индикация</string>
     <string name="pref_notification_led_summary_on">Световая индикация включена</string>
     <string name="pref_notification_led_summary_off">Световая индикация выкл</string>
-    <string name="pref_notification_led_color">Цвет света</string>
+    <string name="pref_notification_led_color">Цвет индикации</string>
     <string name="pref_notification_led_color_summary">Изменить цвет индикации</string>
     <string name="pref_notification_led_color_dialogtitle">Выбрать цвет индикации</string>
     <string name="pref_notification_led_color_green">Зеленый</string>
@@ -173,7 +173,7 @@
 	<string name="pref_overridevolume">Приоритет громкости</string>
     <string name="pref_overridevolume_summary_on">использовать свою громкость</string>	
     <string name="pref_overridevolume_summary_off">использовать системную громкость</string>	
-	<string name="addpreset">Add preset</string>
+	<string name="addpreset">Добавить пресет</string>
     <string name="pref_advancedsettings">show advanced settings</string>	
     <string name="pref_advancedsettings_summary">show additional</string>	
     <string name="pref_hideadvsettings">hide advanced settings</string>	
