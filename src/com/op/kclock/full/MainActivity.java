@@ -60,6 +60,7 @@ import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Parcelable;
 import android.preference.PreferenceManager;
 import android.view.ContextMenu;
 import android.view.GestureDetector;
@@ -99,10 +100,9 @@ import com.op.kclock.utils.*;
 public class MainActivity extends Activity implements OnClickListener,
 		OnSharedPreferenceChangeListener {
 
-	private static final int MAX_ALARM_TSIZE = 150;
+	private static final String SAVE_SELECTED = "SAVE_SELECTED";
 	private static final String SCANER_ACTIVITY = "com.google.zxing.client.android.SCAN";
 	private static final int ALPHA_CLOCK = 80;
-	private static final int DEF_TEXT_SIZE = 66;
 	public static final String SMALLFIRST = "smallfirst";
 	public static final String UNSORTED = "unsorted";
 	public static final String RUNNEDFIRST = "runnedfirst";
@@ -146,6 +146,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.alarmclock_tab);
 
+		
 		mPrefs = PreferenceManager.getDefaultSharedPreferences(this
 				.getApplicationContext());
 		if (!mPrefs.getBoolean(SettingsConst.PREF_EULA_ACCEPTED, false)
@@ -167,10 +168,14 @@ public class MainActivity extends Activity implements OnClickListener,
 
 		Log.d(TAG, "start");
 		
-
+		
 		mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 		notification();
 
+		if (thread != null ) {
+			return;
+		}
+		
 		if (this.getIntent() != null) {
 			AlarmClock alarm = (AlarmClock) this.getIntent()
 					.getParcelableExtra("alarm_extra");
@@ -433,7 +438,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		updateBackGround();
 		int height = getWindowManager().getDefaultDisplay().getHeight();
 		for (AlarmClock alarm : alarmList) {
-			updateAlarmSize(alarm);
+			alarm.updateAlarmSize();
 		}
 		if (timePickDialog != null && timePickDialog.isShowing()) {
 			LinearLayout subscr = (LinearLayout) timePickDialog
@@ -520,6 +525,10 @@ public class MainActivity extends Activity implements OnClickListener,
 				addAlarmDialog();
 			}
 		}
+		
+		for (AlarmClock alarm : alarmList) {
+			alarm.updateAlarmSize();
+		}
 		Log.d(TAG, "MainActivity: onResume()");
 	}
 
@@ -537,29 +546,7 @@ public class MainActivity extends Activity implements OnClickListener,
 	protected void onPause() {
 		super.onPause();
 		if (isTimerActive()) {
-			// sort
 			Log.e(TAG, "pause() active");
-			if (alarmList.get(0).getState() == AlarmClock.TimerState.RUNNING) {
-				// Log.e(TAG, "act status");
-				//
-				// AlarmManager am = (AlarmManager)
-				// getApplicationContext().getSystemService(Context.ALARM_SERVICE);
-				//
-				// Intent intent = new Intent(SettingsConst.INTENT_TIMER_ENDED);
-				// intent.putExtra(ID, 2);
-				// intent.putExtra(LABEL, "sdsd");
-				// Long atTimeInMillis = System.currentTimeMillis() +
-				// alarmList.get(0).getTime() * 1000;
-				// intent.putExtra(TIME, atTimeInMillis);
-				// PendingIntent sender = PendingIntent.getBroadcast(
-				// getApplicationContext(), 0, intent,
-				// PendingIntent.FLAG_CANCEL_CURRENT);
-				//
-				// am.set(AlarmManager.RTC_WAKEUP, atTimeInMillis, sender);
-
-				// AlarmClock.sendTimeIsOverNotification(0,this.getApplicationContext(),
-				// alarmList.get(0).getTime());
-			}
 		}
 
 		if (mPrefs.getBoolean(
@@ -585,18 +572,27 @@ public class MainActivity extends Activity implements OnClickListener,
 	}
 
 	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-		Log.d("oo", "onrestore");
+		Log.d(TAG, "onrestore " + " alarmList: " + alarmList);
 		super.onRestoreInstanceState(savedInstanceState);
+		alarmList = savedInstanceState.getParcelableArrayList(SAVE_SELECTED);
+		for(AlarmClock alarm : alarmList){
+			alarm.setElement(null);
+		}
+		drawAlarms();
 	}
 
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {
-		Log.d("oo", "onsave");
+		Log.d(TAG, "onsave" + " alarmList: " + alarmList);
 		super.onSaveInstanceState(savedInstanceState);
+		savedInstanceState.putParcelableArrayList(SAVE_SELECTED,(ArrayList<? extends Parcelable>) alarmList);
 	}
 
 	private void drawAlarms() {
 		// sort
+		Log.d(TAG, "draw" + " alarmList: " + alarmList);
+		
+		
 		String sortType = mPrefs.getString(
 				getApplicationContext().getString(R.string.pref_sortlist_key),
 				UNSORTED);
@@ -607,6 +603,8 @@ public class MainActivity extends Activity implements OnClickListener,
 			AlarmClock.NearestActiveFirstComparator comparator = new AlarmClock.NearestActiveFirstComparator();
 			Collections.sort(alarmList, comparator);
 		}
+
+		Log.d(TAG, "SORTED" + " alarmList: " + alarmList);
 		for (AlarmClock alarm : alarmList) {
 			drawAlarm(alarm);
 		}
@@ -694,10 +692,11 @@ public class MainActivity extends Activity implements OnClickListener,
 		// add the itemView
 		alarm.updateState();
 
-		updateAlarmSize(alarm);
-
 		if (alarm.getElement() == null)
 			throw new IllegalArgumentException();
+		
+		alarm.updateAlarmSize();
+
 		return alarm.getElement();
 	}
 
@@ -735,20 +734,6 @@ public class MainActivity extends Activity implements OnClickListener,
 		});
 	}
 
-	private void updateAlarmSize(AlarmClock alarm) {
-		int width = getWindowManager().getDefaultDisplay().getWidth();
-		final float densityMultiplier = getApplicationContext().getResources()
-				.getDisplayMetrics().density;
-		Paint paint = new Paint();
-		final float scaledPx = DEF_TEXT_SIZE * densityMultiplier;
-		paint.setTextSize(scaledPx);
-		final float size = paint.measureText("00:00:00");
-		int tsize = (int) ((DEF_TEXT_SIZE * (width / size) - 10)/2.3);
-		if (tsize > MAX_ALARM_TSIZE)
-			tsize = (int) (tsize - tsize * 0.3);
-		alarm.getWidget().setTextSize(tsize);
-		((TextView) alarm.getElement().getChildAt(0)).setTextSize(tsize / 3);
-	}
 
 	// ON-CLICK
 
@@ -775,7 +760,7 @@ public class MainActivity extends Activity implements OnClickListener,
 		if (sortType != UNSORTED) {
 			LinearLayout mainL = (LinearLayout) findViewById(R.id.alarm_layout);
 			mainL.removeAllViews();
-			this.drawAlarms();
+			drawAlarms();
 		}
 	}
 

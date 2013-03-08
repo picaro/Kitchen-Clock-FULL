@@ -19,6 +19,8 @@
 package com.op.kclock.model;
 
 import java.util.ArrayList;
+
+import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import java.util.Comparator;
 
 import android.app.Notification;
@@ -28,12 +30,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
@@ -49,9 +53,15 @@ import android.provider.*;
 
 public class AlarmClock implements Parcelable {
 
+	private static final int MAX_ALARM_TSIZE = 150;
+	
+	private static final int DEF_TEXT_SIZE = 66;
+	
 	private static final int MINUTE = 60;
 
 	private static final int HOUR = 3600;
+
+	private static final String TAG = null;
 
 	private int id;
 
@@ -221,6 +231,38 @@ public class AlarmClock implements Parcelable {
 				.getSystemService(ns);
 	}
 
+	/**
+	 * Change size of alarm element
+	 * @param alarm
+	 */
+	public void updateAlarmSize() {
+
+		final LinearLayout ll = ((LinearLayout)getElement().getParent().getParent());
+		
+		ll.getViewTreeObserver().addOnGlobalLayoutListener(
+		        new OnGlobalLayoutListener() {
+
+		            @Override
+		            public void onGlobalLayout() {
+		                int width = ll.getWidth();
+//		        		Log.d(TAG, "updateAlarmSize()" + " width: " + width);
+		        		final float densityMultiplier = context.getResources()
+		        				.getDisplayMetrics().density;
+		        		Paint paint = new Paint();
+		        		final float scaledPx = DEF_TEXT_SIZE * densityMultiplier;
+		        		paint.setTextSize(scaledPx);
+		        		final float size = paint.measureText("00:00:00");
+		        		int tsize = (int) ((DEF_TEXT_SIZE * (width / size) - 10)/1.3);
+		        		if (tsize > MAX_ALARM_TSIZE)
+		        			tsize = (int) (tsize - tsize * 0.3);
+		        		getWidget().setTextSize(tsize);
+		        		((TextView) getElement().getChildAt(0)).setTextSize(tsize / 3);
+		            }
+		        });
+		
+	}
+
+	
 	public void updateElement() {
 		if (element != null) {
 			getWidget().post(new Runnable() {
@@ -239,7 +281,6 @@ public class AlarmClock implements Parcelable {
 						getLabelWidget().setText(getName());
 				}
 			});
-
 		}
 	}
 	
@@ -319,6 +360,7 @@ public class AlarmClock implements Parcelable {
 		sCode = parcel.readString();
 		preset = (parcel.readInt()==1)? true : false;
 		initSeconds = parcel.readLong();
+		this.element = null;
 	}
 
 	public TextView getWidget() {
