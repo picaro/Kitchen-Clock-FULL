@@ -96,6 +96,8 @@ import com.op.kclock.model.AlarmClock;
 import com.op.kclock.model.AlarmClock.TimerState;
 import com.op.kclock.ui.TextViewWithMenu;
 import com.op.kclock.utils.*;
+import java.util.*;
+import com.op.kclock.full.alarm.*;
 
 public class MainActivity extends Activity implements OnClickListener,
 		OnSharedPreferenceChangeListener {
@@ -113,6 +115,8 @@ public class MainActivity extends Activity implements OnClickListener,
 	private ActionBar actionBar;
 	private List<AlarmClock> alarmList = new ArrayList<AlarmClock>();
 
+	private AlarmManager alarmManager;
+	
 	public final static String ID = "alarm_id";
 	public final static String TIME = "alarm_time";
 	public final static String LABEL = "alarm_label";
@@ -168,6 +172,8 @@ public class MainActivity extends Activity implements OnClickListener,
 
 		Log.d(TAG, "start");
 		
+		alarmManager = 
+            (AlarmManager)getSystemService(Activity.ALARM_SERVICE);
 		
 		mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 		notification();
@@ -612,6 +618,18 @@ public class MainActivity extends Activity implements OnClickListener,
 
 	private void addAlarm(AlarmClock newAlarm) {
 
+		//Create an offset from the current time in which the alarm will go off.
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.SECOND, (int) newAlarm.getTime());
+
+        //Create a new PendingIntent and add it to the AlarmManager
+        Intent intent = this.getIntent();//new Intent(this, MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(this,
+											12345, intent, PendingIntent.FLAG_CANCEL_CURRENT);
+        alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(),
+			   pendingIntent);
+		newAlarm.setPendingIntent(pendingIntent);
+		
 		if (newAlarm.getElement() == null) {
 			drawAlarm(newAlarm);
 			if (newAlarm.getElement() != null) {
@@ -918,8 +936,10 @@ public class MainActivity extends Activity implements OnClickListener,
 	// ============================================================
 	private void deleteAllAlarms(boolean allowDialog) {
 
+			Log.e(TAG,"del all" );
 		DBHelper dbHelper = new DBHelper(getApplicationContext());
 		dbHelper.open();
+		Log.e(TAG,"del all 2" );
 		for (final AlarmClock alarm : alarmList) {
 
 			if (alarm.getElement() != null)
@@ -929,12 +949,18 @@ public class MainActivity extends Activity implements OnClickListener,
 			if (alarm.getId() > 0) {
 				dbHelper.deleteAlarm(alarm.getId());
 			}
+			
 			alarm.alarmSTOP();
 			alarm.setElement(null); // TODO clean!
 			alarm.setTime(-1);// used for debug. ensure thay deleted
+			
+			Log.e(TAG,"aaa" + alarm.getPendingIntent() );
+			if (alarm.getPendingIntent() != null) alarmManager.cancel(alarm.getPendingIntent());
 		}
 		dbHelper.close();
 		alarmList.clear();
+		
+
 		if (allowDialog
 				&& mPrefs.getBoolean(
 						getApplicationContext().getString(

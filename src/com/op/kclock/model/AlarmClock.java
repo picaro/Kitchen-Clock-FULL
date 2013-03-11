@@ -94,6 +94,18 @@ public class AlarmClock implements Parcelable {
 
 	private NotificationManager mNotificationManager;
 
+	private PendingIntent pendingIntent;
+
+	public void setPendingIntent(PendingIntent pendingIntent)
+	{
+		this.pendingIntent = pendingIntent;
+	}
+
+	public PendingIntent getPendingIntent()
+	{
+		return pendingIntent;
+	}
+	
 	public static enum TimerState {
 		STOPPED, PAUSED, RUNNING, ALARMING
 		};
@@ -255,7 +267,8 @@ public class AlarmClock implements Parcelable {
 		        		int tsize = (int) ((DEF_TEXT_SIZE * (width / size) - 10)/1.3);
 		        		if (tsize > MAX_ALARM_TSIZE)
 		        			tsize = (int) (tsize - tsize * 0.3);
-		        		getWidget().setTextSize(tsize);
+		        		if (getWidget() == null) return;
+						getWidget().setTextSize(tsize);
 		        		((TextView) getElement().getChildAt(0)).setTextSize(tsize / 3);
 		            }
 		        });
