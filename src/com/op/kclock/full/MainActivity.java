@@ -19,26 +19,23 @@
 package com.op.kclock.full;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FilterInputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.protocol.BasicHttpContext;
-import org.apache.http.protocol.HttpContext;
-import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+//import java.io.IOException;
+//import org.apache.http.HttpEntity;
+//import org.apache.http.HttpResponse;
+//import org.apache.http.client.ClientProtocolException;
+//import org.apache.http.client.HttpClient;
+//import org.apache.http.client.methods.HttpGet;
+//import org.apache.http.impl.client.DefaultHttpClient;
+//import org.apache.http.protocol.BasicHttpContext;
+//import org.apache.http.protocol.HttpContext;
+//import org.apache.http.util.EntityUtils;
+//import org.json.JSONException;
+//import org.json.JSONObject;
 
 import android.app.Activity;
 import android.app.AlarmManager;
@@ -52,11 +49,8 @@ import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.res.Configuration;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Paint;
+import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.Handler;
@@ -86,18 +80,18 @@ import com.markupartist.android.widget.ActionBar;
 import com.markupartist.android.widget.ActionBar.Action;
 import com.markupartist.android.widget.ActionBar.IntentAction;
 import com.op.kclock.cookconst.SettingsConst;
-import com.op.kclock.full.R;
 import com.op.kclock.full.alarm.AlarmSingleServiceImpl;
 import com.op.kclock.full.alarm.WakeUpLock;
 import com.op.kclock.full.dialogs.NameDialog;
 import com.op.kclock.full.dialogs.TimePickDialog;
-import com.op.kclock.misc.*;
+import com.op.kclock.misc.Changelog;
+import com.op.kclock.misc.Eula;
+import com.op.kclock.misc.Log;
 import com.op.kclock.model.AlarmClock;
 import com.op.kclock.model.AlarmClock.TimerState;
 import com.op.kclock.ui.TextViewWithMenu;
-import com.op.kclock.utils.*;
-import java.util.*;
-import com.op.kclock.full.alarm.*;
+import com.op.kclock.utils.DBHelper;
+import com.op.kclock.utils.Utils;
 
 public class MainActivity extends Activity implements OnClickListener,
 		OnSharedPreferenceChangeListener {
@@ -120,7 +114,7 @@ public class MainActivity extends Activity implements OnClickListener,
 	public final static String ID = "alarm_id";
 	public final static String TIME = "alarm_time";
 	public final static String LABEL = "alarm_label";
-	private static String prefName = "com.op.kclock.full";
+	//private static String prefName = "com.op.kclock.full";
 
 	// fling
 	public static final int SWIPE_MIN_DISTANCE = 120;
@@ -145,6 +139,7 @@ public class MainActivity extends Activity implements OnClickListener,
 	private static Thread thread;
 
 	/** Called when the activity is first created. */
+	@SuppressWarnings("deprecation")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -269,9 +264,12 @@ public class MainActivity extends Activity implements OnClickListener,
 	
 	
 
+	@SuppressWarnings("deprecation")
 	private void updateBackGround() {
-		boolean vLay = getWindowManager().getDefaultDisplay().getHeight() > getWindowManager()
-				.getDefaultDisplay().getWidth();
+		
+		Point size = getDisplaySize();
+
+		boolean vLay = size.y > size.x;
 
 		String bgSRC = mPrefs.getString(
 				getApplicationContext().getString(R.string.pref_bgsource_key),
@@ -319,6 +317,14 @@ public class MainActivity extends Activity implements OnClickListener,
 				mainV.setBackgroundResource(R.drawable.bg_spaghetti_h);
 			}
 		}
+	}
+
+
+
+	private Point getDisplaySize() {
+		Point size = new Point();
+		getWindowManager().getDefaultDisplay().getSize(size);
+		return size;
 	}
 
 	private void initActionBar() {
@@ -440,9 +446,13 @@ public class MainActivity extends Activity implements OnClickListener,
 
 	@Override
 	public void onConfigurationChanged(Configuration newConfig) {
+		
 		super.onConfigurationChanged(newConfig);
 		updateBackGround();
-		int height = getWindowManager().getDefaultDisplay().getHeight();
+		
+		Point size = getDisplaySize();
+		
+		int height = size.x;
 		for (AlarmClock alarm : alarmList) {
 			alarm.updateAlarmSize();
 		}
@@ -480,16 +490,16 @@ public class MainActivity extends Activity implements OnClickListener,
 		}
 	}
 
-	// Store the instance of an object
-	@Override
-	public Object onRetainNonConfigurationInstance() {
-
-		Log.d(TAG, "retain");
-
-		if (alarmList != null) // Check that the object exists
-			return (alarmList);
-		return super.onRetainNonConfigurationInstance();
-	}
+//	// Store the instance of an object
+//	@Override
+//	public Object onRetainNonConfigurationInstance() {
+//
+//		Log.d(TAG, "retain");
+//
+//		if (alarmList != null) // Check that the object exists
+//			return (alarmList);
+//		return super.onRetainNonConfigurationInstance();
+//	}
 
 	@Override
 	protected void onStart() {
@@ -670,14 +680,14 @@ public class MainActivity extends Activity implements OnClickListener,
 			alarm.setElement(itemView);
 
 			mainL.addView(alarm.getElement(),// mainL.getChildCount() - 1
-					new TableLayout.LayoutParams(LayoutParams.FILL_PARENT,
+					new TableLayout.LayoutParams(LayoutParams.MATCH_PARENT,
 							LayoutParams.WRAP_CONTENT));
 			TextViewWithMenu textView = (TextViewWithMenu) (alarm.getWidget());
 			textView.setAlarm(alarm);
 		} else {
 			if (alarm.getElement().getParent() == null) {
 				mainL.addView(alarm.getElement(), new TableLayout.LayoutParams(
-						LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+						LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			}
 		}
 		alarm.updateElement();
@@ -898,9 +908,6 @@ public class MainActivity extends Activity implements OnClickListener,
 
 	private void addPreset(TextViewWithMenu text) {
 		DBHelper dbHelper = new DBHelper(getApplicationContext());
-		if (SettingsConst.APP_FULL
-				|| dbHelper.getPresetsList().size() < SettingsConst.MAX_PRESETS) {
-
 			for (final AlarmClock alarm : alarmList) {
 				if (alarm.getElement() != null
 						&& alarm.getElement().getChildAt(1) == (TextViewWithMenu) text) {
@@ -908,13 +915,6 @@ public class MainActivity extends Activity implements OnClickListener,
 					alarm.setPreset(true);
 				}
 			}
-		} else {
-			Toast toast = Toast.makeText(this, getString(R.string.liteallow),
-					Toast.LENGTH_LONG);
-			toast.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
-			toast.show();
-		}
-		
         refreshPresets();
 		
         
@@ -955,7 +955,8 @@ public class MainActivity extends Activity implements OnClickListener,
 			alarm.setTime(-1);// used for debug. ensure thay deleted
 			
 			Log.e(TAG,"aaa" + alarm.getPendingIntent() );
-			if (alarm.getPendingIntent() != null) alarmManager.cancel(alarm.getPendingIntent());
+			if (alarm.getPendingIntent() != null)
+				alarmManager.cancel(alarm.getPendingIntent());
 		}
 		dbHelper.close();
 		alarmList.clear();
@@ -1052,17 +1053,9 @@ public class MainActivity extends Activity implements OnClickListener,
 	// ************************* end Getters Setters ************
 
 	private void addAlarmDialog() {
-		if (SettingsConst.APP_FULL
-				|| alarmList.size() < SettingsConst.MAX_TIMERS) {
-			if (timePickDialog == null
-					|| (timePickDialog != null && !timePickDialog.isShowing())) {
-				setAlarmDialog(null);
-			}
-		} else {
-			Toast toast = Toast.makeText(this, getString(R.string.liteallow),
-					Toast.LENGTH_LONG);
-			toast.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
-			toast.show();
+		if (timePickDialog == null
+				|| (timePickDialog != null && !timePickDialog.isShowing())) {
+			setAlarmDialog(null);
 		}
 	}
 
@@ -1344,35 +1337,35 @@ public class MainActivity extends Activity implements OnClickListener,
 			
 			"http://cookapp-cloud.cloudfoundry.com/barcode/";
 
-	private JSONObject getProductFromGlobalDB(String contents)
-			throws ClientProtocolException, IOException, JSONException {
-		StringBuilder fullUrl = new StringBuilder(URL_GET_PRODUCT_BY_BARCODE);
-		fullUrl.append(contents);
-		HttpClient client = new DefaultHttpClient();
-		
-		Log.e(TAG,"getProd");
-
-		HttpContext localContext = new BasicHttpContext();
-		
-		HttpGet get = new HttpGet(fullUrl.toString());
-		HttpResponse response = client.execute(get, localContext);
-		//HttpResponse response = client.execute(get);
-		//client.
-		int statusCode = response.getStatusLine().getStatusCode();
-		Log.e(TAG,"getProdstatus" + statusCode);
-		if (statusCode == 200) {
-			HttpEntity entity = response.getEntity();
-			String json = EntityUtils.toString(entity);
-			//JSONArray bunchOfTweets = new JSONArray(json);
-			JSONObject mostRecentTweet = new JSONObject(json);//bunchOfTweets.getJSONObject(0);
-			return mostRecentTweet;
-		} else {
-			String reason = response.getStatusLine().getReasonPhrase();
-			throw new RuntimeException("Trouble reading status(code="
-					+ statusCode + "):" + reason);
-		}
-
-	}
+//	private JSONObject getProductFromGlobalDB(String contents)
+//			throws ClientProtocolException, IOException, JSONException {
+//		StringBuilder fullUrl = new StringBuilder(URL_GET_PRODUCT_BY_BARCODE);
+//		fullUrl.append(contents);
+//		HttpClient client = new DefaultHttpClient();
+//		
+//		Log.e(TAG,"getProd");
+//
+//		HttpContext localContext = new BasicHttpContext();
+//		
+//		HttpGet get = new HttpGet(fullUrl.toString());
+//		HttpResponse response = client.execute(get, localContext);
+//		//HttpResponse response = client.execute(get);
+//		//client.
+//		int statusCode = response.getStatusLine().getStatusCode();
+//		Log.e(TAG,"getProdstatus" + statusCode);
+//		if (statusCode == 200) {
+//			HttpEntity entity = response.getEntity();
+//			String json = EntityUtils.toString(entity);
+//			//JSONArray bunchOfTweets = new JSONArray(json);
+//			JSONObject mostRecentTweet = new JSONObject(json);//bunchOfTweets.getJSONObject(0);
+//			return mostRecentTweet;
+//		} else {
+//			String reason = response.getStatusLine().getReasonPhrase();
+//			throw new RuntimeException("Trouble reading status(code="
+//					+ statusCode + "):" + reason);
+//		}
+//
+//	}
 
 	@Override
 	public void onBackPressed() {

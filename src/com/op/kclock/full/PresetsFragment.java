@@ -4,9 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.markupartist.android.widget.ActionBar;
-import com.op.kclock.cookconst.SettingsConst;
-import com.op.kclock.full.PresetsActivity.MyGestureDetector;
+//import com.markupartist.android.widget.ActionBar;
+//import com.op.kclock.cookconst.SettingsConst;
 import com.op.kclock.full.dialogs.TimePickDialog;
 import com.op.kclock.model.AlarmClock;
 import com.op.kclock.utils.DBHelper;
@@ -19,7 +18,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.GestureDetector;
-import android.view.Gravity;
+//import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -29,7 +28,6 @@ import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class PresetsFragment extends Fragment implements OnClickListener{
 	  
@@ -37,11 +35,10 @@ public class PresetsFragment extends Fragment implements OnClickListener{
 	private List<AlarmClock> histories = null;
 	private List<AlarmClock> presets = null;
 	private final Map<View, AlarmClock> logsNpresetsMap = new HashMap<View, AlarmClock>();
-	private TimePickDialog timePickDialog = null;
+	//private TimePickDialog timePickDialog = null;
 	private SharedPreferences mPrefs;
 	
 	private GestureDetector gestureDetector;
-	private ActionBar actionBar;
 	private DBHelper dbHelper = null;
 	
 	@Override
@@ -156,9 +153,9 @@ public class PresetsFragment extends Fragment implements OnClickListener{
 		mainActivity.putExtra("alarm_extra", "");
 		dbHelper.close();
 
-		gestureDetector = new GestureDetector(new MyGestureDetector());
+		gestureDetector = new GestureDetector(getActivity().getApplicationContext(), new MyGestureDetector());
 		View logsScroll = view.findViewById(R.id.llViewLog);
-		View presetsScroll = view.findViewById(R.id.llViewPreset);
+		//View presetsScroll = view.findViewById(R.id.llViewPreset);
 
 		// Set the touch listener for the main view to be our custom gesture
 		// listener
@@ -183,36 +180,26 @@ public class PresetsFragment extends Fragment implements OnClickListener{
 	}
 
 
-	private void addPresetDialog() {
-		if (SettingsConst.APP_FULL  || presets.size() < SettingsConst.MAX_PRESETS)
-		{		if (timePickDialog == null || (timePickDialog != null && !timePickDialog.isShowing()))
-		{
-			timePickDialog = new TimePickDialog(this.getActivity());
-			timePickDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-			//timePickDialog.setAlarm(alarm);
-
-			timePickDialog.setDialogResult(new TimePickDialog.OnMyDialogResult() {
-					public void finish(AlarmClock alarm)
-					{
-						// addAlarm(newAlarm);
-						//newAlarm.updateElement();
-						dbHelper.insertPreset(alarm);
-						PresetsFragment.this.getActivity().finish();
-						PresetsFragment.this.startActivity(getActivity().getIntent());
-					}
-				});
-			timePickDialog.show();
-		}
-	}
-	else
-	{
-		Toast toast = Toast.makeText(this.getActivity(),
-									 getString(R.string.liteallow),
-									 Toast.LENGTH_LONG);
-		toast.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
-		toast.show();
-	}
-	}
+//	private void addPresetDialog() {
+//		if (timePickDialog == null || (timePickDialog != null && !timePickDialog.isShowing()))
+//		{
+//			timePickDialog = new TimePickDialog(this.getActivity());
+//			timePickDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//			//timePickDialog.setAlarm(alarm);
+//
+//			timePickDialog.setDialogResult(new TimePickDialog.OnMyDialogResult() {
+//					public void finish(AlarmClock alarm)
+//					{
+//						// addAlarm(newAlarm);
+//						//newAlarm.updateElement();
+//						dbHelper.insertPreset(alarm);
+//						PresetsFragment.this.getActivity().finish();
+//						PresetsFragment.this.startActivity(getActivity().getIntent());
+//					}
+//				});
+//			timePickDialog.show();
+//		}
+//	}
 
 	public static void deleteAllPresets(Context context)
 	{
